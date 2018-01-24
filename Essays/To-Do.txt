@@ -1,0 +1,6 @@
+This is the folder for projects in Web-Tech
+To-Do:
+1. Make a plan for the coming requirements.
+2. Assign Tasks
+3. Make sure everything is audited thru committing important details here.
+Wait for further instructions.
