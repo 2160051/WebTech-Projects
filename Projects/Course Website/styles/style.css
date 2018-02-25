@@ -1,0 +1,123 @@
+@font-face{
+	font-family: Lib;
+	src: url('fonts/suit.TTF');
+}
+body{
+	overflow-x: hidden;
+}
+#ds1{
+	width: 150px;
+	height: 150px;
+	position:absolute;
+	left: -78px;
+	top: -130px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #000080;
+}
+#ds1:hover{  
+    background-color: #0041C2;
+}
+#ds2{
+	width: 180px;
+	height: 180px;
+	position:absolute;
+	left: 24px;
+	top: -35px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #4863A0;  
+}
+#ds2:hover{
+    background-color: #728FCE;
+}
+#ds3{
+	width: 60px;
+	height: 60px;
+	position:absolute;
+	left: -14px;
+	top: 85px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #151B54;    
+}
+#ds3:hover{
+    background-color: #95B9C7;
+}
+#ds4{
+	width: 0px;
+	height: 0px;
+	border-top: 300px solid transparent;
+	border-right: 200px solid #87AFC7;
+	border-bottom: 300px solid transparent;
+    position: absolute;
+	right: 0px;
+	top: 185px;
+}
+#ds4:hover{
+	border-right: 200px solid #B4CFEC;
+}
+#divCover{
+    background-color: #B3B2B0;
+	position: absolute;
+	top: 0px;
+	left: 55px;
+	width: 100%;
+	height: 70px;
+ 	z-index: -2;
+}
+#ds5{
+	width: 0px;
+	height: 0px;
+	border-top: 250px solid transparent;
+	border-left: 150px solid #77BFC7;
+	border-bottom: 250px solid transparent;
+    position: absolute;
+	left: 0px;
+	top: 685px;
+}
+#ds5:hover{
+	border-left: 150px solid #8EEBEC;
+}
+#ds6{
+	width: 150px;
+	height: 150px;
+	position:absolute;
+	left: 80px;
+	top: 1000px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #9AFEFF;
+}
+#ds6:hover{
+    background-color: #D6FFFF;
+}
+#logo{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 35px;
+	top: -12px;
+	opacity: 0;
+}
+#topNav{
+	background-color: #B3B2B0;
+	position: absolute;
+	top: 0px;
+	left: 210px;
+	width: 100%;
+	height: 70px;
+ 	z-index: -1;
+}
+#topNav a{
+	float: left;
+	color: white;
+	padding: 15px 18px;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+}
+#topNav a:hover{
+    height: 40px;
+	background-color: grey;
+	text-decoration: none;
+}
+footer{
+	opacity: 0;
+}
