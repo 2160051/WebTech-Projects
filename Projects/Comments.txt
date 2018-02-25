@@ -1,0 +1,2 @@
+COMMENTS
+Web developers can easily understand each other specially when one of them will give a guide through the use of comments, comments in HTML starts with <!-- and ends with -->. These comments are ignored and not seen by users whenever the web page is rendered.
