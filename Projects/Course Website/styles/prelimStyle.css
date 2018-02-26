@@ -8,6 +8,7 @@
 }
 body{
 	overflow-x: hidden;
+	height: 5000px;
 }
 #ds2{
 	width: 90px;
@@ -17,10 +18,16 @@ body{
 	top: 380px;
 	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
     background-color: #6ADEFF;
-	z-index: 2;
 }
-#ds2:hover{  
-    background-color: #B0FFFF;
+#ds3{
+	width: 90px;
+	height: 90px;
+	position:absolute;
+	right: -20px;
+	top: 290px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #9AFEFF;
+	z-index: 2;
 }
 #ds4{
 	width: 170px;
@@ -30,10 +37,6 @@ body{
 	top: 430px;
 	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
     background-color: #2EA2C3;
-	z-index: 2;
-}
-#ds4:hover{
-	background-color: #88FCFF;
 }
 #divCover{
     background-color: #87AFC7;
@@ -76,7 +79,6 @@ body{
 	left: 60px;
 	width: 100%;
 	height: 70px;
- 	z-index: -1;
 }
 #topNav a{
 	float: left;
@@ -150,7 +152,7 @@ body{
 	background-color: #4863A0;
 	color: #FFFFFF;
 }
-#sideNav a:nth-child(5){
+#sideNav a:nth-child(6){
 	display: block;
 	color: #4863A0;
 	padding: 0px 55px;
@@ -159,11 +161,11 @@ body{
 	font-weight: bold;
 	text-decoration: none;
 }
-#sideNav a:nth-child(5):hover{
+#sideNav a:nth-child(6):hover{
 	background-color: #4863A0;
 	color: #FFFFFF;
 }
-#sideNav a:nth-child(12){
+#sideNav a:nth-child(13){
 	display: block;
 	color: #4863A0;
 	padding: 0px 55px;
@@ -172,9 +174,26 @@ body{
 	font-weight: bold;
 	text-decoration: none;
 }
-#sideNav a:nth-child(12):hover{
+#sideNav a:nth-child(13):hover{
 	background-color: #4863A0;
 	color: #FFFFFF;
+}
+#upMe{
+	position: fixed;
+	bottom: 5px;
+	right: 0px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 40px solid #87AFC7;
+	opacity: 0.6;
+	z-index: 99;
+}
+#upMe:hover{
+	border-bottom: 40px solid #57FEFF;
+	opacity: 0.8;
+	z-index: 99;
 }
 #content{
 	left: 256px;
@@ -240,6 +259,265 @@ body{
 	font-size: 26px;
 	text-decoration: none;
 	padding: 0px 20px 20px 20px;
+}
+#dev{
+	color: #FFFFFF;
+	height: 20px;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+	text-align: left;
+	position: relative;
+	top: -80px;
+	background-color: #889FB0;
+	padding: 20px 20px 40px 20px;
+}
+#devPar{
+	position: relative;
+	top: -90px;
+	text-indent: 50px;
+	text-align: justify;
+	color: #4C6374;
+	font-family: Lib, Helvetica;
+	font-size: 26px;
+	text-decoration: none;
+	padding: 0px 20px 20px 20px;
+}
+#cern{
+	color: #FFFFFF;
+	height: 20px;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+	text-align: left;
+	position: relative;
+	top: -110px;
+	background-color: #889FB0;
+	padding: 20px 20px 40px 20px;
+}
+#cernPar{
+	position: relative;
+	top: -130px;
+	text-indent: 50px;
+	text-align: justify;
+	color: #4C6374;
+	font-family: Lib, Helvetica;
+	font-size: 26px;
+	text-decoration: none;
+	padding: 0px 20px 20px 20px;
+}
+#stone{
+	color: #566D7E;
+	height: 30px;
+	font-family: Lib, Helvetica;
+	font-size: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+	position: relative;
+	top: -120px;
+}
+#stPar{
+	text-indent: 50px;
+	text-align: justify;
+	color: #2E4556;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	top: -140px;
+}
+#oneHTTP{
+	color: #2B3856;
+	height: 30px;
+	font-family: Lib, Helvetica;
+	font-size: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: -75px;
+}
+#containHTTP{
+	position: relative;
+    width: 100%;
+	top: -130px;
+}
+#containHTTP img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#HTTPar{
+	text-indent: 50px;
+	text-align: justify;
+	color: #FFFFFF;
+	background-color: #4C6374;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	top: -80px;
+}
+#HTTPSPar{
+	text-indent: 50px;
+	text-align: justify;
+	color: #FFFFFF;
+	background-color: #4C6374;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	top: -130px;
+}
+#twoHTML{
+	color: #E56717;
+	height: 30px;
+	font-family: Lib, Helvetica;
+	font-size: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: 80px;
+}
+#containHTML{
+	position: relative;
+    width: 100%;
+	top: -90px;
+}
+#containHTML img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	height: 200px;
+	width: 200px;
+}
+#HTMLPar{
+	text-indent: 50px;
+	text-align: justify;
+	color: #FFFFFF;
+	background-color: #E56717;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	top: 70px;
+}
+#threeURL{
+	color: #B94022;
+	height: 30px;
+	font-family: Lib, Helvetica;
+	font-size: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: 270px;
+}
+#containURL{
+	position: relative;
+    width: 100%;
+	top: 100px;
+}
+#containURL img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	height: 200px;
+	width: 200px;
+}
+#URLPar{
+	text-indent: 50px;
+	text-align: justify;
+	color: #FFFFFF;
+	background-color: #B94022;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+	top: 260px;
+}
+#vers{
+	color: #566D7E;
+	height: 30px;
+	font-family: Lib, Helvetica;
+	font-size: 36px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+	position: relative;
+	top: 290px;
+}
+#versWWW{
+	color: #566D7E;
+	font-family: Lib, Helvetica;
+	font-size: 26px;
+	text-decoration: none;
+	text-indent: 50px;
+	text-align: justify;
+	position: relative;
+	top: 280px;
+	padding: 20px 30px 20px 20px;
+}
+#versInter{
+	color: #566D7E;
+	font-family: Lib, Helvetica;
+	font-size: 26px;
+	text-decoration: none;
+	text-indent: 50px;
+	text-align: justify;
+	position: relative;
+	top: 240px;
+	padding: 20px 30px 280px 20px;
+}
+#comparison {
+    font-family: Lib, Helvetica;
+	font-size: 26px;
+    border-collapse: collapse;
+    width: 100%;
+	text-align: center;
+}
+
+#comparison td, #comparison th {
+    border: 1px solid #blue;
+    padding: 8px;
+}
+
+#comparison tr:nth-child(even){
+background-color: grey;
+}
+
+#comparison tr:hover {
+background-color: #7FFFD4;
+}
+
+#comparison th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+#center{
+	color: black;
+	font-weight: bold;
+	font-size: 30px;
 }
 footer{
 	opacity: 0;
