@@ -1,4 +1,0 @@
-timBer: https://cdn1.designhill.com/assets/dh/images/infographic/famous-entrepreneur/tim_berners_lee/tim.png?ver=2.7.2
-http logo: https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/062/thumb/http.png
-HTML logo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png
-URL: https://servmask.com/img/products/url.png

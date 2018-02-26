@@ -17,11 +17,10 @@
 		<a href="#birth">▶ Birth of WWW</a>
 		<a href="#stone">▶ 3 Cornerstones</a>
 		<a href="#vers">▶ WWW vs. Internet</a>
-		<a href="#lollipopTitle">▶ DNS</a>
-		<a href="prelims.html">HTTP Fundamentals</a>
-		<a href="prelims.html">▶ Versions</a>
-		<a href="prelims.html">▶ Structures</a>
-		<a href="prelims.html">▶ Headers & Methods</a>
+		<a href="#dns">▶ DNS</a>
+		<a href="#HTTPFun">HTTP Fundamentals</a>
+		<a href="#HTTPVers">▶ Versions</a>
+		<a href="#hedMet">▶ Headers & Methods</a>
 		<a href="prelims.html">▶ Status Codes</a>
 		<a href="prelims.html">▶ Extensions</a>
 		<a href="prelims.html">▶ RFCs</a>
@@ -122,13 +121,13 @@
 			more, these networks are interlinked with each other. The Internet Protocol, which deals with the transmission of packets and data as a 
 			whole governs the Internet. In order to view the World Wide Web, you have to access the Internet.
 		</p>
-		<p id="dns"> ◆ Domain Name System (DNS) </p>
+		<p id="dns"> Domain Name System (DNS)</p>
 		<p id="reqPar">
 			DNS or Domain Name System is a type of Internet Service that caters to mapping certain addresses of network or IP address into a unique domain name.
 		</p>
 
-		<h1>HTTP Fundamentals</h1>
-		<h2> ◆ HTTP Version History </h2>
+		<h1 id="HTTPFun">HTTP Fundamentals</h1>
+		<h2 id="HTTPVers"> ◆ HTTP Version History </h2>
 		<p id="verCon"> <b>HTTP Version Control</b>
 			<div id="httpVer">
   			<ul>
@@ -153,24 +152,24 @@
 				-	Protocol: ASCII<br>
 				-	Connection Nature: terminated immediately after the response<br>
 				-	Methods:<br>
-				o	GET uri http-version<br>
-				o	HEAD uri http-version<br>
-				o	POST uri http-version<br>
+				▶	GET uri http-version<br>
+				▶	HEAD uri http-version<br>
+				▶	POST uri http-version<br>
 				-	Standard status codes<br>
-				o	200 OK<br>
-				o	201 Created<br>
-				o	202 Accepted<br>
-				o	204 No Content<br>
-				o	301 Moved permanently<br>
-				o	302 moved temporarily<br>
-				o	304 Not modified<br>
-				o	400 Bad request<br>
-				o	401 unauthorized<br>
-				o	403 Forbidden<br>
-				o	500 Internal server error<br>
-				o	501 Not implemented<br>
-				o	502 bad gateway<br>
-				o	503 Service unavailable<br>
+				▶	200 OK<br>
+				▶	201 Created<br>
+				▶	202 Accepted<br>
+				▶	204 No Content<br>
+				▶	301 Moved permanently<br>
+				▶	302 moved temporarily<br>
+				▶	304 Not modified<br>
+				▶	400 Bad request<br>
+				▶	401 unauthorized<br>
+				▶	403 Forbidden<br>
+				▶	500 Internal server error<br>
+				▶	501 Not implemented<br>
+				▶	502 bad gateway<br>
+				▶	503 Service unavailable<br>
 				<br>
       			</div>
     		</li>
@@ -184,11 +183,11 @@
 				-	Connection Nature: long lived<br>
 				-	Protocol : text<br>
 				-	Additional methods:<br>
-				o	PUT<br>
-				o	DELETE<br>
-				o	TRACE<br>
-				o	OPTIONS<br>
-				o	CONNECT<br>
+				▶	PUT<br>
+				▶	DELETE<br>
+				▶	TRACE<br>
+				▶	OPTIONS<br>
+				▶	CONNECT<br>
 				-	Retrieve through alias in the DNS<br>
 				<br>
       			</div>
@@ -202,7 +201,7 @@
 				-	Foundation was SPDY protocol<br>
 				-	Included header compression<br>
 				-	Added Status code:<br>
-				o	421 Misdirected Request<br>
+				▶	421 Misdirected Request<br>
 				-	Added server push<br>
 				-	Added pipelining feature for sending multiple requests<br>
       			</div>
@@ -211,30 +210,30 @@
     		</div>
 		</p>
 
-		<h2> ◆ Headers & Methods </h2>
-		<h3> Request </h3>
-		<p id="reqPar">
+		<h2 id="hedMet"> ◆ Headers & Methods </h2>
+		<h3 id="req"> Request </h3>
+		<p id="reqParLove">
 			<b>CRLF (Carriage Return Line Feed)</b> - contains three values which are separated by spaces.
 		</p>
-			<p id="reqParTwo">
-			Request CRLF <br>
-				1.	Method <br>
-				2.	Request Target <br>
-				3.	Protocol Version <br>
+			<p id="reqParTwo"> Request CRLF </p> 
+			<p id="reList">
+				1.  Method<br>
+				2.	Request Target</br> 
+				3.	Protocol Version</br>
 			</p>
-			<p id="reqParTwo">
-				Process: <br>
-				1.	Message Body <br>
-				2.	Empty Line <br>
-				3.	Payload <br>
-			</p>
+			<p id="reqParTwoTwo"> Process: </p>
+			<ul id="reListTwo">
+				<li>1.	Message Body </li>
+				<li>2.	Empty Line </li>
+				<li>3.	Payload </li>
+			</ul>
 		<p id="reqParThree"><br>
 			*HTTP 1.0 has at least one required header which is request header <br>
 			*Message headers: General, Request, Entity Header <br>
 			*Payload - found after the header, blank line means empty payload <br>
 		</p>	
-		<h4>Methods and Properties</h4> <br>
-		<div id="httpVer">
+		<h4 id="metProp">Methods and Properties</h4> <br>
+		<div id="httpVerTwo">
   			<ul>
     		<li>
       			<a href="#oneMethod">Request Methods</a>
@@ -274,23 +273,23 @@
       		</ul>
       	</div>
 
-      	<h3> Response </h3><br><br>
-      	<p id="reqParTwo">
-			Response CRLF: <br>
+      	<h3 id="resp"> Response </h3>
+      	<p id="respParTwo"> Response CRLF:</p>
+		<p id="respList">
 			1.	Protocol Version<br>
 			2.	Status Code<br>
 			3.	Reason Phrase<br>
 			Example: HTTP/1.1 200 OK<br>
 		</p>
-		<p id="reqParTwo">
-			Process: <br>
+		<p id="respParTwoTwo">Process:<p>
+		<p id="respListTwo">
 			1.	Message Body <br>
 			2.	Empty Line<br>
 			3.	Payload<br>
 		</p>
 
-		<h4> Message Headers </h4><br>
-		<div id="httpVer">
+		<h4 id="mes"> Message Headers </h4><br>
+		<div id="httpVerThree">
   			<ul>
     		<li>
       			<a href="#un">General Header Fields</a>
@@ -368,37 +367,7 @@
 			</li>
       	</ul>
       </div>
-	   <p id="reqParTwo">•	For a Full list go to <a href="http://www.iana.org/assignments/message-headers/message-headers.xhtml">iana.org </a></p>
-	   
-		<br><br>
-	  <h1 id="his">HTML BASIC STRUCTURE</h1>
-			
-			<h2 id="subtitle">DOCTYPE</h2>
-			<p id="htmldes">
-			< ! DOCTYPE HTML > which is usually found at the very top of the page before any HTML tags, is called a document type declaration that identifies the document and tells the browser that it is in HTML5 version. This doc type should appear only once at the beginning of the code and the declaration is not case sensitive. <!DOCTYPE HTML> helps the browsers to display the pages of the web in a correct manner or way.
-			</p>
-
-			<h2 id="subtitle">HTML Root Element</h2>
-			
-			<p id="htmldes">
-			The < HTML> serves as the root element that defines the whole HTML document. It holds all of the code and wraps the content in the HTML document. It identifies which the web page is written in HTML. It usually contains each of < head> and < body> elements. The </ HTML> tag is the sign that it is the end of the web page. When a web developer used element something like this, < HTML lang="en">, it means that it declares that language of the document is English. </p>
-
-
-			<h2 id="subtitle">ELEMENTS AND TAGS</h2>
-			<p id="htmldes">
-			To mark up or create the content, elements and tags always work together. HTML elements role is to identify the importance of a tag. Tag determines the start and the end of an element, the thing that is inside of each element is called content. Not all of the elements are required to have an end tag like <br>. For each and every element, it has its meaning like example < p > Content < /p >, the < p> element is used whenever a web developer will write a paragraph.
-
-			There are two main parts for every HTML document. The < head > and < body > elements have both end tags. The < head > element is responsible in containing the meta information of the HTML document and the < title > element that is the only element required to be put inside the < head > tags which indicates the title for the document or simply specifies the web page title.  This < head > element could also include a lot of HTML elements that that cannot be seen as parts of the page when rendered by the browser. These elements are either meta data or are the things that is helping in pulling the external resources like JavaScript files or CSS style sheets. The HTML elements which can be used by a web developer that can be put inside the < head > element are the < base >, < link >,< noscript >,< style >,< meta >,< title > and the < script >. 
-
-			The < body > element serves as a container of the content of a web page that defines the HTML document body, it is considered as the information that a person want to display in a web page. The < body > element should be only one therefore all of the things that a user can see whenever the browser is rendered is contained in the < body > element. </p>
-
-			<h2 id="subtitle">COMMENTS</h2>
-			<p id="htmldes">
-			Web developers can easily understand each other specially when one of them will give a guide through the use of comments, comments in HTML starts with "< !--" and ends with the " --> ".
-			These comments are ignored and not seen by users whenever the web page is rendered.</p>
-	  </div>
-	  
-     
+      <p id="reqMEup">*For a Full list go to <a href="http://www.iana.org/assignments/message-headers/message-headers.xhtml">iana.org </a></p>
 	</article>
 	<footer> 
 		<p>&copy;2018 9358A</p>
