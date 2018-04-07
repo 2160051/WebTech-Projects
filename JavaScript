@@ -17,3 +17,17 @@ For example,its extensions gives continuity of information from one invocation t
 
 
 The meaning of this is that in our web browser, the power of changing the way the webpage looks like is handled by JavaScript.
+
+
+JAVASCRIPT VS. JAVA
+
+JAVASCRIPT
+
+It is Object-oriented. Between types of objects, there are no distinction. You can dynamically add methods and properties to any object and through the prototype mechanism, the idea of inheritance is implemented.
+In javaScript, there are no times where there is declaration of variable data types. It implements dynamic typing and it is loosely typed. You can not automatically write something to hard disk in JavaScript.
+
+
+JAVA
+
+Unlike in JavaScript, the declaration of variable data types is very important. It implements static typing and it os strongly typed. Java is class based and the objects are separated into Classes and instances considering all of the inheritance through the hierarchy of the class. You can not add dynamically the methods or properties in the classes and instances. Unlike in JavaScript, in Java you can automatically write into the hard disk.
+
