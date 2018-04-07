@@ -31,3 +31,12 @@ JAVA
 
 Unlike in JavaScript, the declaration of variable data types is very important. It implements static typing and it os strongly typed. Java is class based and the objects are separated into Classes and instances considering all of the inheritance through the hierarchy of the class. You can not add dynamically the methods or properties in the classes and instances. Unlike in JavaScript, in Java you can automatically write into the hard disk.
 
+JavaScript Execution Environment
+
+
+1. Core JavaScript(EcmaScript) Language and API(Standardized)
+
+ECMA TC39 committee standardized core language of JavaScript and it was termed as ECMAScript. On December 2012,initial standard was approved. ECMAScript known as the standard script language ,is created with the cooperation of Microsoft and Netscape but it is more derived from the idea of Netscape's JavaScript. It is object-oriented where context or objects of any of specific domain like the idea of a "document" can be added.
+ECMAScript is commonly used on non-browser environments such as node.js.
+
+Ecma TC39 standardized ECMAScript Internationalization API Specification that is an addition to the ECMAScript Language Specification. The API gives collation of things such as number formatting, string comparison, and date-and-time formatting for JavaScript applications. The API also let applications to pick a language and it tailors it to the functionality to each of their needs. In the Intl object , you can track the status of implementation on the browers.
