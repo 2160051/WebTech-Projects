@@ -1,0 +1,19 @@
+What is JavaScript?
+
+Javascript is a lightweight and dynamic computer programming language. It is a part of web pages that has an implementations of creating dynamic pages and allows client-side script to have a contact with the user. It is an object-oriented scripting language and cross-platform that is commonly used to create webpages interactive like clickable buttons , complex animations and popup menus.
+
+Array, Date, and Math which are standard library of objects are included in JavaScript. JavaScript also contain the statements, operators and control structures which are termed as the core set of language elements. By supplementing additional objects, the core JavaScript could be extended for different kinds of goals or purposes.
+
+Client-side JavaScript
+
+It extends the language by the way of giving objects to control browsers and each of its Document Object Model. For example, its extensions it permits an application to put elements in an HTML form and it responds on to the user events like page navigation, mouse clicks, and form input.
+
+
+Server-side JavaScript
+
+It extends the language by the way of giving objects important to running JavaScript on servers. 
+For example,its extensions gives continuity of information from one invocation to another invocation of the application, performs on servers file manipulations or allows interaction of applications with a database.
+
+
+
+The meaning of this is that in our web browser, the power of changing the way the webpage looks like is handled by JavaScript.
