@@ -171,6 +171,13 @@ For the special numbers like
 Boolean values does not need quotes around them and the true and false words are special keywords on JavaScript.
 Example :
 	var booleanName = false;
+	
+	
+Null and undefined
+You declare it by using null and undefined keywords
+Example :
+var sample = null;
+var meaning, dictionary = undefined;
 
 Array will allow you to store many values on one single reference.
 Example : 
