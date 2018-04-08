@@ -182,5 +182,21 @@ if (cake === 'small') {
 }
 If the result of the comparison is false then the first block will be skipped and after the else statement which is the second block should run instead.
 
+Functions
 
+ It's a way of collection of functionality that you want to reuse in the future. Instead of spending so much time rewriting a code, you could just call the name of the function when you need a procedure.
+ 
+Example:
+
+var sampleName = document.querySelector('h1');
+alert('alert is a function!');
+
+When you encounter a variable name that has parentheses after it then is it a function. For the functions to do their job, they often get arguments which are the bits of data. Argument go inside the parentheses, if it is more than one then it will be separated by comma.
+
+Example :
+
+function add(num1,num2) {
+  var sum = num1 + num2;
+  return sum;
+}
 
