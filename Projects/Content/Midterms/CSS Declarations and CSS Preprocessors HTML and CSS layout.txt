@@ -1,5 +1,10 @@
 HTML to be inserted
 
+<div id="nightButton">
+	<button class="nightMode">Night Mode</button>
+	</div>
+	<article id="content">
+
 <h1 id="css">CSS</h1>
 			<p id="css">
 			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
@@ -264,6 +269,20 @@ CSS to be Inserted
 	background: #d5e0ff;
 	border-bottom: 1px solid #7396fa;
 	color: #4C6374;
+}
+.nightMode {
+  background-color : #7396fa;
+  color: white;
+  font-family: Lib, Helvetica;
+  font-size: 22px;
+  border-radius: 3x;
+  border-color: #46b8da;
+  padding: 15px 25px;
+}
+#nightButton {
+  position: fixed;
+  top: -3px;
+  right: 15px;
 }
 .colorScheme{
 	display: block;
