@@ -87,6 +87,53 @@ JavaScript Language Fundamentals
 
 In JavaScript, you have to separate the statements on a single line by using a semi-colon. Semi-colon that is usually found on the end of the line determines where the statement is ending.
 
+Variables and Constants
+
+You can store values inside a container called Variables. You just have to declare the variable with the use of var keyword and it should be followed by any name that you have chosen.
+Example : 
+var myVariable;
+
+You can declare also by using a let keyword but the difference with the var is that , it does not become a property of the Window object. Both of var and let are global scope.
+
+Example : 
+let yourVariable; 
+
+For the declaration of Constants, you make use of const keyword and then followed by the name of the constant. It is a global scope but it does not become a property of the Window object.
+Example :
+const sampleName = 'Jo';   
+
+One thing that you should not do in declaring variable and constants is something like this :
+avoidThis = 100;       
+
+Because it is made implicitly if non-existent and
+it will serve as the global reference to window property 
+
+Variables and constants may contain values which have different data types such as String , Number, Boolean	A True/False value, Array, and Object.
+
+String is a sequence of text.The value should be enclosed in quote marks.
+Example :
+	var stringName = 'Christine';
+
+
+Number does not have quotes around the value.
+Example :
+	var numberName = 10;
+
+
+Boolean values does not need quotes around them and the true and false words are special keywords on JavaScript.
+Example :
+	var booleanName = false;
+
+Array will allow you to store many values on one single reference.
+Example : 
+	var arrayName = [1,'Christine','Janine',10]; 
+
+Object is seen anywhere in the JavaScript code because everything in JavaScript are objects. Objects can be stored on a variable.
+
+Example :
+	var objectName = document.querySelector('h2');
+
+
 
 
 
