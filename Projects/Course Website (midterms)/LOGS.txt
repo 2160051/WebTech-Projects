@@ -1,0 +1,327 @@
+LEGENDS:
+Andres, Erythrina Nicole - 2160051
+Baldovino, Britanny - Britaknee 
+Doria, Janine - JanineDoria 
+Mascardo, Naider - 2160487
+Tagle, Christine - Quirkyalone
+
+commit ebdfe5ac674342cd9e8f7bc0b5fe7abfca2877cc (HEAD -> master, origin/master)
+Author: 2160487 <32945438+2160487@users.noreply.github.com>
+Date:   Mon Feb 26 13:45:51 2018 +0800
+
+    added content httpv2
+
+commit 58abcb5ab996324cc8c44944d5d3e931bead200f
+Author: Janine Doria <32945411+JanineDoria@users.noreply.github.com>
+Date:   Mon Feb 26 13:44:22 2018 +0800
+
+    Add files via upload
+
+commit 21e22e60c9ce05404a4c415145ebd0d38aa95e2a
+Author: Erythrina Nicole Andres <32945430+2160051@users.noreply.github.com>
+Date:   Mon Feb 26 13:29:00 2018 +0800
+
+    HTML For References
+
+    Just append, CSS is found below commented out
+
+commit 1aa387c80dfb396694ddda5544253dd6f46a649b
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Mon Feb 26 13:28:22 2018 +0800
+
+    Latest
+
+commit 298c273627c0f72da2b86a283c8755587dba95a4
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Mon Feb 26 13:13:19 2018 +0800
+
+    Added HTML basic structure, element, comments
+
+commit fa84b688994a871d6c980450d5b4b6160df43912
+Author: Erythrina Nicole Andres <32945430+2160051@users.noreply.github.com>
+Date:   Mon Feb 26 13:09:54 2018 +0800
+
+    Added Accordion and Text Formatting
+
+    Just append the additions
+
+commit 67c5a78b432795a89ef0c155ea5ed80648793e85
+Author: Erythrina Nicole Andres <32945430+2160051@users.noreply.github.com>
+Date:   Mon Feb 26 13:07:50 2018 +0800
+
+    Layout of Version History and Methods
+
+    Methods i.e. Request & Response and Header Fields
+
+commit 10db82da0f6338e839bd0ecff28dac05cc355d5b
+Author: 2160487 <32945438+2160487@users.noreply.github.com>
+Date:   Mon Feb 26 13:01:47 2018 +0800
+
+    added additional sources
+
+commit 8800b045dd6fc83e93c4028c4a41602c323dfeb1
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Mon Feb 26 11:29:59 2018 +0800
+
+    Added comparison table
+
+commit 21f4efd84108ec6d2642ea5effe82960b9dedc08
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Mon Feb 26 10:42:14 2018 +0800
+
+    CSS for Comparison table
+
+commit d1907e68fdbeba5c4e7177990ed7b5bd06217317
+Author: Britanny Baldovino <britbaldovino@yahoo.com>
+Date:   Sun Feb 25 15:20:11 2018 +0800
+
+    Uploaded website contents
+
+commit dea9b7fe8c07ede5b2e3c9a04039880dd4df1fc0
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Sun Feb 25 11:25:28 2018 +0800
+
+    SecondCompiledContent
+
+commit d255738c8bf49fbcad2f31dc513310f912bc72a5
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Sun Feb 25 11:13:31 2018 +0800
+
+    Comments
+
+commit ae725f7dbfd534072277e20b966d5db01846e7ea
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Sun Feb 25 11:12:51 2018 +0800
+
+    Elements and Tags
+
+commit e623c0c149f5c7786510f129c9c4301d80bdbc79
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Sun Feb 25 11:11:55 2018 +0800
+
+    HTML Basic Structure
+
+commit c450221f28fead6c50dddc5cbafe1c0ec98b60d3
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Sat Feb 24 20:57:18 2018 +0800
+
+    Second to the last version
+
+commit 16b2e4bed77285ab0bde34814c35f191f0fd06a2
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Sat Feb 24 18:48:43 2018 +0800
+
+    Copies Request and Response doc to Contents folder
+
+commit 993b47f6e7f47771afbce5c37301690fdf22e19c
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Sat Feb 24 18:47:23 2018 +0800
+
+    Refined the Request and Response doc
+
+commit 97410a74c4be5946e8e4667ec7408f59f0e7cbdf
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Sat Feb 24 18:29:56 2018 +0800
+
+    Revised Response and Request
+
+commit 413a65ad201d24797082eeec96dedac7fce01a9e
+Author: Britaknee <32957344+Britaknee@users.noreply.github.com>
+Date:   Fri Feb 23 00:35:31 2018 +0800
+
+    Uploaded the document for HTTP Status Codes
+
+commit 354b3a2394163dd67cec4f368e03fadf037ac06d
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Thu Feb 22 10:39:03 2018 +0800
+
+    Added sample CSS for comparison table
+
+commit e12e8196911790dc81f60a28c7662e6cc03fea26
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Thu Feb 22 10:37:18 2018 +0800
+
+    Added resources
+
+commit 66ca942a14c2bec8ce448a40715a51e73edf35b6
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Thu Feb 22 10:22:53 2018 +0800
+
+    Added url description
+
+commit bd77aadcd00b714eec64b9477e41f75c9e6518e4
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Thu Feb 22 10:14:40 2018 +0800
+
+    Added https description
+
+commit 36fb2c65d32f9fa109b27d760cad508f98ba3b37
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Thu Feb 22 09:37:15 2018 +0800
+
+    Added HTTP description
+
+commit 769db166b362f7a308c2147ad438c7b070edc2cc
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Wed Feb 21 23:51:45 2018 +0800
+
+    Added Three Corner Stones Intro with HTML desc
+
+commit 99bd604e2e4de9e9421b5f5f01d3373ba766ec5c
+Author: Janine Doria <32945411+JanineDoria@users.noreply.github.com>
+Date:   Wed Feb 21 23:49:50 2018 +0800
+
+    History and the birth of World Wide Web
+
+commit 10ffcab9bbfd6f96904eb88f2df670160d1f2d05
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Wed Feb 21 21:27:22 2018 +0800
+
+    Finalized Request and Response.docx
+
+commit 7e3db6ed23ea284e58e393c3e668a389571227c7
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Wed Feb 21 17:58:05 2018 +0800
+
+    Added request methods, started method properties
+
+commit ff8e1b7e86e18f176be40886efabe20467fc42fc
+Author: 2160487 <32945438+2160487@users.noreply.github.com>
+Date:   Tue Feb 20 23:44:36 2018 +0800
+
+    Added HTTP Version History
+
+commit 2523986935a273fc1de26e6617403d2b14c0bbc7
+Author: 2160487 <32945438+2160487@users.noreply.github.com>
+Date:   Tue Feb 20 23:43:29 2018 +0800
+
+    Deleted HTTP version history
+
+    to be moved to another folder
+
+commit b7989da985fc9964df52ac4bfd19c2da62775278
+Author: 2160487 <32945438+2160487@users.noreply.github.com>
+Date:   Tue Feb 20 23:41:44 2018 +0800
+
+    Added HTTP version history
+
+commit 93fc18e30641b6b1ed4bf272a878eb39f35c1fdc
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Tue Feb 20 23:36:44 2018 +0800
+
+    Added more details about Response and Request Headers/Methods
+
+commit a748cb114b0c16e5c009f34d1ed1d30d8ae22447
+Merge: 1ba725f 8da055d
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Tue Feb 20 23:35:49 2018 +0800
+
+    Merge branch 'master' of https://github.com/2160051/WebTech-Projects
+
+commit 1ba725fc35b48997c223566766754435f69bf8aa
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Tue Feb 20 23:35:28 2018 +0800
+
+    Added more details about Response and Request Headers/Methods
+
+commit 8da055d1c4edd3925cf607534630d7aaff00fdde
+Author: Janine Doria <32945411+2162338@users.noreply.github.com>
+Date:   Tue Feb 20 22:32:22 2018 +0800
+
+    uploaded "Content" For "HTML"
+
+commit 643c9444d84715014e44e517451c9d9c652ecbfa
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Tue Feb 20 17:09:06 2018 +0800
+
+    Deleted Original Internet vs. WWW HTML file
+
+commit 6b59fe1ea346c06b59901467159a4047afcf0caa
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Tue Feb 20 17:05:56 2018 +0800
+
+    Added sources as comments
+
+commit 9208c217cace1b986003b697da231cf407222206
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Tue Feb 20 16:55:47 2018 +0800
+
+    Added one row for the Comparison Table
+
+commit 47daa06fe32b392565329aa6b3901223dd888db0
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Tue Feb 20 16:50:03 2018 +0800
+
+    WWW vs. Internet Content
+
+commit 894854f9d300e1e35e601a0b16de6f99d6f0967b
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Tue Feb 20 01:08:11 2018 +0800
+
+    Added Internet initial description
+
+commit 9cfd623feb7de5a410daa0b021d65e5b3debce16
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Tue Feb 20 00:47:54 2018 +0800
+
+    WWW initial description
+
+commit d3d6abe2f0839be907dafd7af1884a2b6e04d69e
+Author: 2160051 <32945430+2160051@users.noreply.github.com>
+Date:   Mon Feb 19 22:21:11 2018 +0800
+
+    Uploaded Part of the Encoded HTTP info
+
+    Still incomplete
+
+commit 474f1c09e7bfb42579d517003445e78fc97bef26
+Author: Christine Tagle <32945378+Quirkyalone@users.noreply.github.com>
+Date:   Sun Feb 11 10:50:27 2018 +0800
+
+    Suggestion for one page web page
+
+commit dfb81fc27152fb85d5ae8570efb722dc2ac83882
+Author: Britaknee <32957344+Britaknee@users.noreply.github.com>
+Date:   Sun Feb 11 10:26:31 2018 +0800
+
+    Upload index.html
+
+    index.html will serve as the homepage and it currently has the initial content for other pages
+
+commit 58a842759ded33deef8e8d5913ee1185f5a53844
+Author: Britaknee <32957344+Britaknee@users.noreply.github.com>
+Date:   Sun Feb 11 10:24:53 2018 +0800
+
+    Delete main.html
+
+    Rename main into index and add initial content, it is better to replace the file
+
+commit 29f51a9e5d10ac052274e76754d4cfa9ab5d60c7
+Author: Britaknee <32957344+Britaknee@users.noreply.github.com>
+Date:   Sun Feb 11 09:40:12 2018 +0800
+
+    Uploaded empty main page html code
+
+commit e23207afaae36f18e63583b4830c8a654cc32271
+Author: 2160051 <32945430+2160051@users.noreply.github.com>
+Date:   Wed Jan 24 21:17:46 2018 +0800
+
+    Added image file for Homepage Layout
+
+commit 4eaaafea6c1846eaf81bcbadab29f5d2133cb4c1
+Author: 2160051 <32945430+2160051@users.noreply.github.com>
+Date:   Wed Jan 24 21:17:00 2018 +0800
+
+    Added Homepage Layout.xml, can be opened using draw.io
+
+commit 447a206608f9deb254e8c894ad6e57546512b26b
+Author: 2160051 <2160051@slu.edu.ph>
+Date:   Wed Jan 24 20:39:43 2018 +0800
+
+    Added To-Do.txt for both folders
+
+commit 2c128fa503748cfafe9a28b2f5bf72513c173791
+Author: 2160051 <32945430+2160051@users.noreply.github.com>
+Date:   Wed Jan 24 20:02:04 2018 +0800
+
+    Initial commit

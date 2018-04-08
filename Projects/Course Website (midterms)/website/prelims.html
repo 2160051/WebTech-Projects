@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/prelimStyle.css">
+	<title>Prelims</title>
+</head>
+<body>
+	<nav id="topNav">
+		<a href="index.html">webEd</a>
+		<a href="prelims.html">Prelims</a>
+		<a href="midterms.html">Midterms</a>
+		<a href="finals.html">Finals</a>
+	</nav>
+	<nav id="sideNav">
+		<a href="#his">History</a>
+		<a href="#birth">▶ Birth of WWW</a>
+		<a href="#stone">▶ 3 Cornerstones</a>
+		<a href="#vers">▶ WWW vs. Internet</a>
+		<a href="#dns">▶ DNS</a>
+		<a href="#HTTPFun">HTTP Fundamentals</a>
+		<a href="#HTTPVers">▶ Versions</a>
+		<a href="#hedMet">▶ Headers & Methods</a>
+		<a href="#statusCodes">▶ Status Codes</a>
+		<a href="#rfcTitle">▶ RFCs</a>
+		<a href="#hTML">HTML</a>
+		<a href="#histo">▶ Version History</a>
+		<a href="#hisMe">▶ Document Structure</a>
+		<a href="reference.html">References</a>
+	</nav>
+	<article id="content">
+		<h1 id="his">History of the World Wide Web</h1>
+		<p id="hisDef"> 	
+				In 1989, World Wide Web started by an English Physicist named Tim Berners-Lee. An
+			organization called World Wide Web Consortium (W3C) at Massachusetts Institute of
+			Technology (MIT) founded and still headed by Tim Berners-Lee and also participated in by
+			several companies who are willing to create standards and ways to improve the quality of the
+			Web. W3C also aims to provide access to the World Wide Web on the principle of no patent, no
+			royalty due and easily adoptable by everyone. W3C has set the standards for HTML, XHTML,
+			CSS and many other internet applications. 
+		</p>
+		<p id="birth"> ◆ Birth of (WWW) World Wide Web </p>
+		<img id="timBer" src="pictures/timBer.png">
+		<p id="timOp"> 1989 - Tim Berners-Lee's Opinion </p>
+		<p id="timPar">	
+				Tim Berners-Lee is an English Physicist who had been working
+			since 1980 in Geneva for the (CERN) Conseil européen pour la
+			recherche nucleaire. Anyhow, he was concerned and frustrated in
+			sharing between many scientists at CERN for the reason that lack
+			of information. And also the different platforms being used in
+			communicating with each other becomes a barrier. So Tim
+			Berners-Lee proposed his idea to create a new information system
+			build on shared hypertext documents. 
+		</p>
+		<p id="dev"> 1990 - Development of the Project </p>
+		<p id="devPar">	
+				A basic software program that allows editing and viewing of hypertext documents was being developed. 
+		</p>
+		<p id="cern"> 1993 - The World Wide Web Continues Beyond CERN </p>
+		<p id="cernPar">	
+				WWW was made available and free to all, free of patents and royalties, opening up the Web to commercial use.
+		</p>
+		<p id="stone"> ◆ Three Cornerstones </p>
+		<p id="stPar">
+				It was October of 1990 when Tim Berners-Lee created the three corner stones that stood as the foundation 
+			of the modern day's World Wide Web. These three fundamental technologies are the things which people may have seen 
+			on parts of web browsers. 
+		</p>
+		<div id="containHTTP"><img src="pictures/http.png"></div>
+		<p id="oneHTTP"> 1: Hypertext Transfer Protocol or HTTP </p>
+		<p id="HTTPar">	
+			HTTP was created for the World Wide Web and it is liked for its speed and simplicity. HTTP protocol requests the HTML document from 
+			the server and serves it to the browser. HTTP is responsible for the getting of linked resources from across the web. HTTP Protocol 
+			serves as the set of standards that allow people or users of the WWW to exchange data and information that are found on web pages. 
+			The "http://" in front of the address whenever users access the WWW tells the browser to make a connection to or communicate over HTTP. 
+			Some of the browsers in the modern world doesn't require "http://" in the front of the URL because of the reason that it is considered as 
+			the default method of communication. But it is also needed to separate it from other protocols like FTP that is why it is still kept in the 
+			browsers.	 
+		</p>
+		<p id="HTTPSPar">	
+			Hypertext Transfer Protocol Secure or HTTPS is a protocol that uses HTTP on a connection which is encrypted by the transport-layer security. 
+			To protect transmitted data from eavesdropping HTTP is used. For conducting financial transactions the HTTPS is the default protocol. 
+			HTTPS can also protect the users from censorship by an ISP or a government.	 
+		</p>
+		<p id="twoHTML"> 2: Hypertext Markup Language or HTML </p>
+		<div id="containHTML"><img src="pictures/html.png"></div>
+		<p id="HTMLPar">	
+			HTML is a markup language for the web used for constructing electronic documents which are called pages. Each of the pages that are displayed on 
+			the WWW contains a series of connections to other pages named "Hyperlinks". A browser would not know how to load images or display text as elements 
+			or other elements without the existence of HTML. HTML code always make sure the proper or right formatting of images and texts so that 
+			Internet browser will display these things as they are intended to look. People could think of HTML as the bones which represents the basic 
+			structure of a web page and CSS as its skin that represents the appearance when it is overlaid in the HTML.	 
+		</p>
+		<p id="threeURL"> 3: Uniform Resource Locator or URL </p>
+		<div id="containURL"><img src="pictures/URL.png"></div>
+		<p id="URLPar">	
+			URL is the unique address that determines where any given document that is living on the web or documents that are accessible over the Internet. 
+			It is a subset of URI and it is used to identify or locate to each resource through describing its primary access mechanism on the WWW. 
+			URL can be described as <protocol>://<node>/<location>. Example of a URL would be https://www.facebook.com/ which is the URL for the 
+			website Facebook.	 
+		</p>
+		<p id="vers"> ◆ WWW vs. Internet </p>
+		<table id="comparison">
+		  <tr>
+			<th>Internet</th>
+			<th></th>
+			<th>World Wide Web</th>
+		  </tr>
+		  <tr>
+			<td>1969</td>
+			<td id="center">Year of Origin</td>
+			<td>1989</td>
+		  </tr>
+		  <tr>
+			<td>Internet Protocol</td>
+			<td id="center">Governed by</td>
+			<td>Hyper Text Transfer Protocol</td>
+		  </tr>
+		  <tr>
+			<td>ARPANET</td>
+			<td id="center">First version's name</td>
+			<td>NSFnet</td>
+		  </tr>
+		  <tr>
+			<td>Hardware</td>
+			<td id="center">Nature</td>
+			<td>Software</td>
+		  </tr>
+		  <tr>
+			<td>The superset of WWW</td>
+			<td id="center">Set</td>
+			<td>The subset of Internet</td>
+		  </tr>
+		  <tr>
+			<td>By IP Addresses, computing devices are identified</td>
+			<td id="center">Identifier</td>
+			<td>By Uniform Resource Locator, Information pieces are identified</td>
+		  </tr>
+		  <tr>
+			<td>Computers, servers, routers, cables, bridges, cellular towers, wireless networks, copper wires, network of computers, satellites and fiber-optic cables </td>
+			<td id="center">Comprised of</td>
+			<td>Text, images, audio, video, folders, files and documents stored in different computers</td>
+		  </tr>
+		</table>
+		<p id="dns"> ◆ Domain Name System (DNS)</p>
+		<p id="reqPar">
+			DNS or Domain Name System is a type of Internet Service that caters to mapping certain addresses of network or IP address into a unique domain name.
+		</p>
+
+		<h1 id="HTTPFun">HTTP Fundamentals</h1>
+		<h2 id="HTTPVers"> ◆ HTTP Version History </h2>
+		<p id="verCon"> <b>HTTP Version Control</b>
+			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#one">HTTP 0.9</a>
+      			<div id="one" class="httpVer">
+        		-	1995 <br>
+				-	The original version <br>
+				-	Connection Nature: terminated immediately after response <br>
+				-	Response: entity-body <br>
+				-	No HTTP headers <br>
+				-	Methods: GET URI <br>
+				<br>
+      			</div>
+      		</li>
+      		<li>
+      			<a href="#two">HTTP 1.0</a>
+      			<div id="two" class="httpVer">
+				-	May 1996 <br>
+				-	RFC-1945<br>
+				-	Achieved large dissemination<br>
+				-	Protocol: ASCII<br>
+				-	Connection Nature: terminated immediately after the response<br>
+				-	Methods:<br>
+				▶	GET uri http-version<br>
+				▶	HEAD uri http-version<br>
+				▶	POST uri http-version<br>
+				-	Standard status codes<br>
+				▶	200 OK<br>
+				▶	201 Created<br>
+				▶	202 Accepted<br>
+				▶	204 No Content<br>
+				▶	301 Moved permanently<br>
+				▶	302 moved temporarily<br>
+				▶	304 Not modified<br>
+				▶	400 Bad request<br>
+				▶	401 unauthorized<br>
+				▶	403 Forbidden<br>
+				▶	500 Internal server error<br>
+				▶	501 Not implemented<br>
+				▶	502 bad gateway<br>
+				▶	503 Service unavailable<br>
+				<br>
+      			</div>
+    		</li>
+    			<li>
+      			<a href="#three">HTTP 1.1</a>
+      			<div id="three" class="httpVer">
+      			-	January 1997<br>
+				-	RFC-2616<br>
+				-	Enhanced speed<br>
+				-	Enhanced cache management<br>
+				-	Connection Nature: long lived<br>
+				-	Protocol : text<br>
+				-	Additional methods:<br>
+				▶	PUT<br>
+				▶	DELETE<br>
+				▶	TRACE<br>
+				▶	OPTIONS<br>
+				▶	CONNECT<br>
+				-	Retrieve through alias in the DNS<br>
+				<br>
+      			</div>
+      			</li>
+
+      			<li>
+      			<a href="#four">HTTP 2.0</a>
+      			<div id="four" class="httpVer">
+				-	May 2015<br>
+				-	RFC-7540<br>
+				-	Foundation was SPDY protocol<br>
+				-	Included header compression<br>
+				-	Added Status code:<br>
+				▶	421 Misdirected Request<br>
+				-	Added server push<br>
+				-	Added pipelining feature for sending multiple requests<br>
+      			</div>
+      		</li>
+    		</ul>
+    		</div>
+		</p>
+
+		<h2 id="hedMet"> ◆ Headers & Methods </h2>
+		<h3 id="req"> Request </h3>
+		<p id="reqParLove">
+			<b>CRLF (Carriage Return Line Feed)</b> - contains three values which are separated by spaces.
+		</p>
+			<p id="reqParTwo"> Request CRLF </p> 
+			<p id="reList">
+				1.  Method<br>
+				2.	Request Target</br> 
+				3.	Protocol Version</br>
+			</p>
+			<p id="reqParTwoTwo"> Process: </p>
+			<ul id="reListTwo">
+				<li>1.	Message Body </li>
+				<li>2.	Empty Line </li>
+				<li>3.	Payload </li>
+			</ul>
+		<p id="reqParThree"><br>
+			*HTTP 1.0 has at least one required header which is request header <br>
+			*Message headers: General, Request, Entity Header <br>
+			*Payload - found after the header, blank line means empty payload <br>
+		</p>	
+		<h4 id="metProp">Methods and Properties</h4> <br>
+		<div id="httpVerTwo">
+  			<ul>
+    		<li>
+      			<a href="#oneMethod">Request Methods</a>
+      			<div id="oneMethod" class="httpVer">
+      				1.	GET – retrieves, transfers a selected resource into the message body aka entity. Commonly used method (RFC 7231, Sec. 4.3.1) (RFC 2616, Sec. 9.3). <br><br>
+      				2.	HEAD – identical to get but doesn’t get the resource. It has no payload, only headers and metadata (RFC 7231, Sec. 4.3.2) (RFC 2616, Sec. 9.4).<br><br>
+      				3.	POST – non-safe and non-idempotent method. It is utilized for processing resources from the payload given by a request (RFC 7231, Sec. 4.3.3) (RFC 2616, Sec. 9.5).<br><br>
+      				-	Typically used in HTML form data.<br><br>
+      				-	Any data that is being submitted is already in the payload aka message body and the information will not be in the URL.<br>
+      				*Search-friendly URL – doesn’t contain any query.<br><br>
+      				4.	PUT – utilized to modify all existing models of the resource being targeted by basing it from the payload contained by the request (RFC 7231, Sec. 4.3.4) (RFC 2616, Sec. 9.6).<br><br>
+      				-	Web servers, by default, do not allow put request since it may affect the information.<br>
+      				5.	DELETE – logically removes the relationship existing between the resource being targeted and its existing functions. It does not necessarily delete the true resource hence it may be modified by a human intervening from the server which has the true copy (RFC 2616, Sec. 9.7) (RFC 7231, Sec 4.3.5).<br><br>
+      				6.	OPTIONS – allows you to query a particular resource on the server itself. Its response is usually other request methods. It is another way of ensuring the integrity of a resource.<br><br>
+      				*A request may be noted as an asterisk (*) wherein it represents a global or general resource (RFC 7231, Sec. 4.3.7) (RFC 2616, Sec. 9.2).<br><br>
+      				7.	TRACE – echoes back to the user or client what is happening to the request or received request message. It can manipulate the message (RFC 7231, Sec. 4.3.8) (RFC 2616, Sec. 9.8).<br><br>
+      				-	Typically used for testing, diagnosing the request, response chain and troubleshooting.
+      				*Response chain – set of nodes from client to server.<br><br>
+      				8.	CONNECT – set ups the connection to the requested server of the resource being targeted (RFC 7231, Sec. 4.3.6) (RFC 2616, Sec. 9.9).<br>
+					<br>
+      				*Link Rot – linking to different pages but these pages aren’t controlled by you so some links may not exist anymore and if not updated, the website will degrade due to dead links. Solution: Update.<br><br>
+
+      			</div>
+      		</li>
+      		<li>
+      			<a href="#twoMethod">Method Properties</a>
+      			<div id="twoMethod" class="httpVer">
+      				1.	Safe Methods – used only for read-only purposes. It can’t modify the resource but only retrieve it (RFC 7231, Sec 4.2.1).<br><br>
+      				-	GET, HEAD, OPTIONS, TRACE<br><br>
+      				2.	Idempotent Methods – it refers to the semantics of the method itself (RFC 7231, Sec 4.2.2). <br><br>
+      				-	GET, HEAD, OPTIONS, TRACE, PUT, DELETE<br><br>
+      				3.	Cacheable Methods – specifies that a certain resource given or sent by the server may be stored and retrieved for future purposes (RFC 7231, Sec 4.2.3).<br><br>
+      				-	GET, HEAD, POST
+
+      			</div>
+      		</li>
+      		</ul>
+      	</div>
+
+      	<h3 id="resp"> Response </h3>
+      	<p id="respParTwo"> Response CRLF:</p>
+		<p id="respList">
+			1.	Protocol Version<br>
+			2.	Status Code<br>
+			3.	Reason Phrase<br>
+			Example: HTTP/1.1 200 OK<br>
+		</p>
+		<p id="respParTwoTwo">Process:<p>
+		<p id="respListTwo">
+			1.	Message Body <br>
+			2.	Empty Line<br>
+			3.	Payload<br>
+		</p>
+
+		<h4 id="mes"> Message Headers </h4><br>
+		<div id="httpVerThree">
+  			<ul>
+    		<li>
+      			<a href="#un">General Header Fields</a>
+      			<div id="un" class="httpVer">
+      				These are fields which can be utilized by both the client and server (RFC 2616, Sec. 4.5). <br><br>
+      				-	Cache-Control – specifies the different rules and guidelines that must be observed and upheld by each and every cache-related operation in the request or response chain (RFC 2616, Sec. 14.9).	<br><br>	
+      				-	 Trailer – gives indication if a certain field in the header is made available in the message’s trailer which contains transfer-coding (RFC 2616, Sec. 14.40).<br><br>
+      				-	Connection – gives the sender options for persistent connection (RFC 2616, Sec. 14.10).	<br><br>	
+      				-	Upgrade – gives the client options on additional functional features of the communication protocols (RFC 2616, Sec. 14.42).<br><br>
+      				-	Date – specifies the details of message on when and what time it was sent or received (RFC 2616, Sec. 14.18).<br><br>
+      				-	Via – utilized by both gateways and proxies to specify certain protocols which will serve as bridging the user agent and server as well as between the server and client with regards to requests and responses, respectively (RFC 2616, Sec. 14.45).<br><br>
+      				-	Pragma – identifies rules and guidelines that may correspond to the receiver present in the response or request chain. It originated from HTTP 1.0 and it also represents any new functionality not yet standardized i.e. not yet listed to any RFC’s (RFC 2616, Sec. 14.32).<br><br>	
+      				-	Warning – identifies supplementary information with regards to the state of a message sent or received (RFC 2616, Sec. 14.46).<br><br>
+      				-	Transfer-encoding – specifies if the message body has been edited or transformed. This is important so that the message can be safely sent (RFC 2616, Sec. 14.41).
+      			</div>
+      		</li>
+      		<li>
+      			<a href="#deux">Request Header Fields</a>
+      			<div id="deux" class="httpVer">
+					These are header fields which can only be seen in client-generated request messages (RFC 2616, Sec. 5.3).<br><br>
+					-	Accept – indicates what types of media are allowed to be made available for the response (RFC 2616, Sec. 14.1).<br><br>
+					-	Accept-Charset - indicates what types of set of characters are allowed to be made available for the response (RFC 2616, Sec. 14.2).<br><br>
+					-	Accept-Encoding – analogous with the method Accept with the exception that it limits the coding of the content that are made available to the response (RFC 2616, Sec. 14.3).<br><br>
+					-	Accept-Language – limits the preferred natural languages (RFC 2616, Sec. 14.4).<br><br>
+					-	Authorization – contains the credentials of the user-agent (RFC 2616, Sec. 14.8).<br><br>
+					-	Expect – expectations of the server which are indicated by the client (RFC 2616, Sec. 14.20).<br><br>
+					-	From – contains the email address of the user (RFC 2616, Sec. 14.22).<br><br>
+					-	Host – indicates the Internet host as well as the resource’s number of the port that is being queried (RFC 2616, Sec. 14.23).<br><br>
+					-	If-Match – used to compare resources through their entity tags. If it matches, the response is a GET request (RFC 2616, Sec. 14.24).<br><br>
+					-	If-Modified-Since – used to compare resources especially if the resource may have been updated and if not, the server will not receive any representation of the resource (RFC 2616, Sec. 14.25).<br><br>
+					-	If-None-Match – opposite of the IF-Match header (RFC 2616, Sec. 14.26).<br><br>
+					-	If-Range – sends parts of the entity if it is not changed, else, it sends the whole entity (RFC 2616, Sec. 14.27).<br><br>
+					-	If-Unmodified-Since – another way to compare resources and works as If-Modified-Since header’s polar opposite (RFC 2616, Sec. 14.28).<br><br>
+					-	Max-Forwards – delimits the number of either gateways or proxies that are able to send request by making use of the TRACE and OPTIONS methods (RFC 2616, Sec. 14.31).<br><br>
+					-	Proxy-Authorization – authorizes the client with the use of proxy which will require the client to authenticate itself (RFC 2616, Sec. 14.34).<br><br>
+					-	Range – size (RFC 2616, Sec. 14.35).<br><br>
+					-	Referer – not a typo in this circumstance. It contains the URI address of the resource (RFC 2616, Sec. 14.36).<br><br>
+					-	TE – lists the accepted transfer-encoding’s extension (RFC 2616, Sec. 14.39).<br><br>
+					-	User-Agent – lists the user-agent’s information (RFC 2616, Sec. 14.43).<br><br>
+
+      			</div>
+      		</li>
+      		<li>
+      			<a href="#trois">Response Header Fields</a>
+      			<div id="trois" class="httpVer">
+      				These are header fields which can only be seen on the server’s side. This requires authentication (RFC 2616, Sec. 6.2). <br><br>
+      				-	Accept-Ranges – lists the acceptable range of requests of resource as indicated by the server (RFC 2616, Sec. 14.5).<br><br>
+      				-	Age – estimated time duration it took for the server to process and create the response and send it to the receiver (RFC 2616, Sec. 14.6).<br><br>
+      				-	ETag – means entity tag which is used to identify which entity a certain resource belongs to (RFC 2616, Sec. 14.19).<br><br>
+      				-	Location – utilized for diverting to another address and not the address which was requested (RFC 2616, Sec. 14.30).<br><br>
+      				-	Proxy-Authenticate – challenges the credentials contained in the Proxy-Authentication (RFC 2616, Sec. 14.33).<br><br>
+      				-	Retry-After – may be utilized for the response 503, Service Unavailable, to let the client know the amount of time the service is unavailable (RFC 2616, Sec. 14.37).<br><br>
+      				-	Server – lists the information with regards to the server (RFC 2616, Sec. 14.38).<br><br>
+      				-	Vary – specifies available header fields which correspond to requests (RFC 2616, Sec. 14.44).<br><br>
+      				-	WWW-Authenticate – a definite inclusion in response 401, Unauthorized, messages. It challenges the credentials with regards to the URI requested (RFC 2616, Sec. 14.47).
+      			</div>
+      		</li>
+      		<li>
+      			<a href="#quatre">Entity Header Fields</a>
+      			<div id="quatre" class="httpVer">
+      			gives description to the entity which is in the payload (RFC 2616, Sec. 7.1).<br><br>
+      			-	Allow – indicates to the receiver the valid methods applicable to a resource (RFC 2616, Sec. 14.7).<br><br>
+      			-	Content-Encoding – gives information on the type of media of the entity-body (RFC 2616, Sec. 14.11).<br><br>
+      			-	Content-Language – the natural language of which the entity is presented as (RFC 2616, Sec. 14.12).<br><br>
+      			-	Content-Length – corresponds to the entity’s size according to its body or length of body (RFC 2616, Sec. 14.13).<br><br>
+      			-	Content-Location – where the resource is located (URI) (RFC 2616, Sec. 14.14).<br><br>
+      			-	Content-MD5 – used for message integrity check (MIC) contained in the entity-body (RFC 2616, Sec. 14.15).<br><br>
+      			-	Content-Range – specifies the entity-body’s total length (RFC 2616, Sec. 14.16).<br><br>
+      			-	Content-Type – corresponds to what kind of media the body of the entity is (RFC 2616, Sec. 14.17).<br><br>
+      			-	Expires – corresponds to the date and time the response will expire (RFC 2616, Sec. 14.21).<br><br>
+      			-	Last-Modified – date and time the entity was last changed (RFC 2616, Sec. 14.29).<br><br>
+      			-	Extension-header – this is the message header (RFC 2616, Sec. 7.1).<br><br>
+      			<br>
+			</div>
+			</li>
+      	</ul>
+      </div>
+      <p id="reqMEup">*For a Full list go to <a href="http://www.iana.org/assignments/message-headers/message-headers.xhtml">iana.org </a></p>
+	  <p id="statusCodes"> ◆ Status Codes</p>
+	  <div id="Tstatuscodes">
+    <ul>
+    <li>
+    <a href="#1XX">I. Informational 1XX</a>
+    <div id="1XX" class="Tstatuscodes">
+Informational status codes indicate connection status or progress regarding the request. <br> 
+a.	100 (Continue) – the continue status code implies that the introduction to a request has been accepted. <br>
+b.	101 (Switching Protocols) – the switching protocols status code denotes that the server understands the client’s request and is ready to fulfill it.<br>
+c.	102 (Processing) – the processing status code informs the client that the server has accepted the request but has not finished it yet.<br>  
+    </div>
+        
+    <a href="#2XX">II. Success 2XX</a>
+    <div id="2XX" class="Tstatuscodes">
+    Success status codes indicate that the client's request has been received and accepted. <br>
+
+a.	200 (OK) – the OK status code shows that the request was successful. <br>
+b.	202 (Accepted) – the accepted status code point out a specific request even if it is not done yet or just processing, the server accepted or received it. <br>
+c.	203 (Non-Authoritative Information) – the non-authoritative information status code indicates a disclaimer that acquire a server with third party information or a non-authoritative. <br>
+d.	204 (No Content) – the no content status code informs that the request to the server is successfully processed but cannot return anything because there is no content.<br>
+    
+    </div>
+        
+    <a href="#3XX">III. Redirection 3XX</a>
+    <div id="3XX" class="Tstatuscodes">
+Redirection status codes indicate a destination or location that is required to the URL.<br>
+a.	301 (Moved Permanently) – the moved permanently status code point out automatically the another URL location that has been redirected.<br>
+b.	302 (Found) - the found status code inform where is the temporary URL because of changes in file on the server of web.<br>
+c.	304 (Not Modified) – the not modified status code indicate that the URL is not available at the moment.
+<br>    
+    </div>
+        
+    <a href="#4XX">IV. Client Error 4XX</a>
+    <div id="4XX" class="Tstatuscodes">
+    Client Error status code indicate that there is something done wrong by the client agent.<br>
+a.	400  (Bad Request) – the bad request status code indicates that there are some characters included or syntax error that cannot understand by the server.<br>
+b.	401 (Unauthorized) – the unauthorized status code is resemblant to 403(Forbidden) but in order to enter ,it just need an authentication.<br>
+c.	403 (Forbidden) – the forbidden status code indicate that it will not permit you to enter because there are no protocols for authorization.<br>
+    
+    </div>
+    
+    <a href="#5XX">V. Server Error 5XX</a>
+    <div id="5XX" class="Tstatuscodes">
+    Server Error status code indicate that there is an error when the client’s request is processing. <br>
+        
+a.	501 (Not Implemented) – the not implemented status code means that it is not recognize by the server when the quality needed to the request is not fulfill.<br>
+b.	502 (Bad Gateway) – the bad gateway status code indicate that the server is doing the deed as a proxy or a gateway.     
+        </div>
+    </li>
+    </ul>           
+</div>
+	<p id="rfcTitle"> ◆ RFCs</p>
+	<p id="rfc"> <b>Request for Comments (RFC) for HTTP</b>
+           <p id="rfc1">Request for comments, also called RFCs started ascending on April 7, 1969 invented by Steve Crocker together with the introduction 
+		   of host-to-host and IMP software. These are also known to be the notes that cover information about computer communication, programs, procedures 
+		   network protocols and others. Every covered information will have a number corresponding to it. In case there would be another version of a certain 
+		   RFC, another number will be associated with it. The index of the notes are available online at the site: https://www.rfc-editor.org/rfc-index.html
+		   </p>
+           
+           <p id="rfc2">The first RFC for Hypertext Transfer Protocol – HTTP 1.0 was published in May 1996 by Tim Berners-Lee, Roy Fielding and Henrik 
+		   Frystyk. The specification defines the features that would indicate the common usage of the protocol. Basic rules and syntax were stated in the 
+		   notes like the Request, Response, Method, Status code and Header Field definitions and usage. Another proposed standard is the RFC-2068 which 
+		   describes another version of HTTP which is the HTTP 1.1.</p>
+           
+             <p id="rfc3">HTTP 1.1 was described in the RFC-2616 that included updated definition and usage. Furthermore RFCs 7230-7235 defined more 
+			 features: Message Syntax and Routing, Semantics and Content, Conditional Requests, Range Requests, Caching, and Authentication. In May 2000, 
+			 another RFC was published with a reference number 2817 which imposed an upgrade to TLS Transport Layer Security which allows both http and 
+			 https access the same port of 80 instead of port 80 for http and port 443 for https. There were also mandatory upgrade and mandatory 
+			 advertisement imposed in this RFC version.</p>
+           
+             <p id="rfc4">HTTP version later on was defined in RFC-7540 that added features like allowing the users to send multiple request and eliminating 
+			 head-of-line blocking. Header compression for HTTP/2.0 was also added and stated in the RFC-7541 by the use of HPACK.</p>  
+			 <h1 id="hTML">HTML</h1>
+			 <p id="htmlDef">
+			The term HTML is an acronym for HyperText Markup Language. It is a markup language used for creating Web pages in World Wide Web.  
+			It is actually a product or application of SGML (Standard Generalized Markup Language) which is a specialization of something more general for 
+			the markup language.SGML is a language that define a markup language.Basically, HTML provides the structure, lay-out, content and format of a 
+			Web pages.<br>
+			<br>Initially it was developed at :<br>
+			▶	CERN <br>
+			▶	IETF <br>
+			▶	W3C <br>
+			▶	WHATWG <br>
+			<br>
+			HTML is used purely for semantic specification of structure in Web pages.
+			</p>
+			 <h2 id="histo"> ◆ Version History</h2>
+			<div id="htmlVer">
+<ul>
+<li>
+    <a href="#pre-standard">Pre - Standard</a>
+    <div id="pre-standard" class="htmlVer">
+        -Late 1991 by Tim Berners-Lee , HTML tags<br>
+        -IETF in mid 1993 by Tim Berners-Lee and Dan Conolly, HTML Internet Draft <br>
+        -Late 1993 by Dave Raggett, Internet-Draft, "HTML+Hypertext Markup Format <br>
+    </div>
+    
+    <a href="#standard">Standard</a>
+    <div id="standard" class="htmlVer">
+        HTML 2.0 <br>
+        •	Form Based File Upload<br>
+        •	HTML Tables <br>
+        •	Client Side Image Maps <br>
+        •	Internalizations of HTML <br>
+        HTML 3.2 <br>
+        HTML 4.0 <br>
+        HTML 4.1 <br>
+    </div>
+    </li>
+    </ul>
+</div>
+<h1 id="hisMe">HTML BASIC STRUCTURE</h1>
+			
+			<p id="subtitle">DOCTYPE</h2>
+			<p id="htmldes">
+			< ! DOCTYPE HTML > which is usually found at the very top of the page before any HTML tags, is called a document type declaration that identifies the document and tells the browser that it is in HTML5 version. This doc type should appear only once at the beginning of the code and the declaration is not case sensitive. <!DOCTYPE HTML> helps the browsers to display the pages of the web in a correct manner or way.
+			</p>
+
+			<p id="subtitle">HTML Root Element</h2>
+			
+			<p id="htmldes">
+			The < HTML> serves as the root element that defines the whole HTML document. It holds all of the code and wraps the content in the HTML document. It identifies which the web page is written in HTML. It usually contains each of < head> and < body> elements. The </ HTML> tag is the sign that it is the end of the web page. When a web developer used element something like this, < HTML lang="en">, it means that it declares that language of the document is English. </p>
+
+
+			<p id="subtitle">ELEMENTS AND TAGS</h2>
+			<p id="htmldes">
+			To mark up or create the content, elements and tags always work together. HTML elements role is to identify the importance of a tag. Tag determines the start and the end of an element, the thing that is inside of each element is called content. Not all of the elements are required to have an end tag like <br>. For each and every element, it has its meaning like example < p > Content < /p >, the < p> element is used whenever a web developer will write a paragraph.
+
+			There are two main parts for every HTML document. The < head > and < body > elements have both end tags. The < head > element is responsible in containing the meta information of the HTML document and the < title > element that is the only element required to be put inside the < head > tags which indicates the title for the document or simply specifies the web page title.  This < head > element could also include a lot of HTML elements that that cannot be seen as parts of the page when rendered by the browser. These elements are either meta data or are the things that is helping in pulling the external resources like JavaScript files or CSS style sheets. The HTML elements which can be used by a web developer that can be put inside the < head > element are the < base >, < link >,< noscript >,< style >,< meta >,< title > and the < script >. 
+
+			The < body > element serves as a container of the content of a web page that defines the HTML document body, it is considered as the information that a person want to display in a web page. The < body > element should be only one therefore all of the things that a user can see whenever the browser is rendered is contained in the < body > element. </p>
+
+			<p id="subtitle">COMMENTS</h2>
+			<p id="htmldes">
+			Web developers can easily understand each other specially when one of them will give a guide through the use of comments, comments in HTML starts with "< !--" and ends with the " --> ".
+			These comments are ignored and not seen by users whenever the web page is rendered.</p>
+	  </div>
+	  <div id="authContain">
+	  <p id="authors">
+	  That concludes the lessons we had for Prelims, stay tuned for Midterms and Finals! <br><br>
+	  Creators: <br> Andres, Erythrina Nicole <br> Baldovino, Britanny <br> Doria, Janine <br> Mascardo, Naider <br> Tagle, Christine <br>
+	  <br> &copy;2018 9358A
+	  </p>
+	 </div>
+	</article>
+	<footer> 
+		<p>&copy;2018 9358A</p>
+	</footer>
+</body>
+<div id="ds1">
+</div>
+<div id="ds2">
+</div>
+<div id="ds3">
+</div>
+<div id="divCover">
+</div>
+<div id="ds4">
+</div>
+<div id="ds5">
+</div>
+<div id="ds6">
+</div>
+<a href="#topNav">
+<div id="upMe"></div>
+</a>
+</div>
+</html>
