@@ -76,3 +76,11 @@ External JavaScript
 A developer should create a file with the following syntax "nameOfTheScript.js" and they should make sure it has that .js filename extension so that it will be recognized as JavaScript file. Next is that when a developer is inside the HTML, he or she can easily call the script file by putting < script src="nameOfTheScript.js" > < /script > inside the HTML file. Both the HTML and the javaScript file should be placed inside the same folder.
 
 
+Comments
+A developer can write comments the JavaScript code which will be ignored by the browser and it would be useful of you want to provide guidelines and instructions on how the JavaScript works to some of your fellow developers.
+
+single line : written after a double forward slash (//this is a comment)
+multi-line  : written between the strings (/* this is also a comment */)
+
+
+
