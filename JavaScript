@@ -53,6 +53,15 @@ The DOM includes a tree model which is the document structure ,the DOM Event arc
 
 In the terms of the DOM, HTML is determined. It describes the meaning of the elements.  HTML is on the upper layer on the concepts of the abstract in the DOM Core. The HTML DOM includes things like the className property in the elements of HTML or on the APIs like document.body. The restrictions on the documents is also defined by HTML spefication, for example, it is mandatory to have all children of a ul element to be li elements. For short it forbids using attributes and elements that are not described in the standard.
 
+
+There are so many DOM API functionalities like getting references to nodes with the use of the following methods getElementsByTagName(),getElementById(), getElementsByName(),getElementsByClassName(),querySelector() and querySelectorAll(). It also traverse the DOM tree from a given node with parentNode, parentElement, childNodes, children,firstChild, lastChild, nextSibling, previousSibling, firstElementChild, lastElementChild, nextElementSibling, previousElementSibling. One function is constructing or copying nodes with cloneNode(), importNode(),createElement(), createTextNode(), createAttribute() functions and other more. DOM API also has the function of manipulating the DOM tree and it uses
+appendChild(), insertBefore(), replaceChild(), removeChild() and adoptNode() functions. DOM API have miscellaneous attributes and methods like 
+nodeType, nodeName, nodeValue,attributes, id, tagName, className, classList,ownerDocument, documentElement, hasChildNodes() and normalize(). For the Element nodes, the DOM APIs has the ability to manipulate attributes together with setAttribute(), getAttribute(), removeAttribute(), setAttributeNode(), getAttributeNode(), and removeAttributeNode() functions. One important function is handling events by the use of 
+addEventListener(), removeEventListener(), and dispatchEvent() functions. DOM APIs also involved in style handling and it uses styleSheets, ownerRule, cssRules, insertRule(), deleteRule() and getComputedStyle() functions.
+
+Browsers support other methods ans properties that are used with the interaction with the DOM Tree even though it is not described as a part of the Document Object Model. It offers innerHTML, outerHTML, innerText, and outerText. The references to oft-used document sections and collections are the head, body, anchors, forms, and images.
+
+
 4. Miscellaneous JavaScript Web APIs
 
 Some important miscellaneous javaScript web APIs are IndexDB, Geolocation, Push Notification ,Local Storage, Web Sockets,Web workers, Service Workers, XMLHttpRequest(AJAX) etc.
@@ -216,3 +225,6 @@ is equal to
 
 var myHTML = document.querySelector('html');
 myHTML.onclick = function() {};
+
+
+
