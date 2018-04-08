@@ -83,4 +83,10 @@ single line : written after a double forward slash (//this is a comment)
 multi-line  : written between the strings (/* this is also a comment */)
 
 
+JavaScript Language Fundamentals
+
+In JavaScript, you have to separate the statements on a single line by using a semi-colon. Semi-colon that is usually found on the end of the line determines where the statement is ending.
+
+
+
 
