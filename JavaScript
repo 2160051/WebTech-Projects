@@ -53,3 +53,8 @@ The DOM includes a tree model which is the document structure ,the DOM Event arc
 
 In the terms of the DOM, HTML is determined. It describes the meaning of the elements.  HTML is on the upper layer on the concepts of the abstract in the DOM Core. The HTML DOM includes things like the className property in the elements of HTML or on the APIs like document.body. The restrictions on the documents is also defined by HTML spefication, for example, it is mandatory to have all children of a ul element to be li elements. For short it forbids using attributes and elements that are not described in the standard.
 
+4. Miscellaneous JavaScript Web APIs
+
+Some important miscellaneous javaScript web APIs are IndexDB, Geolocation, Push Notification ,Local Storage, Web Sockets,Web workers, Service Workers, XMLHttpRequest(AJAX) etc.
+
+
