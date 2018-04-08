@@ -21,15 +21,12 @@
 		<a href="#HTTPFun">HTTP Fundamentals</a>
 		<a href="#HTTPVers">▶ Versions</a>
 		<a href="#hedMet">▶ Headers & Methods</a>
-		<a href="prelims.html">▶ Status Codes</a>
-		<a href="prelims.html">▶ Extensions</a>
-		<a href="prelims.html">▶ RFCs</a>
-		<a href="prelims.html">HTML</a>
-		<a href="prelims.html">▶ History</a>
-		<a href="prelims.html">▶ Version</a>
-		<a href="prelims.html">▶ Document Structure</a>
-		<a href="prelims.html">▶ Elements</a>
-		<a href="prelims.html">▶ Comments</a>
+		<a href="#statusCodes">▶ Status Codes</a>
+		<a href="#rfcTitle">▶ RFCs</a>
+		<a href="#hTML">HTML</a>
+		<a href="#histo">▶ Version History</a>
+		<a href="#hisMe">▶ Document Structure</a>
+		<a href="reference.html">References</a>
 	</nav>
 	<article id="content">
 		<h1 id="his">History of the World Wide Web</h1>
@@ -43,7 +40,7 @@
 			CSS and many other internet applications. 
 		</p>
 		<p id="birth"> ◆ Birth of (WWW) World Wide Web </p>
-		<img id="timBer" src="pictures/timBer.png">
+		<img id="timBer" src="pictures/timBer.png" alt="Tim Berners-Lee">
 		<p id="timOp"> 1989 - Tim Berners-Lee's Opinion </p>
 		<p id="timPar">	
 				Tim Berners-Lee is an English Physicist who had been working
@@ -69,7 +66,7 @@
 			of the modern day's World Wide Web. These three fundamental technologies are the things which people may have seen 
 			on parts of web browsers. 
 		</p>
-		<div id="containHTTP"><img src="pictures/http.png"></div>
+		<div id="containHTTP"><img src="pictures/http.png" alt="HTTP"></div>
 		<p id="oneHTTP"> 1: Hypertext Transfer Protocol or HTTP </p>
 		<p id="HTTPar">	
 			HTTP was created for the World Wide Web and it is liked for its speed and simplicity. HTTP protocol requests the HTML document from 
@@ -86,7 +83,7 @@
 			HTTPS can also protect the users from censorship by an ISP or a government.	 
 		</p>
 		<p id="twoHTML"> 2: Hypertext Markup Language or HTML </p>
-		<div id="containHTML"><img src="pictures/html.png"></div>
+		<div id="containHTML"><img src="pictures/html.png" alt="HTML"></div>
 		<p id="HTMLPar">	
 			HTML is a markup language for the web used for constructing electronic documents which are called pages. Each of the pages that are displayed on 
 			the WWW contains a series of connections to other pages named "Hyperlinks". A browser would not know how to load images or display text as elements 
@@ -95,37 +92,60 @@
 			structure of a web page and CSS as its skin that represents the appearance when it is overlaid in the HTML.	 
 		</p>
 		<p id="threeURL"> 3: Uniform Resource Locator or URL </p>
-		<div id="containURL"><img src="pictures/URL.png"></div>
+		<div id="containURL"><img src="pictures/URL.png" alt="URL"></div>
 		<p id="URLPar">	
 			URL is the unique address that determines where any given document that is living on the web or documents that are accessible over the Internet. 
 			It is a subset of URI and it is used to identify or locate to each resource through describing its primary access mechanism on the WWW. 
-			URL can be described as <protocol>://<node>/<location>. Example of a URL would be https://www.facebook.com/ which is the URL for the 
+			URL can be described as &#60;protocol&#62;://&#60;node>/&#60;location&#62;. Example of a URL would be https://www.facebook.com/ which is the URL for the 
 			website Facebook.	 
 		</p>
 		<p id="vers"> ◆ WWW vs. Internet </p>
-		<p id="versWWW"> 
-				<strong>WWW</strong> - also called the World Wide Web, is a group of software services provided by the Internet. 
-			The information inside the Internet is the World Wide Web. It is the collection of HTML pages that are offered on the Internet. 
-			To access information from the various servers, the WWW uses HTTP Protocol. The Hyper Text Transfer Protocol (HTTP) is the one 
-			in charge with the documents, linking of files, and other resources inside the World Wide Web. Through sending Web pages, organized 
-			in the form of websites, is the way how information is sent. These web pages are connected to each other by hyper links. 
-			Using the Uniform Resource Locator address, one can determine the web pages and other pieces of information in WWW.	 
-		</p>
-		<p id="versInter"> 
-				<strong>Internet</strong> - is identified as the collection of all hardware infrastructure existing in the network including routers, 
-			cables like fiber-optic, computer system, servers, bridges, satellites, cellular towers,  copper wires, wireless connections and more. 
-			Communication between its devices and a large variety of interactions, are things that the Internet fully supports. 
-			No one owns the Internet, not even the government. They have no rights and authority over its operations, it is free and it is an open broadcast 
-			medium of hardware networking. It is an interconnection between a lot of smaller computer networks 
-			distributed around the world. By the use of underground cables, sub-oceanic cables, satellite, links, over ground cables, wireless signals and 
-			more, these networks are interlinked with each other. The Internet Protocol, which deals with the transmission of packets and data as a 
-			whole governs the Internet. In order to view the World Wide Web, you have to access the Internet.
-		</p>
-		<p id="dns"> Domain Name System (DNS)</p>
+		<table id="comparison">
+		  <tr>
+			<th>Internet</th>
+			<th></th>
+			<th>World Wide Web</th>
+		  </tr>
+		  <tr>
+			<td>1969</td>
+			<td id="center">Year of Origin</td>
+			<td>1989</td>
+		  </tr>
+		  <tr>
+			<td>Internet Protocol</td>
+			<td id="center">Governed by</td>
+			<td>Hyper Text Transfer Protocol</td>
+		  </tr>
+		  <tr>
+			<td>ARPANET</td>
+			<td id="center">First version's name</td>
+			<td>NSFnet</td>
+		  </tr>
+		  <tr>
+			<td>Hardware</td>
+			<td id="center">Nature</td>
+			<td>Software</td>
+		  </tr>
+		  <tr>
+			<td>The superset of WWW</td>
+			<td id="center">Set</td>
+			<td>The subset of Internet</td>
+		  </tr>
+		  <tr>
+			<td>By IP Addresses, computing devices are identified</td>
+			<td id="center">Identifier</td>
+			<td>By Uniform Resource Locator, Information pieces are identified</td>
+		  </tr>
+		  <tr>
+			<td>Computers, servers, routers, cables, bridges, cellular towers, wireless networks, copper wires, network of computers, satellites and fiber-optic cables </td>
+			<td id="center">Comprised of</td>
+			<td>Text, images, audio, video, folders, files and documents stored in different computers</td>
+		  </tr>
+		</table>
+		<p id="dns"> ◆ Domain Name System (DNS)</p>
 		<p id="reqPar">
 			DNS or Domain Name System is a type of Internet Service that caters to mapping certain addresses of network or IP address into a unique domain name.
 		</p>
-
 		<h1 id="HTTPFun">HTTP Fundamentals</h1>
 		<h2 id="HTTPVers"> ◆ HTTP Version History </h2>
 		<p id="verCon"> <b>HTTP Version Control</b>
@@ -172,7 +192,7 @@
 				▶	503 Service unavailable<br>
 				<br>
       			</div>
-    		</li>
+				</li>
     			<li>
       			<a href="#three">HTTP 1.1</a>
       			<div id="three" class="httpVer">
@@ -192,7 +212,6 @@
 				<br>
       			</div>
       			</li>
-
       			<li>
       			<a href="#four">HTTP 2.0</a>
       			<div id="four" class="httpVer">
@@ -209,7 +228,6 @@
     		</ul>
     		</div>
 		</p>
-
 		<h2 id="hedMet"> ◆ Headers & Methods </h2>
 		<h3 id="req"> Request </h3>
 		<p id="reqParLove">
@@ -218,8 +236,8 @@
 			<p id="reqParTwo"> Request CRLF </p> 
 			<p id="reList">
 				1.  Method<br>
-				2.	Request Target</br> 
-				3.	Protocol Version</br>
+				2.	Request Target<br> 
+				3.	Protocol Version<br>
 			</p>
 			<p id="reqParTwoTwo"> Process: </p>
 			<ul id="reListTwo">
@@ -367,28 +385,151 @@
 			</li>
       	</ul>
       </div>
-      <p id="reqMEup">*For a Full list go to <a href="http://www.iana.org/assignments/message-headers/message-headers.xhtml">iana.org </a></p>
+		<p id="reqMEup">*For a Full list go to <a href="http://www.iana.org/assignments/message-headers/message-headers.xhtml">iana.org </a></p>
+		<p id="statusCodes"> ◆ Status Codes</p>
+		<div id="Tstatuscodes">
+		<ul>
+		<li>
+		<a href="#1XX">I. Informational 1XX</a>
+		<div id="1XX" class="Tstatuscodes">
+			Informational status codes indicate connection status or progress regarding the request. <br> 
+			a.	100 (Continue) – the continue status code implies that the introduction to a request has been accepted. <br>
+			b.	101 (Switching Protocols) – the switching protocols status code denotes that the server understands the client’s request and is ready to fulfill it.<br>
+			c.	102 (Processing) – the processing status code informs the client that the server has accepted the request but has not finished it yet.<br>  
+		</div>
+		<a href="#2XX">II. Success 2XX</a>
+		<div id="2XX" class="Tstatuscodes">
+			Success status codes indicate that the client's request has been received and accepted. <br>	
+			a.	200 (OK) – the OK status code shows that the request was successful. <br>
+			b.	202 (Accepted) – the accepted status code point out a specific request even if it is not done yet or just processing, the server accepted or received it. <br>
+			c.	203 (Non-Authoritative Information) – the non-authoritative information status code indicates a disclaimer that acquire a server with third party information or a non-authoritative. <br>
+			d.	204 (No Content) – the no content status code informs that the request to the server is successfully processed but cannot return anything because there is no content.<br>   
+		</div>
+		<a href="#3XX">III. Redirection 3XX</a>
+		<div id="3XX" class="Tstatuscodes">
+			Redirection status codes indicate a destination or location that is required to the URL.<br>
+			a.	301 (Moved Permanently) – the moved permanently status code point out automatically the another URL location that has been redirected.<br>
+			b.	302 (Found) - the found status code inform where is the temporary URL because of changes in file on the server of web.<br>
+			c.	304 (Not Modified) – the not modified status code indicate that the URL is not available at the moment.<br>    
+		</div>
+		<a href="#4XX">IV. Client Error 4XX</a>
+		<div id="4XX" class="Tstatuscodes">
+			Client Error status code indicate that there is something done wrong by the client agent.<br>
+			a.	400  (Bad Request) – the bad request status code indicates that there are some characters included or syntax error that cannot understand by the server.<br>
+			b.	401 (Unauthorized) – the unauthorized status code is resemblant to 403(Forbidden) but in order to enter ,it just need an authentication.<br>
+			c.	403 (Forbidden) – the forbidden status code indicate that it will not permit you to enter because there are no protocols for authorization.<br>
+		</div> 
+		<a href="#5XX">V. Server Error 5XX</a>
+		<div id="5XX" class="Tstatuscodes">
+			Server Error status code indicate that there is an error when the client’s request is processing. <br>      
+			a.	501 (Not Implemented) – the not implemented status code means that it is not recognize by the server when the quality needed to the request is not fulfill.<br>
+			b.	502 (Bad Gateway) – the bad gateway status code indicate that the server is doing the deed as a proxy or a gateway.     
+		</div>
+		</li>
+		</ul>           
+		</div>
+		<p id="rfcTitle"> ◆ RFCs</p>
+		<p id="rfc"> <b>Request for Comments (RFC) for HTTP</b>
+           <p id="rfc1">Request for comments, also called RFCs started ascending on April 7, 1969 invented by Steve Crocker together with the introduction 
+		   of host-to-host and IMP software. These are also known to be the notes that cover information about computer communication, programs, procedures 
+		   network protocols and others. Every covered information will have a number corresponding to it. In case there would be another version of a certain 
+		   RFC, another number will be associated with it. The index of the notes are available online at the site: https://www.rfc-editor.org/rfc-index.html
+		   </p>
+           <p id="rfc2">The first RFC for Hypertext Transfer Protocol – HTTP 1.0 was published in May 1996 by Tim Berners-Lee, Roy Fielding and Henrik 
+		   Frystyk. The specification defines the features that would indicate the common usage of the protocol. Basic rules and syntax were stated in the 
+		   notes like the Request, Response, Method, Status code and Header Field definitions and usage. Another proposed standard is the RFC-2068 which 
+		   describes another version of HTTP which is the HTTP 1.1.</p>  
+           <p id="rfc3">HTTP 1.1 was described in the RFC-2616 that included updated definition and usage. Furthermore RFCs 7230-7235 defined more 
+		   features: Message Syntax and Routing, Semantics and Content, Conditional Requests, Range Requests, Caching, and Authentication. In May 2000, 
+		   another RFC was published with a reference number 2817 which imposed an upgrade to TLS Transport Layer Security which allows both http and 
+		   https access the same port of 80 instead of port 80 for http and port 443 for https. There were also mandatory upgrade and mandatory 
+	       advertisement imposed in this RFC version.</p>  
+           <p id="rfc4">HTTP version later on was defined in RFC-7540 that added features like allowing the users to send multiple request and eliminating 
+		   head-of-line blocking. Header compression for HTTP/2.0 was also added and stated in the RFC-7541 by the use of HPACK.</p>  
+		<h1 id="hTML">HTML</h1>
+		<p id="htmlDef">
+			The term HTML is an acronym for HyperText Markup Language. It is a markup language used for creating Web pages in World Wide Web.  
+			It is actually a product or application of SGML (Standard Generalized Markup Language) which is a specialization of something more general for 
+			the markup language.SGML is a language that define a markup language.Basically, HTML provides the structure, lay-out, content and format of a 
+			Web pages.<br>
+			<br>Initially it was developed at :<br>
+			▶	CERN <br>
+			▶	IETF <br>
+			▶	W3C <br>
+			▶	WHATWG <br>
+			<br>
+			HTML is used purely for semantic specification of structure in Web pages.
+			</p>
+			 <h2 id="histo"> ◆ Version History</h2>
+			<div id="htmlVer">
+		<ul>
+		<li>
+		<a href="#pre-standard">Pre - Standard</a>
+		<div id="pre-standard" class="htmlVer">
+			-Late 1991 by Tim Berners-Lee , HTML tags<br>
+			-IETF in mid 1993 by Tim Berners-Lee and Dan Conolly, HTML Internet Draft <br>
+			-Late 1993 by Dave Raggett, Internet-Draft, "HTML+Hypertext Markup Format <br>
+		</div>
+		<a href="#standard">Standard</a>
+		<div id="standard" class="htmlVer">
+			HTML 2.0 <br>
+			•	Form Based File Upload<br>
+			•	HTML Tables <br>
+			•	Client Side Image Maps <br>
+			•	Internalizations of HTML <br>
+			HTML 3.2 <br>
+			HTML 4.0 <br>
+			HTML 4.1 <br>
+		</div>
+		</li>
+		</ul>
+		</div>
+		<h1 id="hisMe">HTML BASIC STRUCTURE</h1>	
+			<p id="subtitle">DOCTYPE</p>
+			<p id="htmldes">
+			&#60;!DOCTYPE HTML&#62; which is usually found at the very top of the page before any HTML tags, is called a document type declaration that identifies the document and tells the browser that it is in HTML5 version. This doc type should appear only once at the beginning of the code and the declaration is not case sensitive. &#60;!DOCTYPE HTML&#62; helps the browsers to display the pages of the web in a correct manner or way.
+			</p>
+			<p id="subtitle">HTML Root Element</p>
+			<p id="htmldes">
+			The &#60;HTML&#62; serves as the root element that defines the whole HTML document. It holds all of the code and wraps the content in the HTML document. It identifies which the web page is written in HTML. It usually contains each of &#60;head&#62; and &#60;body&#62; elements. The &#60;/HTML&#62; tag is the sign that it is the end of the web page. When a web developer used element something like this, &#60;HTML lang="en"&#62;, it means that it declares that language of the document is English. </p>
+			<p id="subtitle">ELEMENTS AND TAGS</p>
+			<p id="htmldes">
+			To mark up or create the content, elements and tags always work together. HTML elements role is to identify the importance of a tag. Tag determines the start and the end of an element, the thing that is inside of each element is called content. Not all of the elements are required to have an end tag like &#60;br&#62;. For each and every element, it has its meaning like example &#60;p&#62; Content &#60;/p&#62;, the &#60;p&#62; element is used whenever a web developer will write a paragraph.
+			There are two main parts for every HTML document. The &#60;head&#62; and &#60;body&#62; elements have both end tags. The &#60;head&#62; element is responsible in containing the meta information of the HTML document and the &#60;title&#62; element that is the only element required to be put inside the &#60;head&#62; tags which indicates the title for the document or simply specifies the web page title.  This &#60;head&#62; element could also include a lot of HTML elements that that cannot be seen as parts of the page when rendered by the browser. These elements are either meta data or are the things that is helping in pulling the external resources like JavaScript files or CSS style sheets. The HTML elements which can be used by a web developer that can be put inside the &#60;head&#62; element are the &#60;base&#62;, &#60;link&#62;, &#60;noscript&#62;, &#60;style&#62;, &#60;meta&#62;, &#60;title&#62; and the &#60;script&#62;. 
+			The &#60;body&#62; element serves as a container of the content of a web page that defines the HTML document body, it is considered as the information that a person want to display in a web page. The &#60;body&#62; element should be only one therefore all of the things that a user can see whenever the browser is rendered is contained in the &#60;body&#62; element. </p>
+			<p id="subtitle">COMMENTS</p>
+			<p id="htmldes">
+			Web developers can easily understand each other specially when one of them will give a guide through the use of comments, comments in HTML starts with "&#60;!--" and ends with " --&#62;".
+			These comments are ignored and not seen by users whenever the web page is rendered.</p>
+		<div id="authContain">
+		<p id="authors">
+		That concludes the lessons we had for Prelims, stay tuned for Midterms and Finals! <br><br>
+		Creators: <br> Andres, Erythrina Nicole <br> Baldovino, Britanny <br> Doria, Janine <br> Mascardo, Naider <br> Tagle, Christine <br>
+		<br> &copy;2018 9358A
+		</p>
+		</div>
 	</article>
 	<footer> 
-		<p>&copy;2018 9358A</p>
+			<p>&copy;2018 9358A</p>
 	</footer>
+	<div id="ds1">
+	</div>
+	<div id="ds2">
+	</div>
+	<div id="ds3">
+	</div>
+	<div id="divCover">
+	</div>
+	<div id="ds4">
+	</div>
+	<div id="ds5">	
+	</div>
+	<div id="ds6">
+	</div>
+	<div id="top">
+	</div>
+	<a href="#top">
+	<div id="upMe"></div>
+	</a>
 </body>
-<div id="ds1">
-</div>
-<div id="ds2">
-</div>
-<div id="ds3">
-</div>
-<div id="divCover">
-</div>
-<div id="ds4">
-</div>
-<div id="ds5">
-</div>
-<div id="ds6">
-</div>
-<a href="#topNav">
-<div id="upMe"></div>
-</a>
-</div>
 </html>
