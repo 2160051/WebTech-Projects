@@ -1,0 +1,274 @@
+HTML to be inserted
+
+<h1 id="css">CSS</h1>
+			<p id="css">
+			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
+			<br>
+			</p>
+		<h1 id="HTMLSheets">HTML Style Sheets</h1>
+			<p id="css">
+			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
+			<br>
+			</p>
+		<h1 id="cssStat">CSS Statements</h1>
+			<p id="css">
+			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
+			<br>
+			</p>
+		<h1 id="cssSelect">CSS Selectors</h1>
+			<p id="css">
+			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
+			<br>
+			</p>
+		<h1 id="cssRule">CSS Rule Precedence</h1>
+			<p id="css">
+			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
+			<br>
+			</p>
+		<h1 id="cssDec">CSS Declarations</h1>
+			<p id="css">
+			CSS Declarations are formed through properties, which are defined thru values. These blocks of declaration combined with selectors then altogether create rule sets (CSS Properties, n.d.).
+			<br><br>
+			▶ Properties: <br>
+			1. Shorthand properties - collection of values which allows identifying several elements. As stated in its definition on the CSS specification, shorthand properties identify and groups together properties which targets or define the same object. This then makes developers to work on the style sheet more efficiently (Shorthand properties, 2018). <br>
+			Example: border properties, margin properties <br> 
+			<b>Note:</b> In this code, the background color will be overridden by the Doge.png image. <br></p>
+ 			<div class="codeID">
+ 			<code>background-color: red; <br>
+ 			background: url(“Doge.png”); <br></code>
+ 			</div>
+ 			<p id="css">
+ 			Explanation: If you don’t set the values properly, they are sent back to their initial value <br>
+			▶ Additional Information: <br>
+			CSS is capable of universally defining the value of each and every property in the style sheet by utilizing the universal shorthand property which is all.<br><br>
+			▶ Universal Property Values:<br>
+			1. inherit – inherits the value from its origin element, otherwise known as parent element.<br>
+			2. initial – it defines the value of the property by the default value of the browser’s local style sheet.<br>
+			3. unset – makes the value of the property to its original value.<br>
+			4. revert – it reverts the value of the property back to its form of origin by basing it to the style sheet of the user. If the user’s style sheet is not made available, the default style sheet from the user-agent is utilized.<br>
+			Source: (Shorthand properties, 2018) <br><br>
+
+			2. Vendor-specific extensions - used by browser vendors as a prefix for the names of experimental or non-standard CSS. Only after the extensions are standardized will the prefix be removed and stated as is. Although this is the case, browser vendors are veering away from it in order to put user-controlled flags or preferences. It is denoted by the character ‘-’ followed by the identifier that the browser vendor used and anoder ‘-‘ then a name which identifies what the property will do (Roberts, 2014). <br>
+			Example: -moz-opacity, -webkit-transition, -opera-animation <br><br>
+			3. Custom properties - aka CSS variables (experimental). These are customized properties indicated by the characters (--) as the prefix.<br>
+ 			Example: <br>
+			1. fallback value - in case there is no defined variable, a default value or fallback value is utilized.<br>
+			2. As a code:<br>
+		 	<div class="codeID">
+		 	<code>
+		 	:root{<br>
+			--kulay: rgb(255, 0, 0);<br>
+			}<br>
+			#backgroundInColor{<br>
+			background-color: var(--kulay);<br>
+			}<br>
+		 	</code>
+		 	</div>
+		 	<p id="css">
+			Source: (Custom properties, 2017) <br>
+			For more information about CSS properties, click <a href = “https://www.quackit.com/css/properties/”>here</a><br><br>
+
+			▶ Values:<br>
+			1. Value Processing – processes are declared, cascaded, specified, computed, used, actual values.<br>
+ 			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#uno">Processes</a>
+      			<div id="uno" class="httpVer">
+					1. Declared Value – refers to any property which is defined and associated to a certain element.<br>
+					2. Cascaded Value – a value produced by the process of cascading. <br>
+					3. Specified Value - every element has one specified value. It is created by processing cascaded value to the processes involving defaulting values.<br>
+					4. Computed Value - calculated value as a result from a given set of elements.<br>
+					5. Used Value - actual value used in a specified condition. This is created by processing computed value through different calculations then comparing it to a set of accepted values.<br>
+					*numbers - integer or real number (scientific or decimal notation)<br>
+					*dimensions - combination of numbers and unit ex. length, angle, time, frequency, resolution<br>
+					Source: (Etemad & Atkins [Eds.], 2016)
+				</div>
+			</li>
+			</ul>
+			</div>
+			<br>
+			<p id="css">
+			2. Value Types<br>
+            - keywords <br>
+			*CSS - wide keywords ex. initial, inherit, unset - acts as either inherit or initial, refers to specs.<br>
+			*Property-specific keywords <br>
+			- numbers<br>
+			*Length<br>
+			*Angle<br>
+			*Ratio – uses percentage (%)<br>
+			- Strings <br>
+			- Labels – can have multiple string values concatenated with one another.<br>
+			- Colors<br>
+			Source: (CSS value types, n.d.)<br><br>
+
+
+			▶ Dimensions of Value Types: <br></p>
+			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#one">Length Units</a>
+      			<div id="one" class="httpVer">
+					1. Length units<br>
+					*font - em, ex, ca, rem<br>
+					*viewport - percentage: vw, vh, vmin, vmax<br>
+					▶ 2 Types of Length Units<br>
+					1.) Relative Lengths - the length is based on another property’s length.<br>
+					Example: em, ex, ch, vmin, vmax, percent (%)<br>
+					2.) Absolute Lengths - the length is fixed. It is defined by a number value and then a unit.<br>
+					Example: cm, in, pt<br>
+					Source: (CSS Units, n.d.)
+				</div>
+			</li>
+    		<li>
+      			<a href="#two">Angle Units</a>
+      			<div id="two" class="httpVer">
+					2. Angle units - used in some gradient and transform durations<br>
+					*deg, grad, rad, turn
+				</div>
+			</li>
+			<li>
+      			<a href="#three">Time Units</a>
+      			<div id="three" class="httpVer">
+					3.Duration or Time units - typically used in transitions and animations<br>
+					*s, ms
+				</div>
+			</li>
+			<li>
+      			<a href="#four">Frequency Units</a>
+      			<div id="four" class="httpVer">
+					4. Frequency units - initially introduced in CSS2 for the now deprecated aural media type. It was reintroduced in CSS3 but is mostly unused.<br>
+					*Hz, kHz
+				</div>
+			</li>
+			<li>
+      			<a href="#five">Resolution Units</a>
+      			<div id="five" class="httpVer">
+					5. Resolution units - used in controlling the resolution of images as well as media queries.<br>
+					*dpi (dots per inch), dpcm (dots per centimeter), dppx (dots per px)<br>
+					*numbers with a percent symbol (%) as a suffix
+			<li>
+      			<a href="#six">URL and URIs</a>
+      			<div id="six" class="httpVer">
+					6. URL and URIs - url() function with an absolute or relative (to the stylesheet) URL.<br>
+					*colors i.e. color keywords<br>
+					*RGB hexadecimal notation - denoted by pound symbol (#)<br>
+					*RGB functions - example: rgb(255, 0, 0), rgba () - alpha<br>
+					*HSL functions -refers to the angles of the color wheel, example: hsl(0, 100%, 0%) where 0 refers to the angle in the color wheel, 100% for the saturation and 0% for lightness.<br>
+					*currentcolor, transparent<br><br>
+				</div>
+			</li>
+		</ul>
+		</div>
+			<br>
+			<p id="css">
+			▶ Additional information:<br>
+			* Color Theory - sets the basic understanding for the associating colors with contrast, complementation and vibrancy.<br>
+			Contrast - sets the background and foreground apart by separating the colors used. <br>
+			Complementation - subjective way of relating colors with one another by choosing which combination of colors is visually appealing to the eye of the beholder.<br>
+			Vibrancy - refers to how the colors evoke emotions. This means that the brighter the color, the more energy it evokes while darker colors evokes less energy and more towards relaxing the viewer’s mind.<br>
+			▶ Effective Color Scheme:<br>
+			1. Triadic Color Scheme - colors which form an equilateral triangular shape in the color wheel compliments one another and have balanced vibrancy.<br>
+			<img src="pictures/tri.jpg" alt="Triadic">
+			2. Split Complimentary Scheme - combination of colors opposite to one another are complimentary.<br>
+			<img src="pictures/compound.jpg" alt="Compound">
+			3. Analogous - combination of colors adjacent with one another. <br>
+			<img src="pictures/ana.jpg" alt="Analogous">
+			Source: (Cannon, 2012)
+			</p>
+		<h1 id="cssPre">CSS Preprocessors</h1>
+			<p id="css">
+			CSS Preprocessors – framework or library which generates CSS using a custom language syntax that typically features that don’t exist in pure CSS i.e variables, control flow, nesting, minutes.<br>
+			<b>Example:</b> <br> </p>
+			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#dos">SASS</a>
+      			<div id="dos" class="httpVer">
+					SASS - abbreviation for Syntactically Awesome Style Sheets. This allows developers to utilize rules for nesting, variables but in order to have these features , Ruby must be installed. It is prefixed by the dollar symbol ($).<br>
+					▶ 2 Syntax of Sass <br>
+					1. Indented - otherwise known as Sass wherein it is identified with the file extension “.sass”. Instead of utilizing brackets, it makes use of indentation. It’s syntax is not completely supported by CSS <br>
+					2. SCSS - abbreviation for Sassy CSS and identified by the file extension “.scss”. It’s syntax is completely supported by CSS.<br>
+					Source: (Coron, 2017)
+				</div>
+			</li>
+			<li>
+      			<a href="#tres">LESS</a>
+      			<div id="tres" class="httpVer">
+					LESS - abbreviation for Leaner Style Sheets. Its syntax is very similar to CSS and prefixed by the at symbol (@) and defined by the file extension “.less”. In order to use it, Node.js must be available (Overview, n.d.).<br>
+				</div>
+			</li>
+			<li>
+      			<a href="#quatro">Stylus</a>
+      			<div id="quatro" class="httpVer">
+					Stylus - does not have a prefix and is defined by the file extension “.styl”. Its syntax is compatible with CSS with the additional option of utilizing colons, semi-colons and brackets optional (Croom, 2012).<br>
+				</div>
+			</li>
+			</ul>
+			<p id="css">
+				<b>Note:</b> These are not compatible with most browsers. It will need some extensions in order to run it.			
+			</p>
+		<h1 id="cssPre">CSS Frameworks</h1>
+			<p id="css">
+			CSS Frameworks – provides predefined CSS design functionality that can be reused, extended, or customized. <br>
+			Example: Bootstrap, Bulma, Foundation<br>
+			Source: (D., 2017)
+			</p>
+		<h1 id="cssPre">CSS Polyfills</h1>
+			<p id="css">
+			CSS Polyfills – provides features that developers expect browsers to provide natively (10 of the best polyfills, 2013).<br>
+			Example: Modernizr, Selectivizr, html5shiv 
+			</p>
+
+CSS to be Inserted
+#css{
+	color: #566D7E;
+	font-family: Lib, Helvetica;
+	font-size: 24px;
+	text-decoration: none;
+	text-align: justify;
+	line-height: 2;
+}
+.codeID{
+	background-color: #baf397;
+	color: black;
+	text-align: left;
+	font-size: 18px;
+}
+#httpVer{
+	position: relative;
+	background: #fdfdfd;
+	color: #4C6374;
+	font-family: Lib, Helvetica;
+	font-size: 26px;
+}
+#httpVer ul{
+	list-style:none;
+	border-color: 0px 2px 7px #7396fa;
+    border-radius: 5px;
+}
+.httpVer{
+	display:none;
+	padding:4px;
+}
+.httpVer:target{
+	display:block;
+	border-top: 3px solid #7396fa;
+}
+#httpVer ul li a{
+	text-decoration: none;
+	font-family: Lib, Helvetica;
+	font-size: 26px;
+	display: block;
+	padding: 10px;
+	background: #d5e0ff;
+	border-bottom: 1px solid #7396fa;
+	color: #4C6374;
+}
+.colorScheme{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 150px;
+	height: auto;
+}
