@@ -168,41 +168,36 @@ For the special numbers like
 	console.log(0.3 - 0.2);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Number does not have quotes around the value.
-Example :
-	var numberName = 10;
-
-
 Boolean values does not need quotes around them and the true and false words are special keywords on JavaScript.
 Example :
 	var booleanName = false;
+	
+	
+Null and undefined
+You declare it by using null and undefined keywords
+Example :
+var sample = null;
+var meaning, dictionary = undefined;
 
 Array will allow you to store many values on one single reference.
 Example : 
 	var arrayName = [1,'Christine','Janine',10]; 
 
-Object is seen anywhere in the JavaScript code because everything in JavaScript are objects. Objects can be stored on a variable.
+Object is seen anywhere in the JavaScript code because everything in JavaScript are objects. Objects can be stored on a variable. Just like in Java , you make use of the new keyword for instantiate an object.
 
 Example :
 	var objectName = document.querySelector('h2');
+	var reaction = new String('Gosh');
+	var grade = new Number(99);
+	var status = new Boolean(false);
+	var s1 = 'Christine', s2 = new String('Tagle');
+	
+	And if will be checked then
+	
+	The ressult will be a string
+	console.log(typeof s1);		
+	The result will be an object
+	console.log(typeof s2); 	
 
 
 Operators (-, *, /)
