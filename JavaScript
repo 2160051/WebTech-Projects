@@ -199,6 +199,23 @@ Example :
 	The result will be an object
 	console.log(typeof s2); 	
 
+Date Object
+For the current client,environment date and time
+var d1 = new Date();          
+
+This would result to April 1, 2018, 12:00 MN
+var d2 = new Date(2018, 3, 1);
+
+Regular Expression object
+An example of RegExp object constructor
+var r1 = new RegExp('[,.]', 'g'); 
+
+An expression of regular expression literal syntax..
+var r2 = /[/ :]/g;
+
+Math Object
+It makes use somthing like Math.sqrt(parameter),Math.PI,
+Math.trunc(parameter), and Math.random()
 
 Operators (-, *, /)
 
