@@ -217,6 +217,23 @@ Math Object
 It makes use somthing like Math.sqrt(parameter),Math.PI,
 Math.trunc(parameter), and Math.random()
 
+
+JSON Object
+The JSON object allows object conversions to and from JSON-formatted strings
+Example :
+var obj = JSON.stringify(student);
+console.log(obj);
+
+var str = `
+    {
+        "description": "3D Origin",
+        "x-coords": 0,
+        "y-coords": 0,
+        "z-coords": 0
+    }`;
+var obj = JSON.parse(str);
+console.log(obj);
+
 Operators (-, *, /)
 
 Addition(+)	
