@@ -58,3 +58,21 @@ In the terms of the DOM, HTML is determined. It describes the meaning of the ele
 Some important miscellaneous javaScript web APIs are IndexDB, Geolocation, Push Notification ,Local Storage, Web Sockets,Web workers, Service Workers, XMLHttpRequest(AJAX) etc.
 
 
+
+How to use JavaScript?
+
+JavaScript is very fussy and case sensitive.
+
+The <script> element is the only friend of JavaScript in the world of HTML.
+
+Internal JavaScript
+
+< script >
+  // The JavaScript goes here and it should be added the script just before the closing of the < /body >. The script can be placed anywhere in the HTML file.
+< /script >
+
+External JavaScript
+
+A developer should create a file with the following syntax "nameOfTheScript.js" and they should make sure it has that .js filename extension so that it will be recognized as JavaScript file. Next is that when a developer is inside the HTML, he or she can easily call the script file by putting < script src="nameOfTheScript.js" > < /script > inside the HTML file. Both the HTML and the javaScript file should be placed inside the same folder.
+
+
