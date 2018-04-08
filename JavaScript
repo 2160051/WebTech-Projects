@@ -168,6 +168,19 @@ var checkIt = 3;
 !(checkIt === 3);
 chechIt !== 3;
 
+Conditionals
+
+For test whether an expression returns true or not, Conditionals code structures are used.It will reveal alternative code by if it does not satisfy its result.If-else statement is a very common form. 
+
+Example:
+
+var cake = 'big';
+if (cake === 'small') {
+  alert('Yay this is perfect for me, I'm on diet');    
+} else {
+  alert('Awww it's so huge');    
+}
+If the result of the comparison is false then the first block will be skipped and after the else statement which is the second block should run instead.
 
 
 
