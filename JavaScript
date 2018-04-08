@@ -200,3 +200,19 @@ function add(num1,num2) {
   return sum;
 }
 
+
+Events
+Website really needs events to have a real interactivity.
+Events are code structures that listens for things that are currently happening in browser and running code as a reply or in response. 
+Example would be the click event that is offered by the browser when you are about to click on something with the use of your mouse. 
+
+If you wish to attach an event to an element well there are so many ways. In Here, we choose the < html > element, setting the onclick handler property that is equivalent to a function that has no name that contains the code we want the click event to be fired.
+
+Note that
+
+document.querySelector('html').onclick = function() {};
+
+is equal to 
+
+var myHTML = document.querySelector('html');
+myHTML.onclick = function() {};
