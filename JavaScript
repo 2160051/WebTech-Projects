@@ -134,6 +134,40 @@ Example :
 	var objectName = document.querySelector('h2');
 
 
+Operators (-, *, /)
+
+Addition(+)	
+It is used to glue two strings or
+add two numbers.
+Example :
+	1 + 2;
+	"Britanny" + "Banina!";
+
+Subtraction, Multiplication, Division (-, *, /)	
+It performs subtraction, multiplication, and division on numbers like what they do in basic math. The multiply in JavaScript is represented by an asterisk.	
+Example :
+9 - 6;
+2 * 2;
+6 / 3;
+
+Assignment (=)
+The assigning a value into a variable.	
+Example :
+var assignmentName = 'Nicole';
+
+Equality (===)
+Use for checking the equality between two things and will result any of Boolean result which are true or false.	
+Example :
+var peraKo = 3;
+peraKo === 4;
+
+Does-not-equal or Not (!, !==)
+It is used to reverse the value of a thing. Whenever it is used together with the Equality operator, The two values are determined by the negation operator if it is not equal. True is the basic expression but if will negate it then it will be false.
+Example : 
+var checkIt = 3;
+!(checkIt === 3);
+chechIt !== 3;
+
 
 
 
