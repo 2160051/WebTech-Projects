@@ -75,6 +75,373 @@
 			<p id="css">
 			10 of the best polyfills. (2013, February 13). Retrieved April 06, 2018, from https://www.creativebloq.com/html5/10-best-polyfills-2133015
 			<br>
+			What is JavaScript?
+
+JavaScript is a lightweight and dynamic computer programming language. It is a part of web pages that has an implementation of creating dynamic pages and allows client-side script to have a contact with the user. It is an object-oriented scripting language and cross-platform that is commonly used to create webpages interactive like clickable buttons, complex animations and popup menus. A scripting language that will let you to make dynamically updating content, animate images, control multimedia, and some everything else.
+
+Array, Date, and Math which are standard library of objects are included in JavaScript. JavaScript also contain the statements, operators and control structures which are termed as the core set of language elements. By supplementing additional objects, the core JavaScript could be extended for different kinds of goals or purposes.
+
+
+Client-side JavaScript
+
+It extends the language by the way of giving objects to control browsers and each of its Document Object Model. For example, its extensions it permits an application to put elements in an HTML form and it responds on to the user events like page navigation, mouse clicks, and form input.
+
+
+Server-side JavaScript
+
+It extends the language by the way of giving objects important to running JavaScript on servers. 
+For example, its extensions give continuity of information from one invocation to another invocation of the application, performs on servers file manipulations or allows interaction of applications with a database.
+The meaning of this is that in our web browser, the power of changing the way the webpage looks like is handled by JavaScript.
+
+
+
+JAVASCRIPT VS. JAVA
+
+JAVASCRIPT
+
+It is Object-oriented. Between types of objects, there are no distinction. You can dynamically add methods and properties to any object and through the prototype mechanism, the idea of inheritance is implemented.
+In javaScript, there are no times where there is declaration of variable data types. It implements dynamic typing and it is loosely typed. You can not automatically write something to hard disk in JavaScript.
+
+
+JAVA
+
+Unlike in JavaScript, the declaration of variable data types is very important. It implements static typing and it os strongly typed. Java is class based and the objects are separated into Classes and instances considering all of the inheritance through the hierarchy of the class. You can not add dynamically the methods or properties in the classes and instances. Unlike in JavaScript, in Java you can automatically write into the hard disk.
+
+
+
+
+JavaScript Execution Environment
+
+1. Core JavaScript(ECMAScript) Language and API(Standardized)
+
+ECMA TC39 committee standardized core language of JavaScript and it was termed as ECMAScript. On December 2012, initial standard was approved. ECMAScript known as the standard script language, is created with the cooperation of Microsoft and Netscape but it is more derived from the idea of Netscape's JavaScript. It is object-oriented where context or objects of any of specific domain like the idea of a "document" can be added.
+ECMAScript is commonly used on non-browser environments such as node.js.
+
+Ecma TC39 standardized ECMAScript Internationalization API Specification that is an addition to the ECMAScript Language Specification. The API gives collation of things such as number formatting, string comparison, and date-and-time formatting for JavaScript applications. The API also let applications to pick a language and it tailors it to the functionality to each of their needs. In the Intl object, you can track the status of implementation on the browsers.
+
+
+
+2. (Traditional) Browser Object Model API (Non-standardized)
+
+Browser Object Model (BOM) has no official standards.
+The modern browsers nowadays have implemented almost the same properties and methods for JavaScript interactivity that is why it is often known as properties and methods of the BOM. The browser is represented by Window object. Window object has a lot of self-contained properties. For example, status that explains the current text of the status bar that is found on the bottom of the browser which provide and reflect access to the browser. Window object’s supporting objects are as fascinating as its immediate methods, events and properties. Window object's supporting objects includes Document, Frame collection, Screen, Navigator, Timing, Location, History, Popup Alert and Cookies. For the Document object, it represents the document that is currently displayed. The frames inside the current window is represented by the Frames collection. For the history list of the browser, it is represented by the History object. The current URL that the browser is displaying is represented by the Location and for the Navigator object, it does represent information about the browser itself like the version number etc.
+
+
+3. Document Object Model API
+The glue between the ECMAScript and DOM technologies is provided by the WebIDL specification.
+
+The Document Object Model is an independent on language convention for interacting and representing with objects in XHTML, XML and  HTML documents. It is cross-platform. The addressing and manipulation of objects in the Dom Tree is done by the use by methods on the objects. It was the W3C who standardized it and it defines the language-agnostic interfaces which abstract the XML and HTML documents as objects. It describes the mechanisms to have a control on this abstraction. 
+The DOM includes a tree model which is the document structure, the DOM Event architecture in DOM core such as Element, DOMImplementation , DocumentFragment, Node, Document, Event, EventTarget. There is a few accurate definition of the DOM Event Architecture together with the specific events in DOM events and some things like DOM Traversal and DOM Range. For ECMAScript, they see the objects of DOM specification as "Host objects".
+
+In the terms of the DOM, HTML is determined. It describes the meaning of the elements.  HTML is on the upper layer on the concepts of the abstract in the DOM Core. The HTML DOM includes things like the className property in the elements of HTML or on the APIs like document.body. The restrictions on the documents is also defined by HTML specification, for example, it is mandatory to have all children of a ul element to be li elements. For short it forbids using attributes and elements that are not described in the standard.
+
+There are so many DOM API functionalities like getting references to nodes with the use of the following methods getElementsByTagName(),getElementById(), getElementsByName(),getElementsByClassName(),querySelector() and querySelectorAll(). It also traverse the DOM tree from a given node with parentNode, parentElement, childNodes, children,firstChild, lastChild, nextSibling, previousSibling, firstElementChild, lastElementChild, nextElementSibling, previousElementSibling. One function is constructing or copying nodes with cloneNode(), importNode(),createElement(), createTextNode(), createAttribute() functions and other more. DOM API also has the function of manipulating the DOM tree and it uses
+appendChild(), insertBefore(), replaceChild(), removeChild() and adoptNode() functions. DOM API have miscellaneous attributes and methods like 
+nodeType, nodeName, nodeValue,attributes, id, tagName, className, classList,ownerDocument, documentElement, hasChildNodes() and normalize(). For the Element nodes, the DOM APIs has the ability to manipulate attributes together with setAttribute(), getAttribute(), removeAttribute(), setAttributeNode(), getAttributeNode(), and removeAttributeNode() functions. One important function is handling events by the use of 
+addEventListener(), removeEventListener(), and dispatchEvent() functions. DOM APIs also involved in style handling and it uses styleSheets, ownerRule, cssRules, insertRule(), deleteRule() and getComputedStyle() functions.
+
+Browsers support other methods ans properties that are used with the interaction with the DOM Tree even though it is not described as a part of the Document Object Model. It offers innerHTML, outerHTML, innerText, and outerText. The references to oft-used document sections and collections are the head, body, anchors, forms, and images
+
+
+
+
+4. Miscellaneous JavaScript Web APIs
+
+Some important miscellaneous javaScript web APIs are IndexDB, Canvas, Geolocation, Push Notification ,Local Storage, Web Sockets,Web workers, Service Workers, XMLHttpRequest(AJAX),HTMLMediaElement etc.
+For the Geolocation, it gets the geographical information. Google Maps use this to find people's location and will plot it on maps. The WebGL and Canvas APIs allows the web developers to create animated 3D and 2D graphics. 
+HTMLMediaElement and WebRTC which are an example of Audio and Video APIs will let web developer to create interesting things with the help of multimedia, like play video and audio while in a web page or something like grabbing videos from your web camera and will eventually display it on other's device.
+
+
+By the use of Global Object Window, almost all of the APIs are accessed.
+
+
+How to use JavaScript?
+JavaScript is very fussy and case sensitive.
+The <script> element is the only friend of JavaScript in the world of HTML.
+
+Internal JavaScript
+
+< script >
+  // The JavaScript goes here and it should be added the script just before the closing of the < /body >. The script can be placed anywhere in the HTML file.
+< /script >
+
+External JavaScript
+
+A developer should create a file with the following syntax "nameOfTheScript.js" and they should make sure it has that .js filename extension so that it will be recognized as JavaScript file. Next is that when a developer is inside the HTML, he or she can easily call the script file by putting < script src="nameOfTheScript.js" > < /script > inside the HTML file. Both the HTML and the javaScript file should be placed inside the same folder.
+
+Comments
+A developer can write comments the JavaScript code which will be ignored by the browser and it would be useful of you want to provide guidelines and instructions on how the JavaScript works to some of your fellow developers.
+
+single line : written after a double forward slash (//this is a comment)
+multi-line  : written between the strings (/* this is also a comment */)
+
+
+
+JavaScript Language Fundamentals
+
+In JavaScript, you have to separate the statements on a single line by using a semi-colon. Semi-colon that is usually found on the end of the line determines where the statement is ending.
+
+
+Variables and Constants
+
+You can store values inside a container called Variables. You just have to declare the variable with the use of var keyword and it should be followed by any name that you have chosen.
+Example : 
+var myVariable;
+
+You can declare also by using a let keyword but the difference with the var is that , it does not become a property of the Window object. Both of var and let are global scope.
+
+Example : 
+let yourVariable; 
+
+For the declaration of Constants, you make use of const keyword and then followed by the name of the constant. It is a global scope but it does not become a property of the Window object.
+Example :
+const sampleName = 'Jo';   
+
+One thing that you should not do in declaring variable and constants is something like this :
+avoidThis = 100;       
+
+Because it is made implicitly if non-existent and
+it will serve as the global reference to window property 
+
+
+Primitive Data Types
+
+Variables and constants may contain values which have different data types such as String , Number, Boolean	A True/False value, Array, and Object.
+
+String
+String is a sequence of text. The value should be enclosed in quote marks.
+Example :
+	With single-qoutes, var stringName = 'Christine';
+	With double-qoutes, var stringNames = "Tagle";
+	With template literals that allows multi-line strings and expression interpolation,
+	var heading = `${stringName}
+               ${stringNames}
+               She's addict`;
+
+ 
+Number
+Number does not have quotes around the value.
+Example :
+	For decimal integer,
+	var numberName = 11;
+	
+    For decimal floating point, 
+	discount = 0.50;
+	
+	For decimal scientific notation,
+    atomsPerMole = 7.011e23;
+
+For the numbers in base 2, 8, and 16,
+	In declaring binary number,
+	var binaryNo = 0b1101;
+	
+	In declaring octal numbers,
+    octalNo = 0123;
+    anotherOctalNo = 0o456;
+
+	In declaring hexadecimal numbers,
+    hexadecimalNo = 0xABC;
+
+For the special numbers like
+	Infinity
+	var positiveInfinity = 1 / 0;
+
+	-Infinity
+    negativeInfinity = -1 / 0;
+	
+	Nan 
+    notANumber = 0 / 0;
+
+	Not that division is always floating-point
+	console.log(5 / 2);
+	
+	and be aware of not exact floating-point arithmetic like
+	console.log(0.3 - 0.2);
+	
+	
+Boolean Values
+Boolean values does not need quotes around them and the true and false words are special keywords on JavaScript.
+When it is used as condition then 0, '', false, null , undefined, and NaN are considered as "falsy" values.
+Example :
+	var booleanName = false;
+
+Null and undefined
+You declare it by using null and undefined keywords
+Example :
+var sample = null;
+var meaning, dictionary = undefined;
+	
+
+Arrays
+Array will allow you to store many values on one single reference.
+Example : 
+	var arrayName = [1,'Christine','Janine',10]; 
+
+
+Object is seen anywhere in the JavaScript code because everything in JavaScript are objects. Objects can be stored on a variable. Just like in Java , you make use of the new keyword for instantiate an object.
+
+Example :
+	var objectName = document.querySelector('h2');
+	var reaction = new String('Gosh');
+	var grade = new Number(99);
+	var status = new Boolean(false);
+	var s1 = 'Christine', s2 = new String('Tagle');
+	
+	And if will be checked then
+	
+	The result of this would be a "string"
+	console.log(typeof s1);	
+	The result of this would be an "object"	
+	console.log(typeof s2);
+	
+Date Object
+For the current client,environment date and time
+var d1 = new Date();          
+
+This would result to April 1, 2018, 12:00 MN
+var d2 = new Date(2018, 3, 1);
+
+Regular Expression object
+An example of RegExp object constructor
+var r1 = new RegExp('[,.]', 'g'); 
+
+An expression of regular expression literal syntax..
+var r2 = /[/ :]/g;
+
+Math Object
+It makes use somthing like Math.sqrt(parameter),Math.PI,
+Math.trunc(parameter), and Math.random()
+
+
+JSON Object
+The JSON object allows object conversions to and from JSON-formatted strings
+Example :
+var obj = JSON.stringify(student);
+console.log(obj);
+
+var str = `
+    {
+        "description": "3D Origin",
+        "x-coords": 0,
+        "y-coords": 0,
+        "z-coords": 0
+    }`;
+var obj = JSON.parse(str);
+console.log(obj);
+
+
+SETS Object API
+It is a collection of some values. Through the elements of on a set in insertion order, you can iterate it. 
+Only one time that the value of the set may appear and it is considered as the unique thing on Set's collection.
+
+
+Example :
+const set1 = new Set([1, 2, 3, 4, 5]);
+
+The expected output would be true
+console.log(set1.has(1));
+
+The expected output would be true
+console.log(set1.has(5));
+
+The expected output would be false
+console.log(set1.has(6));
+
+
+MAPS Object API
+It iterates each of its elements in insertion order.
+
+A developer should always remember that a Map that is a map of an object will only map to the insertion order of the object that is not ordered and random
+
+
+
+
+Operators (-, *, /)
+
+Addition(+)	
+It is used to glue two strings or
+add two numbers.
+Example :
+	1 + 2;
+	"Britanny" + "Banina!";
+
+Subtraction, Multiplication, Division (-, *, /)	
+It performs subtraction, multiplication, and division on numbers like what they do in basic math. The multiply in JavaScript is represented by an asterisk.	
+Example :
+9 - 6;
+2 * 2;
+6 / 3;
+
+Assignment (=)
+The assigning a value into a variable.	
+Example :
+var assignmentName = 'Nicole';
+
+Equality (===)
+Use for checking the equality between two things and will result any of Boolean result which are true or false.	
+Example :
+var peraKo = 3;
+peraKo === 4;
+
+Does-not-equal or Not (!, !==)
+It is used to reverse the value of a thing. Whenever it is used together with the Equality operator, The two values are determined by the negation operator if it is not equal. True is the basic expression but if will negate it then it will be false.
+Example : 
+var checkIt = 3;
+!(checkIt === 3);
+chechIt !== 3;
+
+
+Conditionals
+
+For test whether an expression returns true or not, Conditionals code structures are used.It will reveal alternative code by if it does not satisfy its result.If-else statement is a very common form. 
+
+Example:
+
+var cake = 'big';
+if (cake === 'small') {
+  alert('Yay this is perfect for me, I'm on diet');    
+} else {
+  alert('Awww it's so huge');    
+}
+If the result of the comparison is false then the first block will be skipped and after the else statement which is the second block should run instead.
+
+Functions
+
+ It's a way of collection of functionality that you want to reuse in the future. Instead of spending so much time rewriting a code, you could just call the name of the function when you need a procedure.
+ 
+Example:
+
+var sampleName = document.querySelector('h1');
+alert('alert is a function!');
+
+When you encounter a variable name that has parentheses after it then is it a function. For the functions to do their job, they often get arguments which are the bits of data. Argument go inside the parentheses, if it is more than one then it will be separated by comma.
+
+Example :
+
+function add(num1,num2) {
+  var sum = num1 + num2;
+  return sum;
+}
+
+
+Events
+Website really needs events to have a real interactivity.
+Events are code structures that listens for things that are currently happening in browser and running code as a reply or in response. 
+Example would be the click event that is offered by the browser when you are about to click on something with the use of your mouse. 
+
+If you wish to attach an event to an element well there are so many ways. In Here, we choose the < html > element, setting the onclick handler property that is equivalent to a function that has no name that contains the code we want the click event to be fired.
+
+Please take note that :
+
+document.querySelector('html').onclick = function() {};
+
+is the same as :
+
+var sampleName = document.querySelector('html');
+myHTML.onclick = function() {};
+
+
+
 			</p>
 
 	  <div id="authContain">
