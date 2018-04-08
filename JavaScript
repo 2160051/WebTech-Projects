@@ -318,4 +318,21 @@ var myHTML = document.querySelector('html');
 myHTML.onclick = function() {};
 
 
+SETS
+It is a collections of some values. Through the elements of on a set in insertion order, you can iterate it. 
+Only one time that the value of the set may appear and it is considered  as the unique thing on Set's collection.
+
+
+Example :
+const set1 = new Set([1, 2, 3, 4, 5]);
+
+The expected output would be true
+console.log(set1.has(1));
+
+The expected output would be true
+console.log(set1.has(5));
+
+The expected output would be false
+console.log(set1.has(6));
+
 
