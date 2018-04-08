@@ -121,7 +121,69 @@ Variables and constants may contain values which have different data types such 
 
 String is a sequence of text.The value should be enclosed in quote marks.
 Example :
-	var stringName = 'Christine';
+	With single-qoutes, var stringName = 'Christine';
+	With double-qoutes, var stringNames = "Tagle";
+	With template literals that allows multi-line strings and expression interpolation,
+	var heading = `${stringName}
+               ${stringNames}
+               She's addict`;
+
+
+Number does not have quotes around the value.
+Example :
+	For decimal integer,
+	var numberName = 11;
+	
+    For decimal floating point, 
+	discount = 0.50;
+	
+	For decimal scientific notation,
+    atomsPerMole = 7.011e23;
+
+For the numbers in base 2, 8, and 16,
+	In declaring binary number,
+	var binaryNo = 0b1101;
+	
+	In declaring octal numbers,
+    octalNo = 0123;
+    anotherOctalNo = 0o456;
+
+	In declaring hexadecimal numbers,
+    hexadecimalNo = 0xABC;
+
+For the special numbers like
+	Infinity
+	var positiveInfinity = 1 / 0;
+
+	-Infinity
+    negativeInfinity = -1 / 0;
+	
+	Nan 
+    notANumber = 0 / 0;
+
+	Not that division is always floating-point
+	console.log(5 / 2);
+	
+	and be aware of not exact floating-point arithmetic like
+	console.log(0.3 - 0.2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Number does not have quotes around the value.
