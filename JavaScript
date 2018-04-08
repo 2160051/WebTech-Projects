@@ -335,4 +335,8 @@ console.log(set1.has(5));
 The expected output would be false
 console.log(set1.has(6));
 
+MAPS
+It iterates each of its elements in insertion order.
+
+A developer should always remember that a Map that is a map of an object will only map to the insertion order of the object that is not ordered and random
 
