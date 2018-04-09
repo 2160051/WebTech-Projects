@@ -22,6 +22,9 @@
 		<a href="#cssDec">▶ CSS Declarations</a>
 		<a href="#cssPre">▶ CSS Preprocessors, Frameworks and Polyfills</a>
 		<a href="#js">JavaScript</a>
+		<a href="#watis">▶ What is JavaScript</a>
+		<a href="#jee">▶ Execution Environment</a>
+		<a href="#howjavas">▶ How to use</a>
 		<a href="reference.html">References</a>
 	</nav>
 	<article id="content">
@@ -369,6 +372,352 @@
 			CSS Polyfills – provides features that developers expect browsers to provide natively (10 of the best polyfills, 2013).<br>
 			Example: Modernizr, Selectivizr, html5shiv 
 			</p>
+			
+		<h1 id="js">JavaScript</h1>
+		<div id="watis"><h2 class="head2">◆ What is JavaScript?</h2></div>
+		<p class="def">
+		Javascript is a lightweight and dynamic computer programming language. It is a part of web pages that has an implementations of creating dynamic pages and 
+		allows client-side script to have a contact with the user. It is an object-oriented scripting language and cross-platform that is commonly used to create 
+		webpages interactive like clickable buttons , complex animations and popup menus. Array, Date, and Math which are standard library of objects are included in JavaScript. JavaScript also contain the statements, operators and control structures which are termed as the core set of language elements. 
+		By supplementing additional objects, the core JavaScript could be extended for different kinds of goals or purposes. The meaning of this is that in our web browser, the power of changing the way the webpage looks like is handled by JavaScript.
+		</p>
+		<h3 class="head3">Client-side JavaScript</h3>
+		<p class="css">
+		It extends the language by the way of giving objects to control browsers and each of its Document Object Model. For example, its extensions it permits an 
+		application to put elements in an HTML form and it responds on to the user events like page navigation, mouse clicks, and form input.
+		</p>
+		<h3 class="head3">Server-side JavaScript</h3>
+		<p class="css">
+		It extends the language by the way of giving objects important to running JavaScript on servers. 
+		For example,its extensions gives continuity of information from one invocation to another invocation of the application, performs on 
+		servers file manipulations or allows interaction of applications with a database.
+		</p>
+		<h2 class="head2">JAVASCRIPT VS. JAVA</h2>
+		<div id="javascriptpic"><img src="pictures/javascript.png" alt="JavaScript Logo"></div>
+		<p id="cssjavascript">
+		<b>JAVASCRIPT</b> <br>
+		It is Object-oriented. Between types of objects, there are no distinction. You can dynamically add methods and properties to any object and through the prototype mechanism, the idea of inheritance is implemented.
+		In javaScript, there are no times where there is declaration of variable data types. It implements dynamic typing and it is loosely typed. You can not automatically write something to hard disk in JavaScript.
+		</p>
+		<div id="javapic"><img src="pictures/java.jpg" alt="Java Logo"></div>
+		<p id="cssjava">
+		<b>JAVA</b> <br>
+		Unlike in JavaScript, the declaration of variable data types is very important. It implements static typing and it os strongly typed. Java is class based and the objects are separated into Classes and instances considering all of the inheritance through the hierarchy of the class. You can not add 
+		dynamically the methods or properties in the classes and instances. Unlike in JavaScript, in Java you can automatically write into the hard disk.
+		</p>
+		<div id="jee"><h2 class="head2">◆ JavaScript Execution Environment</h2></div>
+		<p class="css">
+		1. Core JavaScript(EcmaScript) Language and API <br>
+		- ECMAScript is commonly used on non-browser environments such as node.js. <br>
+		<br>2. Browser Object Model API <br>
+		- Browser Object Model (BOM) has no official standards. The modern browsers nowadays have implemented almost the same properties and methods for JavaScript interactivity that is why it is often known as properties and methods of the BOM. <br>
+		<br>3. Document Object Model API<br>
+		- The Document Object Model is an independent on language convention for interacting and representing with objects in XHTML, XML  and  HTML documents. <br>
+		<br>4. Miscellaneous JavaScript Web APIs<br>
+		- Some important miscellaneous javaScript web APIs are IndexDB, Geolocation, Push Notification ,Local Storage, Web Sockets,Web workers, Service Workers, XMLHttpRequest(AJAX) etc. <br>
+		</b>
+		<div id="howjavas"><h2 class="head2">◆ How to use JavaScript?</h2></div>
+		<p class="css">
+		JavaScript is very fussy and case sensitive.
+		The &#60;script&#62; element is the only friend of JavaScript in the world of HTML. JavaScript has two kinds: <br>
+		</p>
+		<h3 class="head5">Internal JavaScript</h3>
+		<p class="css">
+		The script can be placed in the HTML file.
+		</p>
+		<p class="codeID">
+		<code>&#60;script&#62;<br>
+		// The JavaScript goes here and the script should be added just before the closing of the body. <br>
+		&#60;/script&#62;</code>
+		</p>
+		<h3 class="head5">External JavaScript</h3>
+		<p class="css">
+		A developer should create a file with the following syntax "nameOfTheScript.js" and they should make sure it has that .js filename extension 
+		so that it will be recognized as JavaScript file. Next is that when a developer is inside the HTML, he or she can easily call the script file 
+		by putting &#60;script src="nameOfTheScript.js"&#62; &#60;/script&#62; inside the HTML file. Both the HTML and the javaScript file should be placed inside 
+		the same folder.
+		</p>
+		<h3 class="head5">Comments</h3>
+		<p class="css">
+		A developer can write comments the JavaScript code which will be ignored by the browser and it would be useful of you want to provide guidelines 
+		and instructions on how the JavaScript works to some of your fellow developers. <br>
+		<br> single line : written after a double forward slash (//this is a comment) <br>
+		multi-line  : written between the strings (/* this is also a comment */)
+		</p>
+		<h3 class="head6"><center>JavaScript Language Fundamentals</center></h3>
+		<p class="css">
+		In JavaScript, you have to separate the statements on a single line by using a semi-colon. Semi-colon that is usually found on the end of the line 
+		determines where the statement is ending.
+		</p>
+		<h3 class="head5">Variables and Constants</h3>
+		<p class="css">
+		You can store values inside a container called Variables. You just have to declare the variable with the use of var keyword and it should be 
+		followed by any name that you have chosen.
+		</p>
+		<p class="codeID">
+		<code>var myVariable;</code>
+		</p>
+		<p class="css">
+		You can declare also by using a let keyword but the difference with the var is that, it does not become a property of the Window object. 
+		Both of var and let are global scope.
+		</p>
+		<p class="codeID">
+		<code>let yourVariable;</code>
+		</p>
+		<p class="css">
+		For the declaration of Constants, you make use of const keyword and then followed by the name of the constant. 
+		It is a global scope but it does not become a property of the Window object.
+		</p>
+		<p class="codeID">
+		<code>const sampleName = 'Jo';</code>
+		</p>
+		<p class="css">
+		One thing that you should not do in declaring variable and constants is something like this:
+		</p>
+		<p class="codeID">
+		<code>avoidThis = 100; </code>
+		</p>
+		<p class="css">
+		Because it is made implicitly if non-existent and it will serve as the global reference to window property. 
+		</p>
+		<p class="def">
+		Variables and constants may contain values which have different data types such as String, Number, Boolean, Array, and Object.
+		</p>
+		<p class="css">
+		String is a sequence of text. The value should be enclosed in quote marks. Example:
+		</p>
+		<p class="codeID">
+		<code>var stringName = 'Christine'; //With single-quotes <br> 
+			  var stringNames = "Tagle"; //With double-quotes <br>
+			  var heading = `${stringName}+${stringNames} is addicted`; //With template literals
+	    </code>
+		</p>
+		<p class="css">
+		Numbers do not have quotes around the value. Example:
+		</p>
+		<p class="codeID">
+		<code>var numberName = 11; //For decimal integer <br>
+	          discount = 0.50; //For decimal floating point <br> 
+	          atomsPerMole = 7.011e23; //For decimal scientific notation <br>
+		<br>
+		For the numbers in base 2, 8, and 16: <br>
+	          var binaryNo = 0b1101; //In declaring binary number <br>
+			  octalNo = 0123; //In declaring octal numbers <br>
+			  hexadecimalNo = 0xABC; //In declaring hexadecimal numbers <br>
+		<br>
+        For the special numbers like: <br>
+	          var positiveInfinity = 1 / 0; //Infinity <br>
+			  negativeInfinity = -1 / 0; //-Infinity <br>
+			  notANumber = 0 / 0; //Nan <br>
+		<br>
+		Not that division is always floating-point<br>
+		console.log(5 / 2);
+		<br>
+		and be aware of not exact floating-point arithmetic like<br>
+		console.log(0.3 - 0.2);
+	    </code>
+		</p>
+		<p class="css">
+		Boolean values does not need quotes around them and the true and false words are special keywords on JavaScript.
+		</p>
+		<p class="codeID">
+		<code>var booleanName = false;
+	    </code>
+		</p>
+		<p class="css">
+		Null and undefined<br>
+		Declared by using the null and undefined keywords.
+		</p>
+		<p class="codeID">
+		<code>var sample = null; <br>
+			  var meaning, dictionary = undefined;
+	    </code>
+		</p>
+		<p class="css">
+		Array will allow you to store many values on one single reference.
+		</p>
+		<p class="codeID">
+		<code>var arrayName = [1,'Christine','Janine',10]; </code>
+		</p>
+		<p class="css">
+		Object is seen anywhere in the JavaScript code because everything in JavaScript are objects. Objects can be stored on a variable. 
+		Just like in Java, you make use of the new keyword for instantiate an object.
+		</p>
+		<p class="codeID">
+		<code>
+			var objectName = document.querySelector('h2'); <br>
+			var reaction = new String('Gosh'); <br>
+			var grade = new Number(99); <br>
+			var status = new Boolean(false); <br>
+			var s1 = 'Christine', s2 = new String('Tagle'); <br>
+			<br>
+			//And if will be checked then the result will be a:
+			<br>
+			//string<br>
+			console.log(typeof s1);	<br>	
+			//object<br>
+			console.log(typeof s2); <br>
+		</p>
+		<p class="css">
+		Date Object
+		</p>
+		<p class="codeID">
+		<code>
+			var d1 = new Date(); //For the current client,environment date and time <br>
+			var d2 = new Date(2018, 3, 1); //This would result to April 1, 2018, 12:00 MN <br>
+		</code>
+		</p>
+		<p class="css">
+		Math Object<br>
+		- It makes use something like Math.sqrt(parameter, Math.PI, Math.trunc(parameter), and Math.random().
+		</p>
+		<h3 class="head5">JSON Object</h3>
+		<p class="css">
+		The JSON object allows object conversions to and from JSON-formatted strings. Example:
+		</p>
+		<p class="codeID">
+		<code>
+			var obj = JSON.stringify(student);<br>
+			console.log(obj);<br>
+			<br>
+			var str = `<br>
+						{<br>
+						"description": "3D Origin",<br>
+						"x-coords": 0,<br>
+						"y-coords": 0,<br>
+						"z-coords": 0<br>
+						}`;<br>
+			<br>
+			var obj = JSON.parse(str);<br>
+			console.log(obj);<br>
+		</code>
+		</p>
+		<h3 class="head5">Operators (-, *, /)</h3>
+		<p class="css">
+		Addition(+) <br>
+		It is used to glue two strings or add two numbers.
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			1 + 2; <br>
+			"Britanny" + "Banina!"; <br>
+		</code>
+		</p>
+		<p class="css">
+		Subtraction, Multiplication, Division (-, *, /) <br>	
+		It performs subtraction, multiplication, and division on numbers like what they do in basic math. The multiply in JavaScript is represented by an asterisk.	
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			9 - 6;<br>
+			2 * 2;<br>
+			6 / 3;<br>
+		</code>
+		</p>
+		<p class="css">
+		Assignment (=) <br>
+		The assigning a value into a variable.	
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			var assignmentName = 'Nicole';
+		</code>
+		</p>
+		<p class="css">
+		Equality (===) <br>
+		Use for checking the equality between two things and will result any of Boolean result which are true or false.	
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			var peraKo = 3; <br>
+			peraKo === 4;
+		</code>
+		</p>
+		<p class="css">
+		Does-not-equal or Not (!, !==) <br>
+		It is used to reverse the value of a thing. Whenever it is used together with the Equality operator, The two values are determined by the negation operator if it is not equal. True is the basic expression but if will negate it then it will be false.
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			var checkIt = 3; <br>
+			!(checkIt === 3); <br>
+			checkIt !== 3;
+		</code>
+		</p>
+		<p class="css">
+		Conditionals <br>
+		For test whether an expression returns true or not, Conditionals code structures are used.It will reveal alternative code by if it does not satisfy its result.If-else statement is a very common form. 
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			var cake = 'big';<br>
+			if (cake === 'small') {<br>
+			alert('Yay this is perfect for me, I'm on diet');<br>
+			} else {<br>
+			alert('Awww it's so huge');<br>
+			}<br>
+			//If the result of the comparison is false then the first block will be skipped and after the else statement which is the second block should run instead.
+		</code>
+		</p>
+		<p class="css">
+		Functions <br>
+		It's a way of collection of functionality that you want to reuse in the future. Instead of spending so much time rewriting a code, you could just call the name of the function when you need a procedure.
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			 var sampleName = document.querySelector('h1'); <br>
+			 alert('alert is a function!');
+		</code>
+		</p>
+		<p class="css">
+		When you encounter a variable name that has parentheses after it then is it a function. For the functions to do their job, they often get arguments which are the bits of data. Argument go inside the parentheses, if it is more than one then it will be separated by comma. 
+		Example:
+		</p>
+		<p class="codeID">
+		<code>
+			 function add(num1,num2) { <br>
+			 var sum = num1 + num2;<br>
+			 return sum;<br>
+			}
+		</code>
+		</p>
+		<h3 class="head5">Events</h3>
+		<p class="css">
+		Website really needs events to have a real interactivity.
+		Events are code structures that listens for things that are currently happening in browser and running code as a reply or in response. 
+		Example would be the click event that is offered by the browser when you are about to click on something with the use of your mouse. 
+		</p>
+		<h3 class="head5">Sets</h3>
+		<p class="css">
+		It is a collections of some values. Through the elements of on a set in insertion order, you can iterate it. 
+		Only one time that the value of the set may appear and it is considered  as the unique thing on Set's collection. Example:
+		</p>
+		<p class="codeID">
+		<code>
+			const set1 = new Set([1, 2, 3, 4, 5]); <br>
+			<br>
+		//The expected output would be true<br>
+		console.log(set1.has(1));<br>
+		<br>
+		//The expected output would be true<br>
+		console.log(set1.has(5));<br>
+		<br>
+		//The expected output would be false<br>
+		console.log(set1.has(6));<br>
+		</code>
+		</p>
+		<h3 class="head5">Maps</h3>
+		<p class="css">
+		It iterates each of its elements in insertion order. A developer should always remember that a Map that is a map of an object will only map 
+		to the insertion order of the object that is not ordered.
+		</p>
 	</article>
 	<footer> 
 		<p>&copy;2018 9358A</p>

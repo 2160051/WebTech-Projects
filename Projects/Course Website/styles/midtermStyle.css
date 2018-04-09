@@ -171,7 +171,7 @@ body{
 	background-color: #4863A0;
 	color: #FFFFFF;
 }
-#sideNav a:nth-child(9){
+#sideNav a:nth-child(12){
 	display: block;
 	color: #4863A0;
 	padding: 0px 55px;
@@ -180,7 +180,7 @@ body{
 	font-weight: bold;
 	text-decoration: none;
 }
-#sideNav a:nth-child(9):hover{
+#sideNav a:nth-child(12):hover{
 	background-color: #4863A0;
 	color: #FFFFFF;
 }
@@ -245,6 +245,26 @@ body{
 	color: #566D7E;
 	font-family: Lib, Helvetica;
 	font-size: 34px;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative; 
+	top: 25px;
+}
+.head5{
+	text-align: left;
+	color: #566D7E;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative; 
+	top: 25px;
+}
+.head6{
+	text-align: left;
+	color: #566D7E;
+	font-family: Lib, Helvetica;
+	font-size: 37px;
 	font-weight: bold;
 	text-decoration: none;
 	position: relative; 
@@ -333,7 +353,6 @@ body{
 	padding-right: 40px;
 	text-indent: 30px;
 }
-
 .codeID{
 	background-color: #baf397;
 	color: black;
@@ -369,6 +388,46 @@ body{
 	background: #d5e0ff;
 	border-bottom: 1px solid #7396fa;
 	color: #4C6374;
+}
+#javascriptpic{
+	position: relative;
+    width: 100%;
+}
+#javascriptpic img{
+	position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 250px;
+	width: 160px;
+}
+#javapic{
+	position: relative;
+    width: 100%;
+}
+#javapic img{
+	position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 250px;
+	width: 250px;
+}
+#cssjavascript{
+	color: #FFFFFF;
+	background-color: #4AA02C;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px;
+}
+#cssjava{
+	color: #FFFFFF;
+	background-color: #357EC7;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+	padding: 20px;
 }
 footer{
 	opacity: 0;
