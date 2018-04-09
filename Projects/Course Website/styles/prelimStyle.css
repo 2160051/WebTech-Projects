@@ -46,12 +46,12 @@ body{
 }
 #divCover{
     background-color: #87AFC7;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 70px;
- 	z-index: -2;
+ 	z-index: 49;
 }
 #ds5{
 	width: 0px;
@@ -80,12 +80,13 @@ body{
 }
 #topNav{
 	background-color: #B3B2B0;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 60px;
 	width: 100%;
 	height: 70px;
 	padding: 0px;
+	z-index: 50;
 }
 #topNav a{
 	float: left;
@@ -125,7 +126,7 @@ body{
 	text-decoration: none;
 }
 #sideNav{
-	position: absolute;
+	position: fixed;
 	top: 70px;
 	left: -34px;
 	width: 290px;
@@ -141,10 +142,12 @@ body{
 	font-size: 24px;
 	width: 180px;
 	text-decoration: none;
+	text-shadow: 0 0 9px #FFFFFF;
 }
 #sideNav a:hover{
 	background-color: #6495ED;
 	color: #FFFFFF;
+	text-shadow: 0 0 0px #FFFFFF;
 }
 #sideNav a:nth-child(1){
 	display: block;

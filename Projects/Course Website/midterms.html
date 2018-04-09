@@ -14,8 +14,8 @@
 		<a href="finals.html">Finals</a>
 	</nav>
 	<nav id="sideNav">
-		<a href="#css">CSS</a>
-		<a href="#HTMLSheets">▶ HTML Style Sheets</a>
+		<a href="#cssTitle">CSS</a>
+		<a href="#weblay">▶ Web Page Layout</a>
 		<a href="#cssStat">▶ CSS Statements</a>
 		<a href="#cssSelect">▶ CSS Selectors</a>
 		<a href="#cssRule">▶ CSS Rule Precedence</a>
@@ -25,7 +25,350 @@
 		<a href="reference.html">References</a>
 	</nav>
 	<article id="content">
+		<h1 id="cssTitle">CSS</h1>
+		<p class="def">
+		Developers had many ideas regarding how the elements could be presented out in the web since HTML did not have any method of styling pages. Although it was not part of Berners-Lee’s motivation, there were few languages for web page layout and CSS was the chosen to be published in December of 1996. It is also known as Cascading Style Sheets is a stylesheet language that is used to describe the appearance of a document in terms of how the HTML elements are presented. 
+		</p>
+       
+		<div id="weblay"><h2 class="head2">◆ Web Page Layout</h2></div>
 
+		<h3 class="head3">A. ViolaWWW Browser</h3>
+		<p class="css">
+		- It was created by Take Pei-Yuan Wei in 1991<br>
+		- It was a stylesheet incorporated into his own browser <br>
+		- It has the basic navigation features such as bookmark list, and history list that allows one to traverse the documents automatically.<br>
+		- It is an extensible World Wide Web hypermedia browser that supports interactive objects and features like stylesheets and tables.<br>
+		- It did not succeed to be a standard, but it was one of the style sheet inspiration for today’s specifications.<br>
+        </p>
+		
+		<h3 class="head3">B. Netscape Navigator</h3>
+		<p class="css">
+		- It was developed by Marc Andreessen  on October 13th 1994<br>
+		- It was extended HTML language which includes presentational and unstandardized HTML.<br>
+		</p>
+		<h3 class="head3">C. Cascading HTML Style Sheets</h3>
+		<p class="css">
+		- It was proposed by Håkon Wium Lie in October 1994<br>
+		- It supported multiple stylesheet viewing to maintain personal-freedom of the web.<br>
+		- It was further simplified and was published as CSS spec in December of 1996<br>
+		</p>
+		<h2 class="head2">◆ Cascading Style Sheet (CSS) as a Specification</h2>
+		  <img id="hakonWL" src="pictures/HakonWL.jpg">
+          <p id="hwl">Håkon Wium Lie</p>
+          <p id="hwlp">
+            Håkon Wium Lie is a Norwegian web pioneer is known to be the Father of CSS. He proposed the concept of Cascading Style Sheets (CSS) in 1994 while working with the Tim Berners-Lee at CERN. Variuos ideas were already proposed before CSS, which aims to be the standard way of suggesting how the users would like the web pages appear. Before it was finally published, it was known as the Cascading HTML Style Sheets (CHSS) and it seemed to need improvement. Then after simplifing his proposal, it was then published successfully and is now continuously being utilized by developers with the certainty that it will function across browsers seamlessly</p>
+       
+		<h2 class="head2">CSS Levels</h2>
+		<h3 class="head3">▶ CSS Level 1</h3>
+		<p class="css">CSS 1 specification is considered obsolete by the CSS Working Group as it was the first specification established. It was described as a simple style sheet mechanism which allows the users to include styles like colors and fonts to HTML documents. Multiple stylesheets from different users is supported to cater their needs and preferences.</p> 
+		<p class="css">There were basic concepts included in this level of recommendation such as the containment in HTML defining how HTML and style sheets can be linked. Grouping was also included to reduce the style sheet’s size.a To have the same function with the parent element, inheritance can be used. In this case, any element that did not have any assigned style will inherit the style of its parents. In this level, selectors can either be a class, an ID or a context. Lastly, comments were included for the developers’ use and it formatted similarly to C programming language.</p>
+		<p class="css">Pseudo-classes and pseudo-elements in CSS1 extend addressing to allow eternal information take effect with the formatting process. These are Anchor pseudo-classes, Typographical pseudo-elements, the 'first-line' pseudo-element, the 'first-letter' pseudo-element, Pseudo-elements in selectors, and Multiple pseudo-elements. The CSS1 supposes that each formatted element results in rectangular boxes. Elements can either be formatted as block-level or inline. Different style properties can have any value assignment. These style properties are font, color, text, box, and classification properties.</p> 
+		<h3 class="head3">▶ CSS level 2</h3>
+		<p class="css">CSS level 2 had several problems detected though it already passed the recommendation stage. CSS level 2.1 was then specified. The problems were addressed by maintaining the compatibility with the widely accepted CSS2 and removing CSS2 features that were rejected by the CSS community. Conventions were added such as conventions of document language elements and attributes where it is stated that CSS values should be delimited by single quotes while language attributes should be delimited by double quotes. Property definitions contains key information including value, initial, applies to, inherited, percentage values, media groups and computed value. A property can also be specified as a shorthand property which means that authors can specify the values of properties with a single property.</p> 
+		<h3 class="head3">▶ CSS level 3</h3>
+		<p class="css">Module by module, CSS 3 forms on CSS level 2 and adds functionalities to CSS 2.1. It was in the level 3 when selectors were defined furthermore. These selectors represent structure which can be used as a condition. Selector syntax is also case sensitive within the ASCII range depending on the document language. A selector is a chain of simple selector/s that are delimited by combinators which begins with a type selector or universal selector.  This simple selector is either a universal selector, type selector, attribute selector, class selector, ID selector, or pseudo-class. Additionally, a list of selectors delimited by comma represent the combination of elements selected by each selector. The combinators can be identified as either a descendant combinator, child combinatory or a sibling combinator accordin to this level.</p> 
+		<p class="css">The specificity is the process of which the browsers decide what CSS property values are the most important to a specific element, and consequently will be operated. A selector’s specificity can be calculated according to the following CSS3 recommendation: <br>
+		- the count of ID selectors in the selector<br>
+		- the count of class selectors, attributes selectors, and pseudo-classes in the selector<br>
+		- the count of type selectors and pseudo-elements in the selector<br>
+		- ignore the number of universal selector<br>
+		</p>
+		<h3 class="head3">▶ CSS level 4</h3>
+		<p class="css">Extending the level 3, level 4 entitled Selectors Level 4 have been improved and designed to be usable in accordance to performance-critical code. Aside from simple selector, it has now a type of selector which is called compound selector. This selector is not separated by a combinator and represents a set of conditions on a single element. A complex selector, on the other hand, is a sequence of compound selector/s separated by combinator.</p>
+		<p class="css">Document Object Model, also known as DOM, is used for evaluating selectors which can result into document tree or source document. Selectors such as scoped selector and relative selector are included in level 4. Namespace prefixes are supported by selectors in this level as well. These namespace prefixes are declared with the ‘@namespace’ rule as indicated. Error handling is already included and must be observed by the user agents. Another feature inlcuded was Logical combinators and User action pseudo classes.</p>
+		<p class="css">For time-dimensional Pseudo-classes, there are three classifications that describes the elements’ state in a timeline. The Current-element Pseudo-class, Past-element Pseudo-class and Future-element Pseudo-class are the three classifications that was described earlier. Input Pseudo-classes are also included such as the input control states, input value states and input value-checking that are mainly used for the users’ input. Lastly, the tree-structural pseudo-classes is used to select based on the information in the document tree which cannot be represented by a combinatory or a simple selector. The child-indexed and the typed child-indexed pseudo classes were also included.</p>
+		
+		<h2 class="head3">HTML Style Sheets</h1>
+		<p class="css">
+		HTML style sheet is a source of styles for the HTML documents.
+		A style sheet control the appearance or aspect and layout or multi elements on the webpage, also the webpage design to avoid redundancy by a set of commands. <br>
+		<br>
+		▶ Author styles 
+		<br>
+		a.	It recommends to use external style sheet also known as linked. <br>
+		b.	It can also use embedded style sheet also known as internal. <br>
+		c.	It is an inline style. <br>
+		▶ User styles
+		<br>
+		a.	In some browsers provide non-standard alternatives through extensions or plugins. <br>
+		▶ User agent styles
+		<br>
+		a.	It is a sample default user agent style sheet from CSS 2.1
+		</p>
+		<h2 class="head4">Three types of Style sheets</h2>
+		<p class="css">
+		1. Internal – it is a type of stylesheet that is defined within a &#60;style&#62; tag and in the HTML document it is embedded in the &#60;head&#62; portion.
+		<br>
+		2.	External – it is a type of stylesheet that which have a css extention and it use &#60;link&#62; tag in the HTML file.
+		<br>
+		3.	Inline – it is a type of stylesheet that is placed or written inside of the HTML file using a style attribute within an element’s tag.
+		</p>
+		<div id="cssStat"><h2 class="head2">◆ CSS Statements</h2></div>
+		<p class="def">
+		CSS Statements are building blocks that start with any non-space character and ends with a semi-colon. <br>
+		<br>
+		Kinds of Statement
+		<br>
+		▶ Rulesets – also known as rules. It consist of a selector which associate CSS declarations collection to a condition. <br>
+		▶ At-rules – it begins with an ‘@’ at sign symbol with an identifier. <br>
+		<br>
+		Identifiers
+		<br>
+		@charset – it is used in the stylesheet which specify the character. <br>
+		@import – it import style rules in another stylesheet. <br>
+		@namespace - it is used to restrict the type, universal and attribute selectors. <br>
+		@media – it is used to apply styles from one or more media. <br>
+		@supports – it is also called a feature query. <br>
+		@page- when printing a document, it is used to modify CSS properties. <br>
+		@font-face – it allows authors to use or specify fonts.<br>
+		</p>
+		<div id="cssSelect"><h2 class="head2">◆ CSS Selectors</h2></div>
+		<p class="css">
+		CSS Selectors are used to define a style for an element or a group of elements.
+		</p>
+		<h3 class="head3">Simple Selectors</h3>
+		<p class="def">
+		1. Type Selector <br>
+		- the type selector applies styling through utilizing the name of an element. When used, styling will be applied to all instances of the element. <br>
+		2. Class Selector <br>
+		- the class selector uses the name specified in a class attribute. Styling using the class selector is done by placing a ‘.’ character before the class name. <br> 
+		3. ID Selector <br>
+		- the ID selector applies style on an element based on the name specified in an ID attribute. The syntax ‘#’ followed by the ID name is followed when specifying styling using an ID name. <br>
+		4. Universal Selector <br>
+		- the universal selector (*) is applicable for styling elements of any type. All elements can be selected or may be narrowed based on need. <br>
+		5. Attribute Selector <br>
+		- the attribute selector works for applying style based on an attribute or a specified value of an attribute. <br>
+		</p>
+		<h3 class="head3">Combinators</h3>
+		<p class="css">
+		Combinators specify relationships between selectors and are be used to be more specific with element selection.
+		</p>
+		<p class="def">
+		1. Descendant combinator ( ) <br>
+		- the descendant combinator selects the descendants of the first element.<br>
+		2. Child combinator (>)<br>
+		- the child combinator selects the direct children of the first element.<br>
+		3. Adjacent sibling combinator (+)<br>
+		- the adjacent sibling combinator selects adjacent siblings of an element. <br>
+		4. General sibling combinator (~)<br>
+		- the general sibling combinator selects elements that are siblings of another specified element. <br>
+		</p>
+		<h3 class="head3">Pseudo-classes and Pseudo-elements </h3>
+		<p class="defTwo">
+		Elements can also be styled according to their state. Pseudo-classes allow elements to be selected based on other information about the element. An example would be styling the appearance of a button when hovered on or clicked. This uses the ‘:’ symbol. If the web designer wants to specify an element based on its position then pseudo-elements can be used. Pseudo-elements use the ‘::’ symbol and can select an element based on its position. An example would be selecting the first line of a paragraph and such. 
+		</p>
+		<h3 class="head3">Selector group</h3>
+		<p class="defTwo">
+		Styling different elements with one style block is possible with the selector group. Multiple selectors, separated by a comma or the ‘,’ symbol, can be used to style different instances of elements. 
+		</p>
+		<div id="cssRule"><h2 class="head2">◆ CSS Rule Precedence</h2></div>
+		<p class="css">
+		For the reason that specified styles might clash because elements could be stylized by different selectors, the CSS rule precedence is followed. Prioritizing a style is done to resolve conflict.
+		</p>
+		<h3 class="head3">Three ways on how conflict is resolved:</h3>
+		<p class="def">
+		1. Origin and Importance<br>
+		- Styles can be prioritized based from its origins and whether or not it uses the !important property. <br>
+		<br> 2. Specificity <br>
+		- The more specific the selector for a style is, the more it is prioritized. <br>
+		<br> 3. Order <br>
+		- Inline styles are prioritized but if an external CSS is used, the later declaration based on line number will be prioritized. <br>
+		</p>
+		
+		<div id="cssDec"><h2 class="head2">◆CSS Declarations</h2></div>
+			<p class="css">
+			CSS Declarations are formed through properties, which are defined thru values. These blocks of declaration combined with selectors then altogether create rule sets (CSS Properties, n.d.).
+			<br><br>
+			▶ Properties: <br>
+			1. Shorthand properties - collection of values which allows identifying several elements. As stated in its definition on the CSS specification, shorthand properties identify and groups together properties which targets or define the same object. This then makes developers to work on the style sheet more efficiently (Shorthand properties, 2018). <br>
+			Example: border properties, margin properties <br> 
+			<b>Note:</b> In this code, the background color will be overridden by the Doge.png image. <br></p>
+ 			<div class="codeID">
+ 			<code>background-color: red; <br>
+ 			background: url(“Doge.png”); <br></code>
+ 			</div>
+ 			<p class="css">
+ 			Explanation: If you don’t set the values properly, they are sent back to their initial value <br>
+			▶ Additional Information: <br>
+			CSS is capable of universally defining the value of each and every property in the style sheet by utilizing the universal shorthand property which is all.<br><br>
+			▶ Universal Property Values:<br>
+			1. inherit – inherits the value from its origin element, otherwise known as parent element.<br>
+			2. initial – it defines the value of the property by the default value of the browser’s local style sheet.<br>
+			3. unset – makes the value of the property to its original value.<br>
+			4. revert – it reverts the value of the property back to its form of origin by basing it to the style sheet of the user. If the user’s style sheet is not made available, the default style sheet from the user-agent is utilized.<br>
+			Source: (Shorthand properties, 2018) <br><br>
+
+			2. Vendor-specific extensions - used by browser vendors as a prefix for the names of experimental or non-standard CSS. Only after the extensions are standardized will the prefix be removed and stated as is. Although this is the case, browser vendors are veering away from it in order to put user-controlled flags or preferences. It is denoted by the character ‘-’ followed by the identifier that the browser vendor used and anoder ‘-‘ then a name which identifies what the property will do (Roberts, 2014). <br>
+			Example: -moz-opacity, -webkit-transition, -opera-animation <br><br>
+			3. Custom properties - aka CSS variables (experimental). These are customized properties indicated by the characters (--) as the prefix.<br>
+ 			Example: <br>
+			1. fallback value - in case there is no defined variable, a default value or fallback value is utilized.<br>
+			2. As a code:<br>
+		 	<div class="codeID">
+		 	<code>
+		 	:root{<br>
+			--kulay: rgb(255, 0, 0);<br>
+			}<br>
+			#backgroundInColor{<br>
+			background-color: var(--kulay);<br>
+			}<br>
+		 	</code>
+		 	</div>
+		 	<p class="css">
+			Source: (Custom properties, 2017) <br>
+			For more information about CSS properties, click <a href = “https://www.quackit.com/css/properties/”>here</a><br><br>
+
+			▶ Values:<br>
+			1. Value Processing – processes are declared, cascaded, specified, computed, used, actual values.<br>
+ 			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#uno">Processes</a>
+      			<div id="uno" class="httpVer">
+					1. Declared Value – refers to any property which is defined and associated to a certain element.<br>
+					2. Cascaded Value – a value produced by the process of cascading. <br>
+					3. Specified Value - every element has one specified value. It is created by processing cascaded value to the processes involving defaulting values.<br>
+					4. Computed Value - calculated value as a result from a given set of elements.<br>
+					5. Used Value - actual value used in a specified condition. This is created by processing computed value through different calculations then comparing it to a set of accepted values.<br>
+					● numbers - integer or real number (scientific or decimal notation)<br>
+					● dimensions - combination of numbers and unit ex. length, angle, time, frequency, resolution<br>
+					Source: (Etemad & Atkins [Eds.], 2016)
+				</div>
+			</li>
+			</ul>
+			</div>
+			<br>
+			<p class="css">
+			2. Value Types<br>
+            - keywords <br>
+			● CSS - wide keywords ex. initial, inherit, unset - acts as either inherit or initial, refers to specs.<br>
+			● Property-specific keywords <br>
+			- numbers<br>
+			● Length<br>
+			● Angle<br>
+			● Ratio – uses percentage (%)<br>
+			- Strings <br>
+			- Labels – can have multiple string values concatenated with one another.<br>
+			- Colors<br>
+			Source: (CSS value types, n.d.)<br><br>
+
+
+			▶ Dimensions of Value Types: <br></p>
+			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#one">Length Units</a>
+      			<div id="one" class="httpVer">
+					1. Length units<br>
+					*font - em, ex, ca, rem<br>
+					*viewport - percentage: vw, vh, vmin, vmax<br>
+					▶ 2 Types of Length Units<br>
+					1.) Relative Lengths - the length is based on another property’s length.<br>
+					Example: em, ex, ch, vmin, vmax, percent (%)<br>
+					2.) Absolute Lengths - the length is fixed. It is defined by a number value and then a unit.<br>
+					Example: cm, in, pt<br>
+					Source: (CSS Units, n.d.)
+				</div>
+			</li>
+    		<li>
+      			<a href="#two">Angle Units</a>
+      			<div id="two" class="httpVer">
+					2. Angle units - used in some gradient and transform durations<br>
+					*deg, grad, rad, turn
+				</div>
+			</li>
+			<li>
+      			<a href="#three">Time Units</a>
+      			<div id="three" class="httpVer">
+					3.Duration or Time units - typically used in transitions and animations<br>
+					*s, ms
+				</div>
+			</li>
+			<li>
+      			<a href="#four">Frequency Units</a>
+      			<div id="four" class="httpVer">
+					4. Frequency units - initially introduced in CSS2 for the now deprecated aural media type. It was reintroduced in CSS3 but is mostly unused.<br>
+					*Hz, kHz
+				</div>
+			</li>
+			<li>
+      			<a href="#five">Resolution Units</a>
+      			<div id="five" class="httpVer">
+					5. Resolution units - used in controlling the resolution of images as well as media queries.<br>
+					*dpi (dots per inch), dpcm (dots per centimeter), dppx (dots per px)<br>
+					*numbers with a percent symbol (%) as a suffix
+			<li>
+      			<a href="#six">URL and URIs</a>
+      			<div id="six" class="httpVer">
+					6. URL and URIs - url() function with an absolute or relative (to the stylesheet) URL.<br>
+					*colors i.e. color keywords<br>
+					*RGB hexadecimal notation - denoted by pound symbol (#)<br>
+					*RGB functions - example: rgb(255, 0, 0), rgba () - alpha<br>
+					*HSL functions -refers to the angles of the color wheel, example: hsl(0, 100%, 0%) where 0 refers to the angle in the color wheel, 100% for the saturation and 0% for lightness.<br>
+					*currentcolor, transparent<br><br>
+				</div>
+			</li>
+		</ul>
+		</div>
+			<br>
+			<p class="css">
+			▶ Additional information:<br>
+			*Color Theory - sets the basic understanding for the associating colors with contrast, complementation and vibrancy.<br>
+			*Contrast - sets the background and foreground apart by separating the colors used. <br>
+			*Complementation - subjective way of relating colors with one another by choosing which combination of colors is visually appealing to the eye of the beholder.<br>
+			*Vibrancy - refers to how the colors evoke emotions. This means that the brighter the color, the more energy it evokes while darker colors evokes less energy and more towards relaxing the viewer’s mind.<br>
+			<br>▶ Effective Color Scheme:<br>
+			1. Triadic Color Scheme - colors which form an equilateral triangular shape in the color wheel compliments one another and have balanced vibrancy.<br>
+			<img src="pictures/tri.jpg" alt="Triadic"> <br>
+			2. Split Complimentary Scheme - combination of colors opposite to one another are complimentary.<br>
+			<img src="pictures/compound.jpg" alt="Compound"> <br>
+			3. Analogous - combination of colors adjacent with one another. <br>
+			<img src="pictures/ana.jpg" alt="Analogous">
+			<br>Source: (Cannon, 2012)
+			</p>
+		<div id="cssPre"><h2 class="head2">◆ CSS Preprocessors</h2></div>
+			<p class="css">
+			CSS Preprocessors – framework or library which generates CSS using a custom language syntax that typically features that don’t exist in pure CSS i.e variables, control flow, nesting, minutes.<br>
+			<br> <b>Example:</b> <br> </p>
+			<div id="httpVer">
+  			<ul>
+    		<li>
+      			<a href="#dos">SASS</a>
+      			<div id="dos" class="httpVer">
+					SASS - abbreviation for Syntactically Awesome Style Sheets. This allows developers to utilize rules for nesting, variables but in order to have these features , Ruby must be installed. It is prefixed by the dollar symbol ($).<br>
+					▶ 2 Syntax of Sass <br>
+					1. Indented - otherwise known as Sass wherein it is identified with the file extension “.sass”. Instead of utilizing brackets, it makes use of indentation. It’s syntax is not completely supported by CSS <br>
+					2. SCSS - abbreviation for Sassy CSS and identified by the file extension “.scss”. It’s syntax is completely supported by CSS.<br>
+					Source: (Coron, 2017)
+				</div>
+			</li>
+			<li>
+      			<a href="#tres">LESS</a>
+      			<div id="tres" class="httpVer">
+					LESS - abbreviation for Leaner Style Sheets. Its syntax is very similar to CSS and prefixed by the at symbol (@) and defined by the file extension “.less”. In order to use it, Node.js must be available (Overview, n.d.).<br>
+				</div>
+			</li>
+			<li>
+      			<a href="#quatro">Stylus</a>
+      			<div id="quatro" class="httpVer">
+					Stylus - does not have a prefix and is defined by the file extension “.styl”. Its syntax is compatible with CSS with the additional option of utilizing colons, semi-colons and brackets optional (Croom, 2012).<br>
+				</div>
+			</li>
+			</ul>
+			<p id="css">
+				<b>Note:</b> These are not compatible with most browsers. It will need some extensions in order to run it.			
+			</p>
+		<h2 class="head2">◆ CSS Frameworks</h2>
+			<p class="css">
+			CSS Frameworks – provides predefined CSS design functionality that can be reused, extended, or customized. <br>
+			Example: Bootstrap, Bulma, Foundation<br>
+			Source: (D., 2017)
+			</p>
+		<h2 class="head2">◆ CSS Polyfills</h2>
+			<p class="css">
+			CSS Polyfills – provides features that developers expect browsers to provide natively (10 of the best polyfills, 2013).<br>
+			Example: Modernizr, Selectivizr, html5shiv 
+			</p>
 	</article>
 	<footer> 
 		<p>&copy;2018 9358A</p>
@@ -45,7 +388,7 @@
 </div>
 <div id="ds6">
 </div>
-<a href="#topNav">
+<a href="#cssTitle">
 <div id="upMe"></div>
 </a>
 </div>
