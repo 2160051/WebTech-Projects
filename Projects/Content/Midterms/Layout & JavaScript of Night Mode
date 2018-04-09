@@ -1,0 +1,37 @@
+  External JavaScript here:
+  
+  function nightModeActivated(){
+		if( Number(sessionStorage.nightMode) == 0 ){
+    		sessionStorage.nightMode = 1;
+    		document.body.style.setProperty('--day-BG',"#fff");
+     		document.body.style.setProperty('--night-BG',"##5b5a5a");
+		 } else{
+     		sessionStorage.nightMode=0;
+     		document.body.style.setProperty('--night-BG',"##5b5a5a");
+    		document.body.style.setProperty('--day-BG',"#ddd");
+  		}
+	 }
+   
+   HTML here, pakilagay before <article id = "content"...
+   <div id="nightButton">
+	<button class="nightMode" id="nightButton" onclick="nightModeActivated()">Night Mode</button>
+	</div>
+   
+   JS call in HTML here:, pakilagay after <body>.. and not w/in content itself
+   <script src="nightMode.js"></script>
+   
+   CSS Here:
+   .nightMode {
+  background-color : #7396fa;
+  color: white;
+  font-family: Lib, Helvetica;
+  font-size: 22px;
+  border-radius: 10px;
+  border-color: #46b8da;
+  padding: 15px 25px;
+}
+#nightButton {
+  position: fixed;
+  top: 80%;
+  right: -1%;
+}
