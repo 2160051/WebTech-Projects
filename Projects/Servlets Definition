@@ -4,4 +4,13 @@ Servlets
   interactive applications using standard Web browsers for the client-side presentation while WebLogic Server handles the business logic 
   as a server-side process. WebLogic HTTP servlets can access databases, Enterprise JavaBeans, messaging APIs, HTTP sessions, and other 
   facilities of WebLogic Server.
+  
+ Servlets and Java EE
+	With Java EE metadata annotations, the standard web.xml deployment descriptor is now optional. The Servlet 2.5 specification, 
+	states annotations can be defined on certain Web components, such as servlets, filters, listeners, and tag handlers. The 
+	annotations are used to declare dependencies on external resources. The container will detect annotations on such components and 
+	inject necessary dependencies before the component's life cycle methods are invoked. See Chapter 8, "WebLogic Annotation for Web 
+	Components".
+
+  
 
