@@ -19,3 +19,10 @@ Runs on-call. When a webpage is “called up,” or when parts of pages are “p
 Powers functions in dynamic web applications, such as user validation, saving and retrieving data, and navigating between other pages
 Plays a big role in how a database is built from the ground up and managed afterwards—an example of how roles often overlap in all aspects of development
 Build application programming interfaces (APIs), which control what data and software a site shares with other apps
+
+
+Server Side Language
+
+Java: A subset of the C language, Java comes with a huge ecosystem of add-on software components. At its core, Java is a variation of C++ with an easier learning curve, plus, it’s platform independent thanks to the Java Virtual Machine. “Compile once, run anywhere” is its motto—and it’s excellent for enterprise-level applications, high-traffic sites, and Android apps. Java sites: Twitter, Verizon, AT&T, Salesforce
+
+PHP: The most popular server-side language on the web, PHP is designed to pull and edit information in the database. It’s most commonly bundled with databases written in the SQL language. PHP was designed strictly for the web and remains one of the most widely used languages around. It’s easy to install and deploy, is staying competitive with lots of modern frameworks, and is the foundation for a number of content-management systems. PHP-powered sites: WordPress, Wikipedia, Facebook
