@@ -1,0 +1,7 @@
+Servlets
+	Servlets runs and enabled in a java server which is also a Java class. An HTTP servlet is a special type of servlet that handles an HTTP 
+  request and provides an HTTP response, usually in the form of an HTML page. The most common use of WebLogic HTTP servlets is to create 
+  interactive applications using standard Web browsers for the client-side presentation while WebLogic Server handles the business logic 
+  as a server-side process. WebLogic HTTP servlets can access databases, Enterprise JavaBeans, messaging APIs, HTTP sessions, and other 
+  facilities of WebLogic Server.
+
