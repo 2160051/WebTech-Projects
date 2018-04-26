@@ -1,0 +1,6 @@
+[
+{"question": "All of the following are server-side programming language except:", "choices": ["Java", "PHP", "HTML", "Python"], "answer": "c"},
+{"question": "PHP was developed as a server-side programming language", "choices": ["True", "False"], "answer": "a"},
+{"question": "PHP is standardized hence all of its features are backwards-compatible", "choices": ["True", "False"], "answer": "b"},
+{"question": "What does the error code 404 mean?", "choices": ["File Not Found", "Internal Server Error", "Forbidden", "Bad Request"], "answer": "a"}
+]

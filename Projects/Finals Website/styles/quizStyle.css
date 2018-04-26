@@ -1,0 +1,32 @@
+:root{
+	--color-font: #b6e5ff;
+}
+@font-face{
+	font-family: Lib;
+	src: url('fonts/suit.TTF');
+}
+@font-face{
+    font-family: zekt;
+    src: url('fonts/zekton rg.ttf');
+}
+#contain {
+	height: 100vh;
+	background-color: var(--color-font);
+	margin: auto;
+	border-radius: 5px;
+	border: 2px solid black;
+	padding: 2%;
+}
+.centered {
+	position: absolute;
+    width: 520px;
+   	height: 166px;
+   	left: 50%;
+   	margin-left: -260px;
+}
+#quiz{
+	margin: auto;
+	text-align: center;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+}
