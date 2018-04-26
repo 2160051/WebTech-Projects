@@ -1,0 +1,49 @@
+Web application security
+
+DRAFT
+
+Security -Security is fundamentally about protecting assets. Assets may be tangible items, such as a Web page or your customer database - or they may be less tangible, such as your company's reputation.
+
+Security is a path, not a destination. As you analyze your infrastructure and applications, you identify potential threats and understand that each threat presents a degree of risk. Security is about risk management and implementing effective countermeasures.
+
+Web application security is the process of securing confidential data stored online from unauthorized access and modification. This is accomplished by enforcing stringent policy measures. Security threats can compromise the data stored by an organization is hackers with malicious intentions try to gain access to sensitive information. 
+
+Advancements in web applications and other technology have changed the way we do business and access and share information. Many businesses have shifted most of their operations online so employees from remote offices and business partners from different countries can share sensitive data in real time and collaborate towards a common goal.
+
+With the introduction of modern Web 2.0 and HTML5 web applications our demands as a customer have changed; we want to be able to access any data we want to twenty four seven. Such demands are also pushing businesses into making such data available online via web applications. A perfect example of this are the online banking systems and online shopping websites. 
+
+Web application security aims to address and fulfill the four conditions of security, also referred to as principles of security:
+1. Confidentiality: States that the sensitive data stored in the Web application should not be exposed under any circumstances.
+2. Integrity: States that the data contained in the Web application is consistent and is not modified by an unauthorized user.
+3. Availability: States that the Web application should be accessible to the genuine user within a specified period of time depending on the request.
+4. Nonrepudiation: States that the genuine user cannot deny modifying the data contained in the Web application and that the Web application can prove its identity to the genuine user.
+
+*Secure Network Firewall
+Most probably this is the most common web application security myths. Many think that the network firewall they have in place to secure their network will also protect the websites and web applications sitting behind it.
+
+Network security differs from web application security. In network security perimeter defences such as firewalls are used to block the bad guys out and allow the good guys in. For example administrators can configure firewalls to allow specific IP addresses or users to access specific services and block the rest.
+
+But perimeter network defences are not suitable to protect web applications from malicious attacks. Business websites and web applications have to be accessed by everyone, therefore administrators have to allow all incoming traffic on port 80 (HTTP) and 443 (HTPS) and hope that everyone plays by the rules.
+
+Network firewalls cannot analyze web traffic sent to and from the web applications, therefore it can never block any malicious requests sent by someone trying to exploit a vulnerability such as an SQL injection or Cross-site Scripting.
+
+*Scan Servers and Network with a Network Security Scanner
+Network security scanners are designed to identify insecure server and network device configurations and vulnerabilities and not web application vulnerabilities. For example if an FTP server allows anonymous users to write to the server, a network scanner will identify such problem as a security threat. Network security scanners can also be used to check if all of the scanned components, mainly servers and network servers such as FTP, DNS, SMTP etc are fully patched.
+
+*Web Application Firewall?
+A web application firewall, also known as WAF does analyse both HTTP and HTTPS web traffic, hence it can identify malicious hacker attacks. For example if the attacker is trying to exploit a number of known web application vulnerabilities in a website, it can block such connection thus stopping the attacker from successfully hacking the website. 
+
+**Securing Web Applications
+To ensure that a web application is secure you have to identify all security issues and vulnerabilities within the web application itself before a malicious hacker identifies and exploits them. That is why it is very important that the web application vulnerabilities detection process is done throughout all of the SDLC stages, rather than once the web application is live.
+
+There are several different ways how you can detect vulnerabilities in web applications. You can scan the web application with a black box scanner, do a manual source code audit, use an automated white box scanner to identify coding problems, or do a manual security audit and penetration test.
+
+Which is the best method? There is no single bullet proof method that you can use to identify all vulnerabilities in a web application. Each of the methods mentioned above has its own pros and cons.
+
+For example while an automated tool will discover almost all technical vulnerabilities, more than a seasoned penetration tester can, it cannot identify logical vulnerabilities. Logical vulnerabilities can only be identified with a manual audit. On the other hand, a manual audit is not efficient and can take a considerable amount of time and cost a fortune. With a manual audit there are also the risks of leaving unidentified vulnerabilities. White box testing will complicate the development procedures and can only be done by the developers who have access to the code.
+
+If budget and time permits it is recommended to use a variety of all available tools and testing methodologies, but in reality no one has the time and budget to permit it. Therefore one has to choose the most cost effective solution that can realistically emulate a malicious hacker trying to hack a website; use a black box scanner, also known as web application security scanner or web vulnerability scanner. Of course an automated web application security scan should always be accompanied by a manual audit. Only by using both methodologies you can identify all types of vulnerabilities, i.e. logical and technical vulnerabilities.
+
+https://www.netsparker.com/blog/web-security/getting-started-web-application-security/
+https://msdn.microsoft.com/en-us/library/ff648636.aspx
+https://www.techopedia.com/definition/24377/web-application-security
