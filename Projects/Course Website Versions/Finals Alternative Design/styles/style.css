@@ -1,0 +1,65 @@
+body{
+	overflow-x: hidden;
+}
+#background {
+	width: 100%;
+	height: 140%;
+	position: absolute;
+	z-index: -1;
+	left: 0%;
+	top: -15%;
+}
+#background img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	left: 0%;
+	top: 0%;
+}
+#server img {
+	width: 23%;
+	height: 45%;
+	position: absolute;
+	right: 39%;
+	top: 29%;
+}
+#cont {
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 0%;
+	top: 100%;
+}
+#topNav{
+	background-color: RGBA(48, 15, 49, 0.5);
+	background: linear-gradient(to left, rgba(48, 15, 49, 0.5), rgba(48, 15, 49, 1));
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 10%;
+}
+#topNav a{
+	float: right;
+	color: white;
+	padding: 1% 1.2%;
+	font-family: Lib, Helvetica;
+	font-size: 2.4vw;
+	text-decoration: none;
+}
+#topNav a:nth-child(1){
+	font-family: Zek, Helvetica;
+	float: left;
+}
+#topNav a:hover{
+}
+@font-face{
+	font-family: Lib;
+	src: url('fonts/suit.TTF');
+}
+@font-face{
+	font-family: Zek;
+	src: url('fonts/zekton rg.ttf');
+}
