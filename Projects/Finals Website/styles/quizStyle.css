@@ -9,24 +9,33 @@
     font-family: zekt;
     src: url('fonts/zekton rg.ttf');
 }
-#contain {
-	height: 100vh;
-	background-color: var(--color-font);
-	margin: auto;
-	border-radius: 5px;
-	border: 2px solid black;
-	padding: 2%;
+html{
+	background: url("pictures/background.png") no-repeat center center fixed; 
+	background-size: cover;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 }
-.centered {
-	position: absolute;
-    width: 520px;
-   	height: 166px;
-   	left: 50%;
-   	margin-left: -260px;
-}
-#quiz{
+.quiz{
 	margin: auto;
-	text-align: center;
 	font-family: Lib, Helvetica;
 	font-size: 32px;
+}
+#wrapper {	
+	background-color: var(--color-font);
+	width: 750px;
+	height: auto;
+	padding: 13px;
+	margin: auto;
+}
+.submitButton{
+	position: relative;
+	left: 80%;
+	border-radius: 5px;
+	background-color: #f06060;
+	color: white;
+	width: 120px;
+	height: 70px;
+	font-family: Lib, Helvetica;
+	font-size: 24px;
 }
