@@ -25,13 +25,34 @@
 		}
 		$counter++;
 	}
-	echo "<center><font face='Berlin Sans FB' size='8'>Your Score is <br> $score/$counter <br></font></center>";
-	
+	echo "<center>Your Score is <br> $score/$counter <br></center>";
+	echo "<form action='process.php?id=1' method='post' id='quizForm' id='1' class='quiz'> 
+                <ol>"; 
+	foreach ($quizQuestions as $quizQuestion) {
+            echo '<li>
+                    <h3>'. $quizQuestion['question']. '</h3> 
+                    <div>
+                        <label for="answerOneA">A)'. $quizQuestion['choices'][0]. '</label>
+                    </div>
+        
+                    <div>
+                        <label for="answerOneB">B)'. $quizQuestion['choices'][1]. '</label>
+                    </div>
+        
+                    <div>
+                        <label for="answerOneC">C)'. $quizQuestion['choices'][2]. '</label>
+                    </div>
+
+                    <div>
+                        <label for="answerOneD">D)'. $quizQuestion['choices'][3].'</label>
+                    </div>
+                    <h4>Answer: '. $quizQuestion['answer']. '</h4> 
+                </li>';
+                $counter++;
+        }
+        echo "</ol>
+             </form>";
 ?>
-
-
-
-
 </div>
 </body>
 </html>
