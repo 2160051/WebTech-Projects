@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/finalStyle.css">
+	<title>Prelims</title>
+</head>
+<body>
+   <script src="javascript/nightMode.js"></script>
+	<nav id="topNav">
+		<a href="index.html">webEd</a>
+		<a href="prelims.html">Prelims</a>
+		<a href="midterms.html">Midterms</a>
+		<a href="finals.html">Finals</a>
+       <div id="nightButton">
+			<button class="nightMode" id="nightButton" onclick="nightModeActivated()">Night Mode</button>
+		</div>
+	</nav>
+   <nav id="sideNav">
+		<a href="#nodeTitle">Server-Side JavaScript (with Node.JS)</a>
+		<a href="#modules">▶Loading and Exporting Modules</a>
+		<a href="#emitter">▶ Event Emitters</a>
+		<a href="#cps">▶ CPS (continuation-Passing Style)</a>
+		<a href="reference.html">References</a>
+	</nav>
+	<article id="content">
+	<h1 id="nodeTitle">Server-Side JavaScript (with Node.JS)</h1>
+       <p class="def">
+               Node.js is a powerful tool that could be used to execute applications not only on the server side but also on the client side. It is defined as an open source server environment developed by Ryan Dahl in 2009. With Node.js, we are able to construct scalable network applications. It is fast compared to other server side programming languages for the reason that it is written in C and non-locking I/O model. It can also be run on different operating systems like Linux, Sun OS, Mac OS X and windows platforms. 
+       </p>
+       <p class="css">
+               Rather than multithreaded execution, Node.js makes use of event-based server execution procedure. It makes use of event loop and is able to gauge to millions of simultaneous connections. Each I/O operation in Node.js is asynchronous which allows the server to continue processing the incoming request while the I/O operation is ongoing (see figure below). These I/O operation includes accessing an external web service, reading a file from a hard drive or waiting for a file to be uploaded, which takes a lot of time and causes inconvenience without asynchronous functionality. 
+       </p>
+       <img src="pictures/EventBasedExe.png" alt="Event Based Execution">
+       <p class="css">
+               The Node.js operates on a virtual machine v8 environment which could also be called a JavaScript engine running the JavaScript code. With this environment, it is important to host the web with the v8 environment supported web hosts. Some of these web hosts are:
+       </p>
+       <p class="css">
+          1.  Cloud Foundry<br>
+          2.  Cloudnode<br>
+          3.  DotCloud<br>
+          4.  Duostack<br>
+       </p>
+       
+       <p class="css">
+            Node implements the commons modules standard where each module has its own context separated from the other modules. These modules cannot occupy a global scope or interfere with other modules. The modules are referenced by name or by file path. In addition, every module has a public API which could be used after it is imported into the script.
+       </p>
+       
+       <h2 id="modules"class="head2">Loading and Exporting Modules</h2>
+       <p class="def">
+            •	Import or Load a module: use require function – returns an object that represents JavaScript API exposed by the module.
+       </p>
+       
+       <p class="codeID">
+          <code>var module = require(‘module’);</code>
+       </p>
+       
+       <p class="css">
+          •	Export from a module: use module.exports object
+       </p>
+       
+       <p class="codeID">
+          <code>module.exports = ‘Welcome’;</code>
+       </p>
+       
+       <h2 id="emitter" class="head2">Event Emitters</h2>
+       <p class="def">
+         - the objects which release events.<br> 
+         - allow programmers to subscribe to events that they need. <br> *EventEmitter Pseudo-class could be used to create an event emitters of the programmers’ choice.<br> 
+       </p>
+       
+       <h2 id="cps" class="head2">CPS (continuation-Passing Style) </h2>
+       <p class="def">CPS (continuation-Passing Style) is a style of programming where control is passed explicitly in a continuous manner. And it is used as a style for asynchronous programming. A function written this way takes an explicit “continuation” as an extra argument which is a function of one argument. It returns the reset value by calling the continuation function with this values as the argument.</p>
+       
+       <p class="codeID">
+          <code>
+             function receiveData(data) {
+             console.log(“data received: ” %j, data);
+            }
+          </code>
+       </p>
+       
+       <p class="codeID">
+          <code>
+             //Add event listener to an event type<br>
+             <br>
+             readStream.addListener(“data”, receiveData);
+             
+          </code>
+       </p>
+       
+       <p class="codeID">
+          <code>
+             // Attach an event listener to an event type to be called once<br>
+             <br>
+             readStream.once(“data”, receiveData);
+             
+          </code>
+       </p>
+       
+       <p class="codeID">
+          <code>
+             //Removing a specific event listener of an event<br>
+             <br>
+             readStream.removeListener(“data”, receiveData);
+          </code>
+       </p>
+       
+       <p class="codeID">
+          <code>
+             //Remove all event listeners of an event<br>
+             <br>
+            readStream.removeAllListeners(“data”);
+
+          </code>
+       </p>
+
+	</article>
+   <footer> 
+		<p>&copy;2018 9358A</p>
+	</footer>
+</body>
+<div id="ds1">
+</div>
+<div id="ds2">
+</div>
+<div id="ds3">
+</div>
+<div id="divCover">
+</div>
+<div id="ds4">
+</div>
+<div id="ds5">
+</div>
+<div id="ds6">
+</div>
+<a href="#cssTitle">
+<div id="upMe"></div>
+</a>
+</html>
