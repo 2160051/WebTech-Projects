@@ -1,0 +1,221 @@
+@font-face{
+	font-family: Lib;
+	src: url('fonts/suit.TTF');
+}
+@font-face{
+	font-family: Zek;
+	src: url('fonts/zekton rg.ttf');
+}
+body{
+	overflow-x: hidden;
+}
+:root{
+    --font-color: #616D7E;
+    --bg-color: #FFFFFF;
+}
+#ds1{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: -78px;
+	top: -130px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #000080;
+	z-index: 2;
+}
+#ds1:hover{
+        width: 150px;
+	height: 150px;
+	position: absolute;
+	left: -78px;
+	top: -130px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #0041C2;
+}
+#ds2{
+	width: 180px;
+	height: 180px;
+	position:absolute;
+	left: 24px;
+	top: -35px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #4863A0; 
+	z-index: 3;
+}
+#ds2:hover{
+    width: 180px;
+	height: 180px;
+	position: absolute;
+	left: 24px;
+	top: -35px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #728FCE;
+}
+#ds3{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: -14px;
+	top: 85px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #151B54;  
+	z-index: 4;
+}
+#ds3:hover{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	left: -14px;
+	top: 85px;
+	transform: rotate3d(0,0,1,45deg) skew(15deg,15deg);  
+    background-color: #95B9C7;
+}
+#divCover{
+    background-color: #B3B2B0;
+	position: absolute;
+	top: 18px;
+	left: 50px;
+	width: 100%;
+	height: 70px;
+ 	z-index: -2;
+}
+#logo{
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	left: 35px;
+	top: -12px;
+	z-index: 9;
+}
+#topNav{
+	background-color: #B3B2B0;
+	position: absolute;
+	top: 18px;
+	left: 210px;
+	width: 100%;
+	height: 70px;
+ 	z-index: 6;
+	overflow: hidden;
+}
+#topNav a{
+	float: left;
+	color: white;
+	padding: 15px 18px;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+}
+#topNav a:hover{
+    height: 40px;
+	background-color: grey;
+}
+#on{
+    height: 40px;
+	background-color: grey;
+}
+#label a{
+	float: left;
+	color: #FFFFFF;
+	padding: 15px 18px;
+	font-family: Zek, Helvetica;
+	font-size: 18px;
+	text-decoration: none;
+	position: absolute;
+	left: 56px;
+	top: 84px;
+	z-index: 7;
+}
+#sideOpenerA{
+	position: fixed;
+	background-color: #77BFC7;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	top: 40%;
+	left: 0px;
+	cursor: pointer;
+	z-index: 10;
+}
+#sideOpenerA p{
+	color: white;
+	padding-left: 10px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#sideOpener{
+	position: fixed;
+	background-color: #77BFC7;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	top: 40%;
+	left: -290px;
+	cursor: pointer;
+}
+#sideOpener p{
+	color: white;
+	padding-left: 10px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#sideNav{
+	width: 300px;
+	height: 68px;
+	top: 0px;
+	left: -300px;
+	position: fixed;
+	background-color: #63ABB3;
+	z-index: 11;
+}
+#sideNav a{
+	float: right;
+	color: white;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+}
+#sideNav a:hover{
+	text-decoration: underline;
+}
+#bottomNav{
+	width: 300px;
+	height: 100%;
+	top: 68px;
+	left: -300px;
+	position: fixed;
+	background-color: #77BFC7;
+	z-index: 11;
+}
+#bottomNav a:first-child{
+	float: left;
+	width: 100%;
+	color: white;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: Lib, Helvetica;
+	font-size: 36px;
+	text-decoration: none;
+}
+#bottomNav a{
+	float: left;
+	width: 100%;
+	color: white;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	text-decoration: none;
+}
+#bottomNav a:hover{
+	background-color: #6DB5BD;
+	width: 290px;
+}
