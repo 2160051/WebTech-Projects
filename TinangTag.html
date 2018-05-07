@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/midtermStyle.css">
+	<title>Midterms</title>
+</head>
+<body>
+
+	<nav id="sideNav">
+		<a href="#ssTitle">Server-Side Scripting: Back-End Web Development Technology</a>
+		<a href="#js">Java Web Servlets</a>
+		<a href="#jsp">Java Server Pages</a>
+		<a href="#php">PHP</a>
+		<a href="#ssj">Server-Side JavaScript</a>
+		<a href="#node">Node.js</a>
+		<a href="#asp">Active Server Pages</a>
+		<a href="#cgi">Common Gateway Interface</a>
+		<a href="#ror">Ruby On Rails</a>
+		<a href="reference.html">References</a>
+	</nav>
+	<article id="content">
+		<h1 id="ssTitle">Server-Side Scripting: Back-End Web Development Technology</h1>
+		<p class="def">
+		Parts of Back end:
+		<br>
+		Server – serves as the powerful computer that runs the languages in the back end
+		<br>
+		Database – serve as the container or storage of the data
+		<br>
+		APIs – the one that controls the data and application a website shares with other applications
+		<br>
+		Back-end web application (server-side software) – includes the scripts and framework. What it does is to communicate between the Server, Database and the user with the help of languages. The Back-end web developers uses server-side script to create the server-side software of a website.
+
+		<br><br>
+		Server-side script basics
+		<br>
+		The script is embedded in the website’s code and it runs on a server. The script is intended to have a communication with the database and the information will be processed from the server to connect to the database. The facilitation of transferring data from server to the browser that bring pages to life in the browser is also the work of the Server-side script. The usual thing is that when a webpage is “called up” then it processes and turn back the data. On dynamic web applications, it empowers the functions like saving and getting the data and validation etc. It also creates APIs or application programming interfaces. 
+		<br><br>
+		Server-Side Databases and Code
+		<br>
+		It is designed to be seamless, smooth and fast. The flow of work would be the server-side scripting processes the wants or the request of the user depending on what they are looking via using the server and locate the data getting the exact line of data and eventually deliver the information back to the browser. These things will always happen with the help of the middleware which the back-end developer writes and the server-side application. These two builds a channel from the website to the database. What makes it fast and secure is when until it is requested the information for the website reside on the server.
+		<br><br>
+		Popular server-side languages
+		<br><br>
+		Java
+		<br>
+		It is considered as a subset of the language C. On its core is a variation of the C++ language with much easier curve of learning. Because of Java Virtual Machine, the platform of it is independent. It is very excellent for the enterprise level software, android apps and high-traffic sites. It comes with a very big ecosystem of software components which are add-ons.
+		<br><br>
+		PHP
+		<br>
+		PHP will allow you to make websites, create dynamic web pages and develop dynamic content. The language that is designed to edit and pull information from the database. It can do all sort of things like building custom web content to be able to serve the browser, and evaluate data that is send from the browser, and even sending or receiving cookies. It is usually connected with databases that are written in SQL Language. It is strictly designed for the web and very easy to deploy and install. PHP is the foundation for a lot of content-management systems such as WordPress. Wikipedia and Facebook are one of the powered sites by PHP.
+
+		</p>
+		
+		
+		<h1 id="php">PHP</h1>
+		<p class="def">
+		<br>
+		The Php is very familiar to you because it seems like it is an old HTM. PHP code is written inside the “< ? php” and “?>”.  PHP is insensitive on whitespaces, but it is case sensitive. Its style for comments is like C Language. Statements are terminated through semicolons. The combination of tokens would be the expressions. To create a block, you make use of blocks. PHP has 8 data types used to create variables which the Integers, Doubles, Booleans, NULL, Strings, Arrays, Objects and lastly the Resources which is considered as special variables that hold references to the resources that are external to PHP. The Arrays and Objects are considered as compound that could be package up the other arbitrary values of the arbitrary type. PHP can be a local, function, global or static variable.
+		<br>
+		Example :
+		<br>
+		< div class="header">< h1>
+			  < ?php
+		/* This is a multiline comment */
+			  $welcome = "PHP Example !";
+			  echo $welcome;
+			  ?>
+			</ h1></ div>
+
+		<br><br>
+		Comparisons used in PHP
+		<br>
+		List of comparison operators:
+		<br>
+		
+		> means Greater than
+		< means Less than
+		<= means Less than or equal to
+		>= means Greater than or equal to
+		== means Equal to
+		!= means Not equal to
+		<br>
+		Example :
+		<br>
+		< p>
+		  < ?php
+			6 < 7;
+		  ?>
+		</ p>
+		<br><br>
+		Conditional Control Flow Statements
+		<br><br>
+		if/elseif/else statement
+		<br>
+			It is created with the “if” keyword and the curly braces that always comes in pair. If the condition is true then the code inside the curly braces will run otherwise the conditions is false and after the keyword “else” on the second pair of curly braces will run.
+		<br>
+		Example :
+		<br>
+		< p>
+			  < ?php
+				$items = 6
+				if($items < 5) {
+				  echo "You got a free coffee!";
+				}else {
+				  echo “You are not allowed to enter the coffee shop”
+			   }
+			  ?>
+			</ p>
+		<br><br>
+		Switch statement
+		<br>
+		You can use it if you have a series of Conditional if-else statements that has multiple expressions that depend on the same value. It helps the programmer to be more efficient and provide readability. It executes a block of code is it is true like what is happening on if statements. It is created by using “switch” keyword then the variable to be checked and a pair of curly braces. For each comparison, there will be a case block and it uses break to make an exit in the switch statement. “Falling through” is the term if there are cases right after another without having a break. If the condition is not met, then another case block will run and if all of the cases return false then it will execute the default case instead.
+		<br>
+		Example :
+		<br>
+		 < ?php
+			switch (20) {
+				case 0:
+					echo 'The value is 10';
+					break;
+				case 1:
+					echo 'The value is 15';
+					break;
+				case 2:
+					echo 'The value is 20';
+					break;
+				default:
+					echo "The value isn't 10, 15 or 20";
+			}
+			?>
+		<br><br>
+		For Loops in PHP
+		<br>
+		We can use it to repeat a series of instructions instead of typing a lot of print of echo many times.  For the for loop in PHP, it will start with the “for” keyword to be followed by a set of parentheses. There are three things inside the parentheses and it is separated by a semicolon. The first things would be the start of the loop, second would be the place where to end the loop and the third would be the thing to do to get to the next iteration. After the parenthesis is a set of curly braces that will tell on what code will be run for every iteration of the loop.
+		<br>
+		Example:
+		<br>
+		This will print a list of leap years
+		<br>
+		< ?php
+			  for ($leap = 2004; $leap < 2050; $leap = $leap + 4) {
+				echo "<p>$leap</p>";
+			  }
+			 ?>
+		<br><br>
+		While Loop in PHP
+		<br>
+		As long as the condition is true, the while loop will execute. The syntax would be :
+		<br>
+		while(cond) {
+		   // looped statements go here
+		}
+		<br>
+		Where the cond is evaluated as true.
+		<br>
+		Example:
+		<br>
+		$count = 0;
+		while ($count<4) {
+		   echo "<p>Iteration number: {$count} </p>";
+		   $count ++;
+		}
+		<br><br>
+		Array
+		<br>
+		To store more than one item in only one variable, you make use of a text that starts with the $ sign to be followed by and = sign. For the declaration, we have to use array(). The array() will basically determine that $sample is an array and not a regular old variable.
+		<br>
+		Example :
+		<br>
+		< ?php
+				$sample = array("Gusto", "ko", "na", “grumaduate” );        
+			  ?>
+		<br>
+		<br>
+		PHP is very flexible , for the accessing of an array, you can make use either {} or [].
+		To access by offset with [], you just must use echo function to be followed by the name of the array[numOfItem].
+		To access by offset with {}, you just must use print function to be followed by the name of the array[numOfItem]. 
+		We can access using its position.
+		<br>
+		Example :
+		<br>
+		echo $sample[0]
+		<br>
+		//The output would be “Gusto”
+		<br>
+		print $sample{1}
+		<br>
+		///The output would be “ko”
+		<br>
+		
+		By assigning another value to a specific index, you can modify the array elements.
+		<br>
+
+		Example :
+		<br>
+		< ?php
+				$sample = array("Gusto", "ko", "na", “grumaduate” );    
+			echo $sample[0];
+		//The output would be “Gusto”
+		$sample[0] = “Ayaw”;
+		echo $sample[0];
+		//The output would be “Ayaw” because it was modified
+			  ?>
+		<br>
+		To remove or delete array elements , you can make use of unset(toBeDeletedElement[position]) or unset(nameOfTheArray) to delete the whole array
+		<br>
+		Example :
+		<br>
+		< ?php
+				$sample = array("Gusto", "ko", "na", “grumaduate” );   
+				 unset($sample[2]);
+			  ?>
+		
+		<br>OR
+		<br>
+		< ?php
+		  unset($sample);
+		?>
+		
+		<br><br>
+		Functions in PHP
+		<br>
+		There are a lot of built-in functions in PHP. Here are some under String Functions:
+		<br>
+		Addcslashes,addslashes,bin2hex,chop,chr,chunk_split,convert_cyr_string,convert_uudecode,convert_uuencode,count_chars,crc32,crypt,echo,explode,fprintf,get_html_translation_table,hebrev,hebrevc,hex2bin,html_entity_decode,htmlentities,htmlspecialchars_decode,htmlspecialchars,implode,join,lcfirst,levenshtein,localeconv,ltrim,md5_file,md5,metaphone,money_format,nl_langinfo,nl2br,number_format,ord,parse_str,print,printf,quoted_printable_decode,quoted_printable_encode,quotemeta,rtrim,setlocale,sha1_file,sha1,similar_text,soundex,sprint,sscanf,str_getcsv,str_ireplace,str_pad,str_repeat,str_replace,str_rot13,str_shuffle,str_split,str_word_count,strcasecmp,strchr,strcmp,strcoll,strcspn,strip_tags,stripcslashes,stripos,stripslashes,stristr,strlen,strnatcasecmp,strnatcmp,strncasecmp,strncmp,strpbrk,strops,strrchr,strrev,strripos,strrpos,strspn,strstr,strtok,strtolower,strtoupper,strtr,substr_compare,substr_count,substr_replace,substr,trim,ucfirst,ucwords,vfprintf,vprintf,vsprintf, and wordwrap.
+		<br>
+		Example :
+		<br>
+		The function strlen returns the number of characters in a string
+		<br>
+		< ?php
+		  // This will get the length of a string and will print it to the screen
+		  $length = strlen("webtechlecture");
+		  print $length;
+		?>
+		<br>
+		There are also Math Functions that can be used in PHP. One example of these functions would be the round() which will round a number to an integer or to round off complex floating point numbers into a specific number of the decimal places.M_PI is equal to pi and it is considered as PHP Constant
+		<br>
+		Example :
+		<br>
+		// Round pi down from 3.1416...
+		<br>
+		$round = round(M_PI);
+		<br>
+		print $round;  // prints 3
+		<br>
+
+		// This time, round pi to 4 places
+		<br>
+		$round_decimal = round(M_PI, 4);
+		<br>
+		print $round_decimal; // prints 3.1416
+		<br>
+		Another Math Function is the rand() and you can optionally pass min and max as parameters. The  rand() function will return random numbers between two numbers.
+		<br>
+		Example :
+		<br>
+		// This will print a number between 0 and 32767
+		<br>
+		print rand();
+		<br>
+		// This will print a number between 1 and 10
+		<br>
+		print rand(1,10);
+		<br>
+
+		For the arrays, there are also functions that can be used like array_push() which will push or add elements at the end of the array and count() that will return the number of elements in the array in PHP. The sort() function will simply sort the elements in ascending manner in the array and its opposite is the rsort() which will sort the elements in descending manner.
+		<br>
+		<br>
+		Objects in PHP
+		<br>
+		PHP is an object-oriented programming language. The objects are very important when you are dealing with PHP and almost everything will be an object. Arrays and functions are object too.
+		<br>
+		Example :
+		<br>
+		The greet() method of the object $me is called
+		<br>
+		< ?php
+				// The code below creates the class
+				class Person {
+					// Creating some properties 
+		The variables are atied to an object
+
+					public $isAlive = true;
+					public $firstname;
+					public $lastname;
+					public $age;
+					
+					// For the assigning the values
+					public function __construct($firstname, $lastname) {
+					  $this->firstname = $firstname;
+					  $this->lastname = $lastname;
+					}
+					
+					// For the creation of a method where the function is tied to the object
+					public function greet() {
+					  return "Hello, my name is " . $this->firstname . " " . $this->lastname . ".";
+					}
+				  }
+				// For printing out the greeting
+				echo $me->greet(); 
+				?>
+
+		</p>
+		<h1 id="asp">Active Server Pages</h1>
+		<p class="def">
+			ASP.NET and ASP are programs that run on Windows. The file extension ".aspx" belongs to ASP.NET files and “.asp” file extension is from the ASP Files. The ASP. NET is used to create services and web apps with .NET and it is an open sources web framework. The difference between ASP.NET and ASP is that ASP uses interpreted Jscript or VBScript while ASP.net uses any .Net language compiled that includes C#, VB.Net, J#, etc. so basically it supports cross language support.ASP.NET and ASP allow you more efficient by to customizing a Web page, respond to user data or queries given from HTML forms, dynamically change, add or edit the contents on your Web page and to access any database or data and will return the results to a browser. The ASP helps you to combine script commands, COM components and HTML pages. All of the code in the front of the application with the use of ASP 3.0 that led sensitive code become so transparent. The code also was said that it has slow performance then the ASP.NET was born. 
+			<br>
+			ASP.NET was the successor of the Classic ASP and it was released on 2002.The latest official version is 4.6 and it was expected to be a very important redesign of the ASP.NET but the creation of ASP.NET 5 was stopped on the favor of ASP.NET Core.
+			The ASP.NET allows you to create dynamic link libraries which holds the sensitive code and the compiling code into dll's has a great impact on improving the performance. It is rooted in XML and the dlls which the ASP.NET create have started as namespaces. Then all the classes under the namespaces are then compiled into a single dll binary. The .NET framework classes that has more than 2000 built-in classes is the one that ASP.NET is using. It offers a lot of server-based components like TexBox, event driven processing, buttons and other more that could be done at server. It also supports Page level transactions. It offers web creation for mobile devices that alters the content type (chtml or wml etc.) which is based on the device. There is a magic that ASP.NET can offer, the separation of presentation and business logic for the reason that the code does not need to be included directly the page of *.aspx. It also offers data structures like DataSet that allows not connected data processing.
+		</p>
+		
+		<h1 id="cgi">Common Gateway Interface</h1>
+		<p class="def">
+		A very simple interface for running external software, programs or gateways that under an information server on an independent platform manner. The HTTP servers are the supported information servers. The Common Gateway Interface was already in use since 1993 on World Wide Web.
+		It defines the environment variable which is the abstract parameters that describes the client’s request. An environment variable is a parameter that is named which carries information from the server going to the script. It specifies the interface between the HTTP Server and the Script together with the concrete programmer interface. 
+		<br><br>
+		CGI Applications
+		<br>
+		There are a lot of applications that can be designed using CGI
+		Forms
+		In here the CGI program could process the information and will return back the documents that matches the user’s selection criteria.
+		Gateways
+		CGI provides solution by using a language like orapherl or a DBI extension to Perl in order to create SQL queries to read the information inside within the database. Once the information has been accessed then you can format it and send it to the client
+		Virtual Documents
+		It is made on the fly as a response to a user’s information request. In here, you can create virtual HTML and other more like audio documents. The complex documents could be made by creating programs that uses the combination of gateways, graphic libraries, and forms. 
+		<br><br>
+		Internal Work of CGI
+		<br>
+		Almost all the servers expect CGI script and programs to reside in cgi-bin which is a special directory and to have a certain file extension. The request for a CGI programs looks the like what it does for all the Web Documents. The server does not return back the file contents verbatim when the server analyses or recognizes which the address requested is a CGI program. The serve tries to run the program instead. The sample client request seems like:
+		<br><br>
+		GET /cgi-bin/welcome.pl HTTP/1.0
+		Accept: www/source
+		Accept: text/html
+		Accept: image/gif
+		User-Agent: Lynx/2.4 libwww/2.14
+		From: webtech@yo.edu
+		<br>
+		The request of the GET determines the file to be retrieved and as /cgi-bin/welcome.pl. The request of the client also gives the data formats that it can accept like (www/source, text/html, and image/gif and determines itself as Lynx client and then sends user information. It Is on the native OS and on the server where the CGI programs get their input depends. It can either make and output a fresh document or provide the URL to an existent one once the CGI program starts running. The CGI programs can have options of sending indirectly through the server or send the freshly created data directly to the client.	
+		</p>
+		
+		
+		
+		<h1 id="ror">Ruby On Rails</h1>
+		<p class="def">
+		A server-side web application framework that is written in Ruby and under the MIT License. It is considered as a MVC or model view controller framework that gives default structures for a web service, database and web pages. It is built around the MVC philosophy that promotes extensibility and modularity of the applications. It means that it can be very easy to extend with business logic and new features no matter how complex the application is. RoR supports PostgreSQL, MySQL,  SQL Server, Oracle, SQLite, and DB2.Rails facilitates and encourages the use of web standards like HTML, CSS, JavaScript for the purpose of user interacting and display and XML or JSON for data transfer. It also gives value to the use of DRY or don't repeat yourself, active record pattern and COC or convention over configuration which are considered as a well-known software engineering patterns and paradigms. It offers a lot of components of a great web project like ORM or Object Relational Mapping system for logic and business data, application management and routing. The DRY principle is the one which always make sure a very clear separation of maintainability of the application. The principle of COC according to that Rails determine as default to a set of conventions. GitHub is one of the greatest application made by Rails and it is made on a distributed software development and complex architecture of version control. By RoR frameworks, complex applications were made. 
+		<br><br>
+		Structure
+		<br>
+		It is separated into different packages that includes ActiveRecord which is an object-relational mapping system for accessing the database, Action Pack which is the manager of view and controller functions, Active Resource that offers web services, Action Mailer that is the handler of email, Prototype which is an implementer of AJAX and drag and drop functionality and finally the Active Support. Rails included the Action Web Service package which is now replaced by Active Resource before the version of 2.0. The old versions of Rails supported plugins within their own framework that are customized and in Favor of the standard for the Ruby “germs” the version 3.2 was disapproved. Separated to the standard packages, you can create plugins to expand the existing packages in Rails. 		
+		</p>
+		
+		
+		
+		<div id="authContain">
+		<p id="authors">
+		That concludes the lessons we had for Midterms, stay tuned for Finals! <br><br>
+		Creators: <br> Andres, Erythrina Nicole <br> Baldovino, Britanny <br> Doria, Janine <br> Mascardo, Naider <br> Tagle, Christine <br>
+		<br> &copy;2018 9358A
+		</p>
+		</div>
+	</article>
+	<footer> 
+		<p>&copy;2018 9358A</p>
+	</footer>
+</body>
+<div id="ds1">
+</div>
+<div id="ds2">
+</div>
+<div id="ds3">
+</div>
+<div id="divCover">
+</div>
+<div id="ds4">
+</div>
+<div id="ds5">
+</div>
+<div id="ds6">
+</div>
+<a href="#cssTitle">
+<div id="upMe"></div>
+</a>
+</div>
+</html>

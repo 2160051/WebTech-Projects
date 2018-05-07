@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+	<nav id="topNav">
+		<a href="finals.html">Finals</a>
+	</nav>
+
+	<article id="content">
+
+		<h1 id="ref">References</h1><br><br>
+		<p id="ref">
+			Wodehouse, C. (2017, November 20). Server-Side Scripting Languages - PHP scripts, Back-End Coding. Retrieved from https://www.upwork.com/hiring/development/server-side-scripting-back-end-web-development-technology/
+
+			<br>
+	</p>
+	
+			
+			<p id="ref">
+					PHP Tutorial. (n.d.). Retrieved May 01, 2018, from https://www.sololearn.com/Course/PHP/
+			<br>
+			</p>
+			
+			
+			<p id="ref">
+			PHP. (n.d.). Retrieved May 01, 2018, from https://www.codecademy.com/en/tracks/php
+			<br>
+			<p>
+
+			<p id=”ref”>
+			Active Server Pages. (n.d.). Retrieved May 6, 2018, from 
+			https://msdn.microsoft.com/en-us/library/aa286483.aspx
+			<br>
+			<p>
+
+
+			<p id=”ref”>
+			Active Server Pages/Differences between ASP 3.0 and ASP.NET. (n.d.). Retrieved May 6, 2018, from 
+			https://en.wikibooks.org/wiki/Active_Server_Pages/Differences_between_ASP_3.0_and_ASP.NET
+			<br>
+			<p>
+
+
+			<p id=”ref”>
+			The WWW Common Gateway Interface Version 1.1. (n.d.). Retrieved May 7, 2018, from
+			https://tools.ietf.org/html/draft-robinson-www-interface-00
+			<br>
+			<p>
+
+
+			<p id=”ref”>
+			Gundavaram, S. (1997, August 26). CGI Programming on the World Wide Web. Retrieved May 7, 2018, 
+			from https://www.oreilly.com/openbook/cgi/ch01_04.html
+			<br>
+			<p>
+
+
+			<p id=”ref”>
+			Ruby on Rails. (n.d.). Retrieved May 7, 2018, from http://rubyonrails.org/
+			<br>
+			<p>
+			
+			<p id=”ref”>
+			Learn Ruby on Rails. (n.d.). Retrieved May 7, 2018, from https://www.codecademy.com/learn/learn-rails
+			<br>
+			<p>
+			
+	</article>
+</body>
+<div id="divCover">
+</div>
+</html>
