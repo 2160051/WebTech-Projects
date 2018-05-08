@@ -7,22 +7,17 @@ html
 in-line script
 <script>
 		document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
-		document.body.style.color = sessionStorage.getItem('newColor');
 		function nightMode() {
      		if ( sessionStorage.getItem('backgroundColor') == 'white') {         
-            	sessionStorage.setItem('backgroundColor', '#0b0d1e');
-            	sessionStorage.setItem('backgroundColor', '#6e6e6e');
+            		sessionStorage.setItem('backgroundColor', '#0b0d1e');
      		}else if (sessionStorage.getItem('backgroundColor') == null || undefined) {
-        		sessionStorage.setItem('backgroundColor', '#0b0d1e');
-        		sessionStorage.setItem('newColor', '#6e6e6e');      
+        		sessionStorage.setItem('backgroundColor', '#0b0d1e'); 
     		}else if( sessionStorage.getItem('backgroundColor') == '#0b0d1e') {   
         		sessionStorage.setItem('backgroundColor', 'white');
-        		sessionStorage.setItem('newColor', '#424141');
         	}
 			document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
-			document.body.style.color = sessionStorage.getItem('newColor');
 		}
-</script>
+	</script>
 
 css
 #nightButton {
