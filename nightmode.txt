@@ -1,0 +1,37 @@
+html
+<body style="background-color: white;">
+		<div id="nightButton">
+			<button class="nightMode" id="nightButton" onclick="nightMode()"><img src="styles/pictures/night.png" width="130%" alt="Night"></button>
+		</div>
+
+in-line script
+<script>
+		document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		function nightMode() {
+     		if ( sessionStorage.getItem('backgroundColor') == 'white') {         
+            		sessionStorage.setItem('backgroundColor', '#0b0d1e');
+     		}else if (sessionStorage.getItem('backgroundColor') == null || undefined) {
+        		sessionStorage.setItem('backgroundColor', '#0b0d1e'); 
+    		}else if( sessionStorage.getItem('backgroundColor') == '#0b0d1e') {   
+        		sessionStorage.setItem('backgroundColor', 'white');
+        	}
+			document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		}
+	</script>
+
+css
+#nightButton {
+  position: fixed;
+  right: -1%;
+}
+.nightMode {
+  border-radius: 10px;
+  border-color: black;
+  background-color: #fc7272;
+  padding: 15px 25px;
+  height: 50px;
+  width: 70px;
+}
+.nightMode:hover{
+  cursor: pointer;
+}
