@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/phpStyle.css"/>
+	<title>serverEd | PHP</title>
+	<link rel="icon" href="styles/pictures/icon.png">
 </head>
 <body>
 	<div id="divCover">
@@ -17,6 +19,303 @@
 		<a id="on" href="php.html">PHP</a>
 		<a href="node.html">Node.js</a>
 	</nav>
+	<div id="sideOpenerA" onclick="openSide()">
+		<p>►</p>
+	</div>
+	<nav id="sideNav">
+		<a href="node.html">Node.js</a>
+		<a href="php.html">PHP |</a>
+		<a href="java.html">Java |</a>
+		<a href="index.html">Home |</a>
+	</nav>
+	<nav id="bottomNav">
+		<a href="#ds1">PHP</a>
+		<a href="#title">▶ Introduction</a>
+		<a href="#miniTitle2">▶ Data Types</a>
+		<a href="#miniTitle3"> &ensp;&nbsp;☕ Arrays</a>
+		<a href="#miniTitle4"> &ensp;&nbsp;☕ Objects</a>
+		<a href="#miniTitle5">▶ Comparison Operators</a>
+		<a href="#miniTitle6">▶ Control Flow Statements</a>
+		<a href="#miniTitle7">▶ Functions</a>
+	</nav>
+	<div id="sideOpener" onclick="closeSide()">
+		<p>◄</p>
+	</div>
+	<div id="content">
+	<img id="php" src="styles/pictures/php.png">
+	<img id="wrench" src="styles/pictures/wrench.png">
+	<p id="title">PHP: Hypertext Preprocessor</p>
+	<p id="definition">PHP is a language that allows the creation of websites and dynamic web pages. 
+	It usually requires to be ran on a server, hence it being called a server-side scripting language. 
+	It can do all sorts of things like build custom web content which can evaluate data sent from the browser or send and receive cookies. 
+	It is also designed to support the integration of operations done on databases which are often written in SQL. </p>
+	<p id="miniTitle">Basic Syntax</p>
+	<p id="definition2">PHP code is written inside the “&#60;? php” and “?&#62;” tags.  It is insensitive on whitespaces but case sensitive. 
+	Statements are terminated with semicolons (;) and comments are written with “//” for single line comments and “/*” + “*/” 
+	for multiline comments.</p>
+	<div id="sampleCode">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;/* This is a multiline comment */ <br>
+		&emsp;$welcome = "PHP Example!"; <br>
+		&emsp;echo $welcome; <br>
+    ?&#62;
+	</p>
+	</div>
+	<p id="miniTitle2">Data Types</p>
+	<div id="types">
+	<div id="integer"><p>Integer</p></div>
+	<div id="double"><p>Double</p></div>
+	<div id="null"><p>Null</p></div>
+	<div id="boolean"><p>Boolean</p></div>
+	<div id="string"><p>String</p></div>
+	<div id="array"><p>Array</p></div>
+	<div id="object"><p>Object</p></div>
+	<div id="resource"><p>Resource</p></div>
+	</div>
+	<p id="definition3">PHP has 8 data types which can be used when creating variables. 
+	The data types are Integer, Double, Boolean, NULL, String, Array, Object and lastly Resource.</p>
+	<p id="deftit">Did you know?</p>
+	<p id="definition4">▶ Resource is considered a special variable because it holds references to resources that are external.<br> 
+	▶ The Array and Object data types are considered compound because they can be used to pack up other data types.<br>  
+	▶ Aside from specifying the data type of PHP variables, you can specify their scope(local, global or static).<br></p>
+	<p id="miniTitle3">Arrays</p>
+	<p id="definition5">To store more than one item in only one variable, you make use of Arrays. Creating an array starts with the $ sign to 
+	be followed by the = sign. For the declaration, we have to use array(). The array() will basically determine that what you are specifying
+	is an array and not a regular variable. See sample code below:</p>
+	<div id="sampleCode2">
+	<p class="code">
+	&#60;?php <br>
+		&emsp; $sample = array("Crispy", "Cookie", "Caramel", “Cupcake”);<br>
+    ?&#62;
+	</p>
+	</div>
+	<p id="stitle">Accessing, Modifying and Deleting Array Elements</p>
+	<p class="sent" id="def1">PHP is very flexible, for accessing an array element, you can use either {} or [].<br> 
+	▶ To access with [], you must use the echo function followed by the name of the array then the index of the element enclosed by “[“ and “]”.<br> 
+	▶ To access with {}, you must use the print function followed by the name of the array then the index of the element enclosed by “{“ and “}”.<br> 
+	<br>We can then access an item inside the array using the array elements' index:
+	</p>
+	<div id="sampleCode3">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;echo $sample[0]<br>
+		&emsp;//The output would be “Crispy”<br>
+		&emsp;print $sample{1}<br>
+		&emsp;//The output would be “Cookie”<br>
+    ?&#62;
+	</p>
+	</div>
+	<p class="sent" id="sent1">By assigning another value to a specific index, you can modify the array elements.</p>
+	<div id="sampleCode4">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;$sample = array("Crispy", "Cookie", "Caramel", “Cupcake”);<br>    
+		&emsp;echo $sample[0];<br>
+		&emsp;//The output would be “Crispy”<br>
+		&emsp;$sample[0] = “Crunchy”;<br>
+		&emsp;echo $sample[0];<br>
+		&emsp;//The output would be “Crunchy” because it was modified<br>
+    ?&#62;
+	</p>
+	</div>
+	<p class="sent" id="sent2">To remove or delete array elements, you can make use of unset(toBeDeletedElement[index]).</p>
+	<div id="sampleCode5">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;$sample = array("Crispy", "Cookie", "Caramel", “Cupcake”);<br>   
+        &emsp;unset($sample[2]);<br>
+    ?&#62;
+	</p>
+	</div>
+	<p class="sent" id="sent3">You can use unset(nameOfTheArray) to delete the whole array.</p>
+	<div id="sampleCode6">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;unset($sample);<br>   
+    ?&#62;
+	</p>
+	</div>
+	<p id="miniTitle4">Objects</p>
+	<p id="definition6">PHP is object-oriented. This makes objects very important. When you are dealing with PHP, 
+	almost everything will be an object.<br>
+	<br>In the example below, we create an object and define its properties and values.</p>
+	<div id="sampleCode7">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;//The code below creates a class called Person which will be the object<br>
+		&emsp;class Person {<br>
+		<br>
+        &emsp;//Below are properties which are variables tied to the object<br>
+		&emsp;public $isAlive = true;<br>
+		&emsp;public $firstname;<br>
+        &emsp;public $lastname;<br>
+        &emsp;public $age;<br>
+        <br>    
+        &emsp;//For assigning the values<br>
+        &emsp;public function __construct($firstname, $lastname) {<br>
+        &emsp;$this->firstname = $firstname;<br>
+        &emsp;$this->lastname = $lastname;<br>
+        &emsp;}<br>
+        <br>    
+        &emsp;//For the creation of a method where the function is tied to the object<br>
+        &emsp;public function greet() {<br>
+        &emsp;return "Hello, my name is " . $this->firstname . " " . $this->lastname . ".";<br>
+        &emsp;&emsp;}<br>
+        &emsp;}<br>
+		<br>
+        &emsp;//For printing out the greeting<br>
+        &emsp;echo $me->greet();<br>
+    ?&#62;
+	</p>
+	</div>
+	<p id="miniTitle5">Comparison Operators</p>
+	<p id="ops"><&emsp;>&emsp;=&emsp;!</p>
+	<p id="definition7">Comparison Operators are used to compare two values to each other. Below is a list of the comparison operators 
+	you could use in PHP:<br>
+	◆&ensp;&nbsp;> means Greater than<br>
+	◆&ensp;&nbsp;< means Less than<br>	
+	◆&ensp;&nbsp;<= means Less than or equal to<br>
+	◆&ensp;&nbsp;>= means Greater than or equal to<br>
+	◆&ensp;&nbsp;== means Equal to<br>
+	◆&ensp;&nbsp;!= means Not equal to<br>
+	<br>
+	Below is a sample code where a comparison operator is used:
+	</p>
+	<div id="sampleCode8">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;6 < 7;<br>   
+    ?&#62;
+	</p>
+	</div>
+	<p id="miniTitle6">Control Flow Statements</p>
+	<div id="typesTwo">
+	<div id="if"><p>if/else</p></div>
+	<div id="switch"><p>switch</p></div>
+	<div id="for"><p>for</p></div>
+	<div id="while"><p>while</p></div>
+	</div>
+	<p id="iftit">if/else</p>
+	<p id="definition8">It is created with the “if” keyword and the curly braces which always come in pairs. 
+	If the condition is true then the code inside the curly braces will run otherwise if the condition is false 
+	code written after the keyword “else” in the second pair of curly braces will run. See sample code below:</p>
+	<div id="sampleCode9">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;$items = 6<br>
+		&emsp;if($items < 5){<br>
+        &emsp;&emsp;echo "You got a free coffee!";<br>
+        &emsp;}else{<br>
+        &emsp;&emsp;echo “You are not allowed to enter the coffee shop”<br>
+		&emsp;}<br>
+    ?&#62;
+	</p>
+	</div>
+	<p id="switchtit">switch</p>
+	<p id="definition9">It is used for a series of conditional if-else statements that have multiple expressions 
+	that depend on the same value. It executes a block of code what is happening on the if statement is true. 
+	It is created using the “switch” keyword then the variable to be checked and a pair of curly braces. 
+	For each comparison, there will be a case block that uses break to make an exit in the switch statement. 
+	“Falling through” is the term if there are cases right after another without having a break. If the condition is not met, then another 
+	case block will run and if all of the cases return false then it will execute the default case instead. See sample code below:</p>
+	<div id="sampleCode10">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;switch (20) {<br>
+        &emsp;&emsp;case 0:<br>
+        &emsp;&emsp;&emsp;echo 'The value is 10';<br>
+        &emsp;&emsp;&emsp;break;<br>
+        &emsp;&emsp;case 1:<br>
+        &emsp;&emsp;&emsp;echo 'The value is 15';<br>
+        &emsp;&emsp;&emsp;break;<br>
+        &emsp;&emsp;case 2:<br>
+        &emsp;&emsp;&emsp;echo 'The value is 20';<br>
+        &emsp;&emsp;&emsp;break;<br>
+        &emsp;&emsp;default:<br>
+        &emsp;&emsp;&emsp;echo "The value isn't 10, 15 or 20";<br>
+		&emsp;}<br>
+    ?&#62;
+	</p>
+	</div>
+	<p id="fortit">for</p>
+	<p id="definition10">We can use it to repeat a series of instructions instead of typing a lot the same code many times.  
+	For the for loop in PHP, it will start with the “for” keyword to be followed by a set of parentheses. There are three things 
+	inside the parentheses which would be separated by a semicolon. The first thing would be the start of the loop, second would be the 
+	place to end the loop and the third would be the thing to do to get to the next iteration. After the parentheses is a set of 
+	curly braces that will tell on what code will be ran for every iteration of the loop. See sample code below:</p>
+	<div id="sampleCode11">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;for ($leap = 2004; $leap < 2050; $leap = $leap + 4) {<br>  
+        &emsp;&emsp;echo "&#60;p?&#62;$leap&#60;/p?&#62;";<br>  
+		&emsp;}<br>   
+    ?&#62;
+	</p>
+	</div>
+	<p id="whiletit">while</p>
+	<p id="definition11">As long as the condition is true, code inside the while loop will execute. The syntax would be:</p>
+	<div id="sampleCode12">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;$count = 0;<br>
+		&emsp;while ($count<4){<br>
+		&emsp;&emsp;echo "&#60;p&emsp;Iteration number: {$count} &#60;/p&emsp;";<br>
+		&emsp;&emsp;$count ++;<br>
+		&emsp;}<br>   
+    ?&#62;
+	</p>
+	</div>
+	<p id="miniTitle7">Functions</p>
+	<p id="definition12">There are a lot of built-in functions in PHP. Some categories are the String Functions, Math Functions and Array Functions. 
+	serverEd will only be sampling some functions for the sake of understanding function usage. <br><br> Below is a sample of the String Function 
+	strlen which returns the number of characters in a string:</p>
+	<div id="sampleCode13">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;//This will get the length of a string and will print it to the screen<br>
+		&emsp;$length = strlen("webtechlecture");<br>
+		&emsp;print $length;<br>
+    ?&#62;
+	</p>
+	</div>
+	<p id="definition13">Now, let's test Math Functions. One example of these functions would be the round() function which will round a number to an 
+	integer or a complex floating point number into a number with specific decimal places. For this example, we will use 
+	M_PI which is a PHP Constant equal to Pi. See the sample code below:</p>
+	<div id="sampleCode14">
+	<p class="code">
+	&#60;?php <br>
+		&emsp;//Round pi down from 3.1416...<br>
+		&emsp;$round = round(M_PI);<br>
+		&emsp;print $round;  //prints 3<br>
+		<br>
+		&emsp;//This time, round pi to 4 places<br>
+		&emsp;$round_decimal = round(M_PI, 4);<br>
+		&emsp;print $round_decimal; //prints 3.1416<br>  
+    ?&#62;
+	</p>
+	</div>
+	<p id="definition14">For arrays, there are also useful functions available. These functions include array_push() which is used to push or add elements 
+	at the end of the array, count() which can return the number of elements in the array and sort() which will simply sort the elements 
+	of an array in ascending order. Additionally, the opposite of sort() is rsort() which will sort the elements in descending order.</p>
+	<footer id="foot">
+		<div id="footCenter">
+		<a href="index.html"><img id="footlogo" src="styles/pictures/logo.png"></a>
+		<p id="footlabel"><a href="index.html">serverEd</a></p>
+		<p id="footcontent"><a href="index.html">serverEd</a></p>
+		<p id="footcontents">serverEd is an educational website which provides lessons about server-side scripting.</p>
+		<p id="footEnd">Made by Group 3 ©2018</p>
+		<p id="navigation">Navigation</p>
+		<nav id="footNav">
+			<a href="index.html">Home</a>
+			<a href="java.html">Java</a>
+			<a href="php.html">PHP</a>
+			<a href="node.html">Node.js</a>
+		</nav>
+		</div>
+	</footer>
+	</div>
+	<script src="scripts/sideActions.js"></script>
 </body>
 <div id="ds1">
 </div>
