@@ -1,0 +1,22 @@
+[
+{"question": "A powerful tool that could be used to execute applications on the server side", "choices": ["CSS", "PHP", "HTML", "Node.js"], "answer": "d"},
+{"question": "Node.js was developed as a client-side programming language", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "Node.js was developed as a server-side programming language", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "He developed Node.js", "choices": ["Ryan Dahl", "Rhan Dahl", "Ren Dalh", "Ryan Dhi"], "answer": "a"},
+{"question": "It can run on the following operating systems except:", "choices": ["Linux", "Sun OS", "Mac OS", "None of the above"], "answer": "d"}
+{"question": "Node.js was developed by Ryan Dahl in 2009", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "The execution procedure that was used for the Node.js is multithreaded execution", "choices": ["True", "False", "Thru", "Falls"], "answer": "b"},
+{"question": "Each I/O operation in Node.js is _______________ which allows the server to continue processing the incoming request while the I/O operation is ongoing", "choices": ["synchronous", "multithreaded", "asynchronous", "event-based"], "answer": "c"},
+{"question": "It makes use of _________ server execution procedure.", "choices": ["synchronous", "multithreaded", "asynchronous", "event-based"], "answer": "d"},
+{"question": "The JavaScript engine running the JavaScript code", "choices": ["java environment", "virtual boxes v8 environment", "virtual machine v8 environment", "java machine v9 environment"], "answer": "c"},
+{"question": "The following items are the web host supported by the javascript engine except:", "choices": ["Cloudstack", "Cloudnode", "Duostack", "DotCloud"], "answer": "a"},
+{"question": "Node implements the commons modules standard where each module does not have its own context separated from the other modules.", "choices": ["True", "False", "Thru", "Falls"], "answer": "b"},
+{"question": "Modules can occupy a global scope or interfere with other modules", "choices": ["True", "False", "Thru", "Falls"], "answer": "b"},
+{"question": "Every module has a/an _______ API which could be used after it is imported into the script.", "choices": ["private", "abstract", "public", "undefined"], "answer": "c"},
+{"question": "The function that is used to import or load a module", "choices": ["inlcude()", "require()", "import()", "none of the above"], "answer": "b"},
+{"question": "Used to export an from a module", "choices": ["module.ext", "module.export", "module.extract", "module.exports"], "answer": "d"},
+{"question": "The objects which release events", "choices": ["Event Handlers", "Event Responders", "Event Emitters", "Event Listeners"], "answer": "c"},
+{"question": "A style of programming where control is passed explicitly in a continuous manner", "choices": ["Continuation-Passing Style", "Continuation-Permitting Style", "Collaboration-Passing Style", "Continuation-Progressing Style"], "answer": "a"},
+{"question": "Method used to attach an event listener to an event type to be called once", "choices": ["one()", "add()", "addOnce()", "once()"], "answer": "d"},
+{"question": "Method used to remove all of the listeners of an event", "choices": ["removeListeners", "removeAllListeners()", "removeAll()", "removeAllListener()"], "answer": "b"}
+]
