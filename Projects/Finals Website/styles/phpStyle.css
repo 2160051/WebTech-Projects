@@ -1088,6 +1088,26 @@ body{
 	right: -800px;
 	z-index: 96;
 }
+#upper{
+	top: -110px;
+}
+.definition2{
+	text-align: justify;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	top: -10px;
+}
+.definition2 a{
+	text-decoration: none;
+	color: var(--font-color);
+}
+.definition2 a:hover{
+	text-decoration: underline;
+}
 #resourcescloser{
 	position: fixed;
 	background-color: #157DEC;

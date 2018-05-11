@@ -24,7 +24,7 @@ body{
 	z-index: 2;
 }
 #ds1:hover{
-    width: 150px;
+        width: 150px;
 	height: 150px;
 	position: absolute;
 	left: -78px;
@@ -223,7 +223,7 @@ body{
 	height: 2000px;
 	width: 100%;
 	position: absolute;
-	top: 40px;
+	top: 90px;
 	left: 0px;
 	z-index: -1;
 }
@@ -232,249 +232,13 @@ body{
     margin-left: auto;
     margin-right: auto;	
 }
-#node{
-	height: 200px;
-	width: 400px;
-	position: relative;
-	top: 80px;
-}
-#node:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-
-#title{
-	text-align: center;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 57px;
-	font-weight: bold;
-	position: relative;
-   top: 40px;
-}
-#definition{
-	text-align: justify;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 28px;
-	position: relative;
-	top: 20px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-#subdefinition{
-	text-align: justify;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 28px;
-	position: relative;
-	top: 170px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-#miniTitle{
-	text-align: left;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 42px;
-	font-weight: bold;
-	position: relative;
-	top: 160px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-#definition2{
-	text-align: justify;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 28px;
-	position: relative;
-	top: 140px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-#sampleCode{
-	background-color: #EFEEEC;
-	border-left: 5px solid #98AFC7;
-	width: calc(100% - 200px);
-	position: relative;
-	top: 140px;
-	left: 100px;
-}
-.code{
-    color: #7A91A9;
-    text-align: left;
-	font-family: monospace;
-    font-size: 20px;
-	padding: 20px;
-}
-#miniTitle2{
-	text-align: center;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 58px;
-	font-weight: bold;
-	position: relative;
-	top: 140px;
-}
-#types{
-	position: relative;
-	text-align: center;
-}
-#cloudf{
-	position: relative;
-	height: 200px;
-	width: 200px;
-	background-color: #98AFC7;
-	border-radius: 50%;
-	top: 50px;
-	left: 50px;
-	display: inline-block;
-}
-#cloudf:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-#cloudf p{
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Lib, Helvetica;
-	font-size: 48px;
-	padding-top: 5px; 
-}
-#cloudn{
-	position: relative;
-	height: 300px;
-	width: 300px;
-	background-color: #4863A0;
-	border-radius: 50%;
-	top: 100px;
-	left: 80px;
-	display: inline-block;
-}
-#cloudn:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-#cloudn p{
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Lib, Helvetica;
-	font-size: 67px;
-	padding-top: 45px; 
-}
-
-#dotcloud{
-	position: relative;
-	height: 210px;
-	width: 210px;
-	background-color: #7A95D2;
-	border-radius: 50%;
-	top: 200px;
-	left: 140px;
-	display: inline-block;
-}
-#dotcloud p{
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Lib, Helvetica;
-	font-size: 42px;
-	padding-top: 40px; 
-}
-#dotcloud:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-
-#duostack{
-	position: relative;
-	height: 240px;
-	width: 240px;
-	background-color: #505996;
-	border-radius: 50%;
-	top: -30px;
-	left: -140px;
-	display: inline-block;
-}
-#duostack p{
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Lib, Helvetica;
-	font-size: 57px;
-	padding-top: 30px; 
-}
-#duostack:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-#object{
-	position: relative;
-	height: 100px;
-	width: 100px;
-	background-color: #505996;
-	border-radius: 50%;
-	top: 20px;
-	left: -300px;
-	display: inline-block;
-}
-#object p{
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Lib, Helvetica;
-	font-size: 32px;
-}
-#object:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-#resource{
-	position: relative;
-	height: 120px;
-	width: 120px;
-	background-color: #2A4582;
-	border-radius: 50%;
-	top: 20px;
-	left: -300px;
-	display: inline-block;
-}
-#resource p{
-	text-align: center;
-	color: #FFFFFF;
-	font-family: Lib, Helvetica;
-	font-size: 28px;
-	padding-top: 10px; 
-}
-#resource:hover{
-	transform: scale(1.3);
-	z-index: 100;
-}
-#definition3{
-	text-align: justify;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 28px;
-	position: relative;
-	top: 10px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-
-#miniTitle3{
-	text-align: center;
-	color: var(--font-color);
-	font-family: Lib, Helvetica;
-	font-size: 58px;
-	font-weight: bold;
-	position: relative;
-	top: 150px;
-}
 
 #foot{
 	height: 200px;
 	width: 100%;
 	position: relative;
 	left: 0px;
-	top: 0px;
+	top: 100px;
 	background-color: #726E6D;
 	overflow: hidden;
 }
@@ -570,4 +334,182 @@ body{
 }
 #footNav a:hover{
 	font-weight: bold;
+}
+#nightButton{
+	position: fixed;
+	background-color: #151B54;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 60px;
+	right: -1px;
+	cursor: pointer;
+	z-index: 10;
+}
+#nightButton p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#resources{
+	position: fixed;
+	background-color: #157DEC;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 140px;
+	right: -1px;
+	cursor: pointer;
+	z-index: 10;
+}
+#resources p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#sidebits{
+	position: fixed;
+	background-color: #157DEC;
+	border-radius: 5px;
+	width: 800px;
+	height: 100%;
+	top: 0px;
+	right: -800px;
+	z-index: 96;
+}
+#resourcescloser{
+	position: fixed;
+	background-color: #157DEC;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 140px;
+	right: -795px;
+	cursor: pointer;
+	z-index: 97;
+}
+#resourcescloser p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#bitslabel{
+	text-align: center;
+	font-family: Lib, Helvetica;
+	font-size: 42px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#bitscomment{
+	text-align: center;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#note{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	top: 50px;
+}
+#node{
+	height: 50px;
+	width: 100px;
+	position: relative;
+	top: -80px;
+	left: 5px;
+}
+#node:hover{
+	transform: scale(1.3);
+	z-index: 100;
+}
+.title{
+	text-align: center;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 57px;
+	font-weight: bold;
+	position: relative;
+}
+.definition{
+	text-align: justify;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	top: -30px;
+}
+.definitions{
+	text-align: justify;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	top: 10px;
+}
+.miniTitle{
+	text-align: left;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 42px;
+	font-weight: bold;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	top: 50px;
+}
+.miniTitle2{
+	text-align: center;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 58px;
+	font-weight: bold;
+	position: relative;
+	top: 50px;
+}
+.definition2{
+	text-align: justify;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 28px;
+	position: relative;
+	padding-left: 100px;
+	padding-right: 100px;
+	top: -10px;
+}
+.definition2 a{
+	text-decoration: none;
+	color: var(--font-color);
+}
+.definition2 a:hover{
+	text-decoration: underline;
+}
+.sampleCode{
+	background-color: #EFEEEC;
+	border-left: 5px solid #98AFC7;
+	width: calc(100% - 200px);
+	position: relative;
+	top: 0px;
+	left: 100px;
+}
+.code{
+    color: #7A91A9;
+    text-align: left;
+	font-family: monospace;
+    font-size: 20px;
+	padding: 20px;
 }
