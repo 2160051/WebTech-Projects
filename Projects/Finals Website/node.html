@@ -86,13 +86,13 @@
 	is a function of one argument. It returns the reset value by calling the continuation function with this values as the argument.</p>
 	<div class="sampleCode">
 	<p class="code">
-		function receiveData(data) { console.log(“data received: ” %j, data); }<br>
+		function receiveData(data) { console.log(“data received: ” %j, data); }<br><br>
 		//Add event listener to an event type<br>
-		readStream.addListener(“data”, receiveData);<br>
+		readStream.addListener(“data”, receiveData);<br><br>
 		// Attach an event listener to an event type to be called once<br>
-		readStream.once(“data”, receiveData);<br>
+		readStream.once(“data”, receiveData);<br><br>
 		//Removing a specific event listener of an event<br>
-		readStream.removeListener(“data”, receiveData);<br>
+		readStream.removeListener(“data”, receiveData);<br><br>
 		//Remove all event listeners of an event<br>
 		readStream.removeAllListeners(“data”);
 	</p>
