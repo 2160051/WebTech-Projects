@@ -2,6 +2,7 @@ Picture sources:
 Monitor - https://www.shareicon.net/mac-pro-imac-computer-device-macos-technology-apple-109335
 Laptop - http://www.iconarchive.com/show/small-n-flat-icons-by-paomedia/device-laptop-icon.html
 Coding GIF - https://github.com/dan-silver/typewriter-for-vscode
+(Fun fact - Express framework for node.js)
 Lightbulb - https://www.iconfinder.com/icons/653262/bulb_electric_energy_idea_lamp_light_thought_icon#size=512
 Wrench and screw - http://www.newdesignfile.com/post_flat-icon-system_74175/
 Server - http://www.iconhot.com/icon/rrze/computer-database.html
