@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="styles/javaStyle.css"/>
@@ -29,13 +29,380 @@
 		<a href="index.html">Home |</a>
 	</nav>
 	<nav id="bottomNav">
-		<a href="node.html">Java</a>
-		<a href="node.html">▶ Java Web Servlets</a>
-		<a href="java.html">▶ Java Server Pages</a>
+		<a href="#ds1">Java</a>
+		<a href="#up">▶ Java Web Servlets</a>
+		<a href="#space"> &ensp;&nbsp;☕ Life Cycle</a>
+		<a href="#usage"> &ensp;&nbsp;☕ Usage</a>
+		<a href="#except"> &ensp;&nbsp;☕ Exception Handling</a>
+		<a href="#serverp">▶ Java Server Pages</a>
+		<a href="#life"> &ensp;&nbsp;☕ Life Cycle</a>
+		<a href="#usages"> &ensp;&nbsp;☕ Usage</a>
+		<a href="#life"> &ensp;&nbsp;☕ Exception Handling</a>
 	</nav>
 	<div id="sideOpener" onclick="closeSide()">
 		<p>◄</p>
 	</div>
+	<div id="content">
+	<div id="contents">
+	<img id="cup" src="styles/pictures/coffeecup.png">
+	<img id="jserv" src="styles/pictures/jservlets.png">
+	<p class="title" id="up">Java Web Servlets</p>
+	<p class="definition" id="above">A java servlet is a java object which plays a role in the client-server communication of a server component.
+	Servlets run and are enabled in a Java server. In the form of an HTML page, one of the special type of servlets is HTTP servlet which provides 
+	HTTP responses and handles HTTP requests.</p>
+	<p class="miniTitle" id="ups">Java Servlet Versions</p>
+	<div class="down">
+	<div id="types">
+	<div id="integer"><p>J2EE 1.2</p></div>
+	<div id="double"><p>J2EE 1.3</p></div>
+	<div id="null"><p>J2EE 1.4</p></div>
+	<div id="boolean"><p>JavaEE 6</p></div>
+	<div id="string"><p>JavaEE 5</p></div>
+	<div id="array"><p>JavaEE 7</p></div>
+	</div>
+	</div>
+	<p class="definition" id="downs">Java Servlet has these versions:<br>
+	▶	J2EE 1.2 (December 1999) - Java Servlet 2.2, JSP 1.1, EJB 1.1, JDBC 2.0<br>
+	▶	J2EE 1.3 (September 2001) - Java Servlet 2.3, JSP 1.2, EJB 2.0, JDBC 2.1<br>
+	▶	J2EE 1.4 (November 2003) - Java Servlet 2.4, JSP 2.0, EJB 2.1, JDBC 3.0<br>
+	▶	Java EE 5 (May 2006) - Java Servlet 2.5, JSP 2.1, JSTL 1.2, JSF 1.2, EJB 3.0, JDBC 3.0<br>
+	▶	Java EE 6 (December 2009) - Java Servlet 3.0, JSP 2.2/EL 2.2, JSTL 1.2, JSF 2.0, EJB 3.1, JDBC 4.0<br>
+	▶	Java EE 7: end of 2012.<br>
+	</p>
+	<p class="miniTitle2" id="space">Servlet Life Cycle</p>
+	<p class="definition">• Servlet is initialized in init() method.<br>
+	•	To process or proceed to a client’s request, the servlet calls service() method.<br>
+	•	For terminating the servlets, call destroy() method.<br>
+	•	Collect the garbage in servlet by the garbage collector of the JVM (Java Virtual Machine).
+	</p>
+	<p class="miniTitle">♦ init(&nbsp;) method</p>
+	<p class="definition">-	called only once.<br>
+	-	one-time initialization.<br>
+	-	called only once the servlet is created.<br>
+	-	not called for any user requests on the succeeding time or afterwards.<br>
+	-	it will be used through the entire life of the servlet that loads or creates some data.
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	public void init() throws ServletException {<br>
+	&emsp;// Initialization code...<br>
+	}
+	</p>
+	</div>
+	<p class="miniTitle">♦ service(&nbsp;) method</p>
+	<p class="definition">-	main method.<br>
+	-	handles requests from client browsers<br>
+	-	writes the arrangement or formatted response to the client.<br>
+	-	checks the HTTP request type such as GET,DELETE,POST,PUT, etc.<br>
+	-	calls doPost, doGet, doDelete, doPut, etc.
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	public void service(ServletRequest request, ServletResponse response)<br>
+	&emsp;throws ServletException, IOException {<br>
+	}
+	</p>
+	</div>
+	<p class="miniTitle">♦ doGet(&nbsp;) method</p>
+	<p class="definition">-	supports the HTTP GET requests.<br>
+	-	used when a small amount of data and insensitive data.<br>
+	-	results from a normal request from HTML form or URL that has no method being specified.
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	public void doGet(HttpServletRequest request, HttpServletResponse response)<br>
+	&emsp;throws ServletException, IOException {<br>
+    &emsp;// Servlet code<br>
+	}
+	</p>
+	</div>
+	<p class="miniTitle">♦ doPost(&nbsp;) method</p>
+	<p class="definition">-	supports the HTTP POST requests.<br>
+	-	used when almost large amount of a sensitive data has to be sent.
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	public void doPost(HttpServletRequest request, HttpServletResponse response)<br>
+	&emsp;throws ServletException, IOException {<br>
+    &emsp;// Servlet code<br>
+	}
+	</p>
+	</div>
+	<p class="miniTitle">♦ destroy(&nbsp;) method</p>
+	<p class="definition">-	called once at the end of the servlet life cycle.<br>
+	- contributes the servlet to close database connections, write cookie lists, terminate background threads and other cleanup activities.
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	public void doPost(HttpServletRequest request, HttpServletResponse response)<br>
+	&emsp;throws ServletException, IOException {<br>
+    &emsp;// Servlet code<br>
+	}
+	</p>
+	</div>
+	<p class="miniTitle2" id="usage">Usage</p>
+	<p class="miniTitle">Servlet Container</p>
+	<p class="definition">Servlet Container is also called servlet engine which handles components of a Java Servlet that can be 
+	ran in different procedures.</p>
+	<img src="styles/pictures/webc.png">
+	<p class="miniTitle3">Services of a Servlet Container:</p>
+	<p class="definition" id="noSpace">•	It manages or handles the life cycle of servlet.<br>
+	•	The servlet container handles resources like JSP pages, servlets and HTML files.<br>
+	•	To preserve session, it appends or attaches session ID to the URL path.<br>
+	•	It has security service.<br>
+	•	File systems such as local file system or remote file system, network services can load in a servlet class.
+	</p>
+	<p class="miniTitle3">Container Configurations of Servlet:</p>
+	<p class="definition" id="noSpace">Servlets container have three ways on configuring the web server that manages servlets:<br>
+	• Standalone container – a Java-based server which is the functionality of the Web Server is received by the Servlet container.<br>
+	• In-Process container - the web server is separated because the plug-in  runs in another program between the main server’s address space.<br>
+	• Out-Process container – different programs of the servlet container and web server runs in a different procedure or process.
+	</p>
+	<p class="miniTitle">Filters</p>
+	<p class="definition">Filters can be used to convert one to another format of the content of responses, requests, and header.<br>
+	•	In the deployment descriptor is where the Filter class is declared.<br>
+	•	The usage of filter is to write reusable components<br>
+	•	Usage of filter under web application for some tasks:<br>
+		&emsp;▶	Compression<br>
+		&emsp;▶	Validation<br>
+		&emsp;▶	Internationlization<br>
+		&emsp;▶	Verification
+	</p>
+	<p class="miniTitle3" id="downs">♦ Interface</p>
+	<p class="definition">•	Filter<br>
+	The basic and initial interface that should be implement in all filter class. 
+	Java.servlet.Filter interface methods:
+	</p>
+	<img src="styles/pictures/ftable.png">
+	<p class="definition">•	FilterChain<br>
+	FilterChain is a filter that collects information or data which is about more than 1 filter. All filters 
+	before processing of a request should be used on request.
+	</p>
+	<p class="definition">•	FilterConfig<br>
+	Initialized first the filters before the object to be used. Deployment descriptor on web.xml contains 
+	configuration information. The interface of FilterConfig’s object is used to get configuration information 
+	that is specified under web.xml. 
+	</p>
+	<img src="styles/pictures/stable.png">
+	<p class="miniTitle">Sessions</p>
+	<p class="definition">A HTTP requests’ collection between server and client. It will be destroyed when the session expires and 
+	it will reverse its resources to the servlet engine.
+	</p>
+	<p class="miniTitle3" id="downss">Session Handling</p>
+	<p class="definition" id="noSpaces">It describes the data moved in a session. It also means to retain track of session data.  It is also known as 
+	assession tracking. This is used when the session data comes from another session that may be required 
+	for finishing task in different or the same session by a web server.
+	</p>
+	<p class="miniTitle3">Session Handling Mechanisms</p>
+	<p class="definition" id="noSpacess">4 session handling’s mechanism:<br>
+	•	URL rewriting – to make the client’s next request, the session data needs to append to the URL path on the next request.<br>
+	•	Hidden form field – this means that the filed of HTML form is hidden. Form fields like password, textbox etc. It is used for hiding user data.<br>
+	•	Cookies – It is an information from a file that is sent by a server to a client. After being sent to client, the Cookies are at the 
+	client side when it is saved.<br>
+	&emsp;Javax.servlet.http.Cookie class methods:<br>
+	&emsp;&emsp;▶	setValue(String)<br>
+	&emsp;&emsp;▶	getValue()<br>
+	&emsp;&emsp;▶	getName()<br>
+	&emsp;&emsp;▶	setComment(String)<br>
+	&emsp;&emsp;▶	getComment()<br>
+	&emsp;&emsp;▶	setVersion(String)<br>
+	&emsp;&emsp;▶	getVersion()<br>
+	&emsp;&emsp;▶	setDomain(String)<br>
+	&emsp;&emsp;▶	setPath(String)<br>
+	&emsp;&emsp;▶	getPath()<br>
+	&emsp;&emsp;▶	setSecure(boolean)<br>
+	&emsp;&emsp;▶	getSecure(boolean)<br>
+	•	HTTP session – It is implemented throughout HttpSession object that provides asession management service.<br>
+	</p>
+	<p class="miniTitle2" id="except">Exception Handling</p>
+	<p class="definition">It is used to manage errors. It is used to run servlet pages and JSP that deploys description.</p>
+	<p class="miniTitle">Error Code Configuration</p>
+	<p class="definition">It is called with 403 status code that has an error occurs on the /HandlerClass servlet.</p>
+	<div class="sampleCode">
+	<p class="code">
+	&#60;error-page&#62;<br>
+	&emsp;&#60;error-code&#62;403&#60;/error-code&#62;<br>
+    &emsp;&#60;location&#62;/HandlerClass&#60;/location&#62;<br>
+	&#60;/error-page&#62;
+	</p>
+	</div>
+	<p class="miniTitle">Exception-Type Configuration</p>
+	<p class="definition">The /HandlerClass servlet called when the application throws IOException by the container.</p>
+	<div class="sampleCode">
+	<p class="code">
+	&#60;error-page&#62;<br>
+	&emsp;&#60;exception-type&#62;java.io.IOException&#60;/exception-type&#62;<br>
+    &emsp;&#60;location&#62;/HandlerClass&#60;/location&#62;<br>
+	&#60;/error-page&#62;
+	</p>
+	</div>
+	<img id="java" src="styles/pictures/coffee.png">
+	<p class="title" id="serverp">Java Server Pages</p>
+	<p class="definition" id="upsss">JSP or Java Server Pages is used to build or create dynamic web pages. By using JSP tags, a java code can be added 
+	in HTML pages. The use of the tags is to retrieve or store data from the database, sharing information from one page to another etc. NetBeansIDE and 
+	EclipseIDE are the commonly used IDE’s used for JSP pages.</p>
+	<p class="miniTitle2" id="life">Life Cycle</p>
+	<p class="miniTitle4">▶ Translation</p>
+	<p class="definition2">The first step, JSP document is translated by a web container into a corresponding Java code. 
+	The servlet in this is the java code. It is automatically translated by the Web server which validates, locates the 
+	correctness and automatically write the servlet on the JSP page.</p>
+	<p class="miniTitle4">▶ Compilation</p>
+	<p class="definition2">It compiles the java source by the JSP container in order to generate the class file and create the equivalent servlet.</p>
+	<p class="miniTitle4">▶ Loading and Initialization</p>
+	<p class="definition2">It will load the servlet by the JSP container of the two previous stages. After loading it properly, the JSP container 
+	will create an instance of the servlet class.</p>
+	<p class="miniTitle4">▶ Execution</p>
+	<p class="definition2">The _jspService() method is created by the JSP engine. The _jspService() method has 2 parameters. HttpservletRequest and 
+	HttpServletResponse is created once per request.</p>
+	<p class="miniTitle4">▶ Destroying</p>
+	<p class="definition2">In this last step it completes the life cycle of JSP. By using the jspDestroy() method the JSP is removed by the container.</p>
+	<p class="miniTitle2" id="usages">Usage</p>
+	<p class="miniTitle">Directives</p>
+	<p class="definition">Directive tags are utilized to give directions and guidelines used at the interpretation stage of JSP life cycle. Syntax:</p>
+	<div class="sampleCode">
+	<p class="code">
+	&#60;%@ directive attribute="value" %&#62;
+	</p>
+	</div>
+	<p class="miniTitle3" id="downup">Types:</p>
+	<p class="definition">▶ Page directives<br>
+	The page directive tag gives the guidelines utilized by the translator at the phase or stage of the life
+	cycle of JSP. It can be incorporated anywhere, however according to convention it is considered as a 
+	decent programming style of including at the top. Syntax:
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	&#60;%@ page attribute="value" %&#62;
+	</p>
+	</div>
+	<p class="definition">▶ Include directives<br>
+	This tag is utilized amid the translation phase of JSP lifecycle to incorporate a file. It combines the
+	content of more than 2 files. Incorporate directives can be incorporated anyplace in the page. Syntax:
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	&#60;%@ include file="path/url" %&#62;
+	</p>
+	</div>
+	<p class="definition">▶ Taglib<br>
+	It is utilized to characterize a custom tag library in a JSP page. This is done as such that the related tags 
+	can be utilized or used as a part of a similar page. Syntax:
+	</p>
+	<div class="sampleCode">
+	<p class="code">
+	&#60;%@ taglib uri="URI" prefix="TagPrefix" %&#62;
+	</p>
+	</div>
+	<p class="miniTitle">Scripting Tags</p>
+	<p class="definition">JSP scripting tags permit adding script code into the java code of a created JSP page. This page is created 
+	by the JSP translator.</p>
+	<p class="miniTitle3" id="tops">3 Types of Scriptlet tags:</p>
+	<p class="definition2">
+	•	Scriplet Tag -  it is a tag that implements the _jspService method by composing script/java code. 
+	It is utilized for composing java code in JSP page.<br>
+	•	Declarative Tag – it is utilized to declare class variables and executing class methods jspInt and jspDestroy.<br>
+	•	Expression Tag – it is utilized to compose a java expression. Place the semi colon (;) inside an expression tag.
+	</p>
+	<p class="miniTitle">Expression Language</p>
+	<p class="definition">A language that permits developers of JSP for getting to application data stored in JavaBeans components. 
+	It was presented in JSP2.0. The EL expressions are encased between “$” and “}” characters.</p>
+	<p class="miniTitle3" id="topsss">Operators:</p>
+	<p class="miniTitle3" id="topss">▶ Arithmetic Operators</p>
+	<p class="definition2">A language that permits developers of JSP for getting to application data stored in JavaBeans components. 
+	It was presented in JSP2.0. The EL expressions are encased between “$” and “}” characters.</p>
+	<p class="miniTitle3" id="topss">▶ Relational Operators</p>
+	<p class="definition2">Comparison Operators are used to compare two values to each other. &#62; means Greater than, &#60; means Less than,
+	#60;= means Less than or equal to, &#62;= means Greater than or equal to, == means Equal to, != means Not equal to</p>
+	<p class="miniTitle3" id="topss">▶ Logical Operators</p>
+	<p class="definition2">•	&& (AND Operator)<br>
+	•	|| (OR Operator)<br>
+	•	! (NOT Operator)<br>
+	</p>
+	<p class="miniTitle8">Implicit Objects</p>
+	<p class="definition2">The implicit objects can straightforwardly be utilized as a part of an El expressions. Users can utilized 
+	these objects to get attributes from various parameter values and scopes.
+	</p>
+	<p class="miniTitle2" id="life">Exception Handling</p>
+	<p class="definition">An exception is an abnormal or unexpected condition in the ordinary execution flow of a program. These 
+	exception may happen because of invalid information, getting to inaccessible files on desk and so forth.
+	</p>
+	<p class="miniTitle8">• Errors</p>
+	<p class="definition2">These are the issues which are outside the ability to control users.</p>
+	<p class="miniTitle8">• Checked Exceptions</p>
+	<p class="definition2">Exceptions which can’t be ignored at the compilation and is considered as user mistake.</p>
+	<p class="miniTitle8">• Runtime Exceptions or Unchecked Exceptions</p>
+	<p class="definition2">These exceptions can be overlooked at runtime.</p>
+	<p class="miniTitle8">• ErrorPage and isErrorPage</p>
+	<p class="definition2">These exceptions can be overlooked at runtimeErrorPage attribute of directive’s page is utilized for setting up an error page.
+	isErrorPage attribute is utilized for creating the exception instance variable by including the accompanying order.</p>
+	</div>
+	<footer id="foot">
+		<div id="footCenter">
+		<a href="index.html"><img id="footlogo" src="styles/pictures/logo.png"></a>
+		<p id="footlabel"><a href="index.html">serverEd</a></p>
+		<p id="footcontent"><a href="index.html">serverEd</a></p>
+		<p id="footcontents">serverEd is an educational website which provides lessons about server-side scripting.</p>
+		<p id="footEnd">Made by Group 3 ©2018</p>
+		<p id="navigation">Navigation</p>
+		<nav id="footNav">
+			<a href="index.html">Home</a>
+			<a href="java.html">Java</a>
+			<a href="php.html">PHP</a>
+			<a href="node.html">Node.js</a>
+		</nav>
+		</div>
+	</footer>
+	</div>
+	<div id="nightButton" onclick="nightMode()">
+		<p>🌙</p>
+	</div>
+	<div id="resources" onclick="openSides()">
+		<p>✎</p>
+	</div>
+	<div id="sidebits">
+	<p id="bitslabel">Video of the Week</p>
+	<center>
+	<iframe width="600" height="350"
+	src="https://www.youtube.com/embed/tkFRGdUgCsE">
+	</iframe>
+	</center>
+	<p id="bitscomment">This video will help you start with learning Java Web Servlets.</p>
+	</div>
+	<div id="resourcescloser" onclick="closeSides()">
+		<p>✏</p>
+	</div>
+	<script>
+		var c = document.getElementById("contents").querySelectorAll("p");
+		var b = document.getElementById("types").querySelectorAll("p");
+		var a = document.getElementById("typesTwo").querySelectorAll("p");
+		document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		function nightMode() {
+     		if ( sessionStorage.getItem('backgroundColor') == 'white') {         
+            		sessionStorage.setItem('backgroundColor', '#0b0d1e');
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#FDD017";
+					}
+     		}else if (sessionStorage.getItem('backgroundColor') == null || undefined) {
+        		sessionStorage.setItem('backgroundColor', '#0b0d1e'); 
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#FDD017";
+					}
+    		}else if( sessionStorage.getItem('backgroundColor') == '#0b0d1e') {   
+        		sessionStorage.setItem('backgroundColor', 'white');
+					document.body.style.backgroundColor = "white";
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#616D7E";
+					}
+					for (i = 0; i < b.length; i++) {
+						b[i].style.color = "#FFFFFF";
+					}
+					for (i = 0; i < c.length; i++) {
+						a[i].style.color = "#FFFFFF";
+					}
+        	}
+			document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		}
+	</script>
 	<script src="scripts/sideActions.js"></script>
 </body>
 <div id="ds1">
