@@ -551,6 +551,93 @@ body{
 	position: relative;
 	top: 140px;
 }
+#nightButton{
+	position: fixed;
+	background-color: #151B54;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 60px;
+	right: -1px;
+	cursor: pointer;
+	z-index: 10;
+}
+#nightButton p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#resources{
+	position: fixed;
+	background-color: #157DEC;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 140px;
+	right: -1px;
+	cursor: pointer;
+	z-index: 10;
+}
+#resources p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#sidebits{
+	position: fixed;
+	background-color: #157DEC;
+	border-radius: 5px;
+	width: 800px;
+	height: 100%;
+	top: 0px;
+	right: -800px;
+	z-index: 96;
+}
+#resourcescloser{
+	position: fixed;
+	background-color: #157DEC;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 140px;
+	right: -795px;
+	cursor: pointer;
+	z-index: 97;
+}
+#resourcescloser p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#bitslabel{
+	text-align: center;
+	font-family: Lib, Helvetica;
+	font-size: 42px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#bitscomment{
+	text-align: center;
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#note{
+	height: 200px;
+	width: 200px;
+	position: relative;
+	top: 50px;
+}
 #foot{
 	height: 200px;
 	width: 100%;
