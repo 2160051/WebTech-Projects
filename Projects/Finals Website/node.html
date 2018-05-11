@@ -86,6 +86,7 @@
 	is a function of one argument. It returns the reset value by calling the continuation function with this values as the argument.</p>
 	<div class="sampleCode">
 	<p class="code">
+<<<<<<< HEAD
 		function receiveData(data) { console.log(“data received: ” %j, data); }<br>
 		<br>//Add event listener to an event type<br>
 		readStream.addListener(“data”, receiveData);<br>
@@ -94,6 +95,16 @@
 		<br>//Removing a specific event listener of an event<br>
 		readStream.removeListener(“data”, receiveData);<br>
 		<br>//Remove all event listeners of an event<br>
+=======
+		function receiveData(data) { console.log(“data received: ” %j, data); }<br><br>
+		//Add event listener to an event type<br>
+		readStream.addListener(“data”, receiveData);<br><br>
+		// Attach an event listener to an event type to be called once<br>
+		readStream.once(“data”, receiveData);<br><br>
+		//Removing a specific event listener of an event<br>
+		readStream.removeListener(“data”, receiveData);<br><br>
+		//Remove all event listeners of an event<br>
+>>>>>>> 7cf6eb74a0257987a476864636fedb756ec284cf
 		readStream.removeAllListeners(“data”);
 	</p>
 	</div>
