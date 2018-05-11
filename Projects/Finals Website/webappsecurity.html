@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="styles/wasStyle.css"/>
+    <title>serverEd | Web Application Security</title>
+   <link rel="icon" href="styles/pictures/icon.png">
+</head>
+<body>
+	<div id="divCover">
+	</div>
+	<a href="index.html">
+		<img id="logo" src="styles/pictures/logo.png">
+	</a>
+	<p id="label"><a href="index.html">serverEd</a></p>
+	<nav id="topNav">
+		<a href="index.html">Home</a>
+		<a href="java.html">Java</a>
+		<a href="php.html">PHP</a>
+		<a href="node.html">Node.js</a>
+       <a id="on" href="webappsecurity.html">Web Application Security</a>
+	</nav>
+   <div id="sideOpenerA" onclick="openSide()">
+		<p>►</p>
+	</div>
+   <nav id="sideNav">
+      <a href="webappsecurity.html">Web Application Security</a>
+		<a href="node.html">Node.js |</a>
+		<a href="php.html">PHP |</a>
+		<a href="java.html">Java |</a>
+		<a href="index.html">Home |</a>
+	</nav>
+   <nav id="bottomNav">
+		<a href="#ds1">Web Application Security</a>
+		<a href="#miniTitle">▶ TOP 10 OWASP 2017 Application Security Risks</a>
+      <a href="#miniTitle1">&nbsp;▶ 1. Injection</a>
+      <a href="#miniTitle2">&nbsp;▶ 2. Broken Authentication</a>
+      <a href="#miniTitle3">&nbsp;▶ 3. Sensitive Data Exposure</a>
+      <a href="#miniTitle4">&nbsp;▶ 4. XML External Entities (XXE)</a>
+      <a href="#miniTitle5">&nbsp;▶ 5. Broken Access Control</a>
+      <a href="#miniTitle6">&nbsp;▶ 6. Security Misconfiguration</a>
+      <a href="#miniTitle7">&nbsp;▶ 7. Cross-Site Scripting (XSS)</a>
+      <a href="#miniTitle8">&nbsp;▶ 8. Insecure Deserialization</a>
+      <a href="#miniTitle9">&nbsp;▶ 9. Using Components with Known Vulnerabilities</a>
+      <a href="#miniTitle10">&nbsp;▶ 10. Insufficient Logging & Monitoring</a>
+		
+	</nav>
+   <div id="sideOpener" onclick="closeSide()">
+		<p>◄</p>
+	</div>
+   <div id="content">
+      
+      <p id="title">Web Application Security</p>
+      
+
+      <p id="miniTitle">TOP 10 OWASP 2017 Application Security Risks</p>
+      <p id="definition2">OWASP stands for Open Web Application Security Project. It is an organization that specifies practical and neutral information regarding computer and internet applications. They aim to enhance the security for software products and applications used by the consumers.The OWASP documents are free and open for the consumption of many. One of their documents, Top 10 OWASP Application Security Risks focuses on the most critical web application security risk.
+      </p>
+      
+      
+    
+      <p id="miniTitle1">1. Injection</p>            
+<p id="definition2">
+    -	Occurs when the data is sent to an interpreter as a part of a query
+      </p>
+      <p id="definition">
+    -	Found in :
+      </p>
+      <p id="definition2">
+         •	SQL<br>
+         •	LDAP<br>
+         •	XPath<br>
+         •	NoSQL queries<br>
+         •	OS commands<br>
+         •	XML parsers<br>
+         •	SMTP headers<br>
+         •	Expression languages<br>
+         •	ORM queries<br>
+       </p>
+      <p id="definition">
+         -	Vulnerability
+       </p>
+      
+      <p id="definition2">
+		 •	User-data is not validated, or sanitized by the application<br>
+			•	Non-parameterized calls<br>
+
+       </p>
+      
+      <p id="definition">
+         -	Attack Scenario
+       </p>
+      
+	   <p id="definition2">
+		 •	SQL call:
+       </p>
+      
+       <div id="sampleCode">
+	<p class="code">
+	 String query = “SELECT * FROM users WHERE custID=’”+ request.getParameter(“id”)+”’”;
+             
+	</p>
+	</div>
+      <p id="definition">
+          -	Prevention:
+
+       </p>
+      <p id="definition2">
+
+•	Use safe API to provide a parameterized interface<br>
+•	Use Object Relational Mapping Tools<br>
+•	Use server-side input validation<br>
+•	Use SQL controls in the queries<br>
+
+       </p>
+      
+      
+      <p id="miniTitle2">2.	Broken Authentication</p>
+   
+      <p id="definition2">
+  -	Cause of incorrect implementation of application functions associated with authentication and session management.<br>
+		 -	Causes to allow attackers compromise passwords, session tokens and others<br>
+      </p>
+      
+      <p id="definition">
+         -	Vulnerability
+       </p>
+       <p id="definition2">
+
+•	Allows credential stuffing and other automated attacks<br>
+•	Allows weak passwords and default passwords<br>
+•	Use of weak credential recovery<br>
+•	Use of plain text or weakly hashed passwords<br>
+•	Ineffective multi-factor authentication<br>
+•	Session ID exposed in the URL<br>
+•	Invalidation of Session ID are not done properly<br>
+       </p>
+	   
+	  <p id="definition">
+         -	Attack Scenario
+       </p>
+	   <p id="definition2">
+         
+		 •	When an application session timeouts are not set properly, a user may be able to access the previous account that was logged into the device if the browser was just closed but the account was not logged out.<br>
+
+       </p>
+	   
+      <p id="definition">
+          -	Prevention:
+       </p>
+       <p id="definition2">
+         
+•	Employ multi-factor authentication<br>
+•	Employ checks of weak-passwords<br>
+•	Set password length and complexity policy.<br>
+•	Delay failed login attempts progressively and record these attempts that will warn the administrators about the detected malicious activities.<br>
+
+       </p>
+      
+      <p id="miniTitle3">3.	Sensitive Data Exposure</p>
+      <p id="definition2">
+         -	Web applications lack protection not only for the users credential but also the sensitive information in the system.
+		 </p>
+<p id="definition">
+         -	Vulnerability
+       </p>
+	   <p id="definition2">
+        
+		•	Data are transferred in plain text<br>
+•	Sensitive data are stored and backed-up in plain text<br>
+•	Use of weak and default crypto keys<br>
+•	Encryption is not imposed
+       </p>
+      
+	   <p id="definition">
+         -	Attack Scenario
+       </p>
+	   <p id="definition2">
+        
+		 When an application encrypts the sensitive information like passwords to store them and is already decrypted once it is retrieved, then the sensitive will not be secured anymore because it is decrypted automatically upon retrieval. This also makes the encryption useless.
+		</p>
+      
+      
+           <p id="definition">
+          -	Prevention:
+       </p>
+      
+    <p id="definition2">
+          
+•	Use less complex data formats<br>
+•	Upgrade XML processors and libraries<br>
+•	Use dependency checkers<br>
+•	Use server side input validation<br>
+•	Ensure that XML file upload validates incoming XML with validation of XSD
+
+       </p>
+      
+      <p id="miniTitle4">4.	XML External Entities</p>
+      <p id="definition2">
+         -	These entities could be used for internal port scanning, internal file sharing, denial of service and remote code execution.
+		 </p>
+<p id="definition">
+         -	Vulnerability<br>
+       </p>
+	   <p id="definition2">
+        
+		•	Accepts XML from untrusted sources<br>
+		•	Enabled document type definitions in SOAP bases web services<br>
+		•	Use of SAML for processing identity within federal security
+       </p>
+      
+	   <p id="definition">
+         -	Attack Scenario
+       </p>
+	   <p id="definition2">
+        
+		When the attacker could alter the entity line to a server’s private network or an endless file to impose denial of service
+		</p>
+      
+      <div id="sampleCode">
+	<p class="code">
+	 &#60;!ENTITY xxe SYSTEM “https://192.168.1.1/private” &#62;] >
+             
+	</p>
+	</div>
+           
+      <div id="sampleCode">
+	<p class="code">
+	 &#60;!ENTITY xxe SYSTEM file:///dev/random &#62;] >
+             
+	</p>
+	</div>
+           <p id="definition">
+          -	Prevention:
+       </p>
+      
+    <p id="definition2">
+          
+•	Use less complex data formats<br>
+•	Upgrade XML processors and libraries<br>
+•	Use dependency checkers<br>
+•	Use server side input validation<br>
+•	Ensure that XML file upload validates incoming XML with validation of XSD
+
+       </p>
+      
+      <p id="miniTitle5">5.	Broken Access Control
+      
+      <p id="definition2">
+         -	Improper implementation of authentication restrictions
+		 </p>
+
+      <p id="definition">
+         -	Vulnerability
+       </p>
+	   <p id="definition2">
+        
+		•	Evading access control checks<br>
+•	Allowing primary keys to be altered<br>
+•	Allowing the view and edit option for someone else’s account<br>
+•	Promotion of authorization<br>
+•	Manipulation of metadata<br>
+•	Misconfiguration of CORS
+       </p>
+	   
+      <p id="definition">
+         -	Attack Scenario
+       </p>
+	   <p id="definition2">
+      
+		When the attacker could alter the entity line to a server’s private network or an endless file to impose denial of service
+		</p>
+		
+      <div id="sampleCode">
+	<p class="code">
+	http://scenario.com/example/getappInfo      
+	</p>
+	</div>
+      
+		<div id="sampleCode">
+	<p class="code">
+	http://scenario.com/example/admin_getappInfo
+	</p>
+	</div>
+       
+      <p id="definition">
+          -	Prevention:
+       </p>
+      
+       <p id="definition2">
+         
+•	Minimize CORS usage<br>
+•	Implement limit requirements by domain models<br>
+•	Deactivate directory listing of web server<br>
+•	Limit API access<br>
+•	Limit controller access<br>
+•	Delay failed login attempts progressively and record these attempts that will warn the administrators about the detected malicious activities.
+       </p>	   
+      
+      <p id="miniTitle6">6. Security Misconfiguration</p>
+      <p id="definition2">
+          -  Happens when the security structure or framework left open of an application by Database or system administrator.
+         </p>
+<p id="definition">
+          -	Vulnerability:
+       </p>
+      <p id="definition2">
+•	Default or weak password<br>
+•	Obsolete software<br>
+•	Unprotected files, records or databases<br>
+•	Unnecessary highlighted features that are enabled</p>
+      
+<p id="definition">
+         -	Attack Scenario
+       </p>
+   <p id="definition2">   
+•	Weak or default accounts are not yet changed<br>
+•	Directory listing isn’t disabled on server.<br>
+•	Application Server accompanies test application that are not removed from the created server
+</p>
+      <p id="definition">
+          -	Prevention:
+       </p>
+     <p id="definition2"> 
+•	Review of the whole IT environment<br>
+•	Featuring like issues as software that necessities patches or updates<br>
+•	Default accounts that have unique passwords<br>
+•	Audit security settings in systems and applications that are not set to secure qualities or values
+</p>
+       
+      <p id="miniTitle7">7. Cross-Site Scripting (XSS)</p>
+      <p id="definition2">
+        -  It is a web-based accomplished on a vulnerable or sensitive web application.<br>
+- The victim is not the application but the user.
+
+       </p>
+      <p id="definition">
+         -	Vulnerability
+       </p>
+	   
+	   <p id="definition2">
+        •	Reflected XSS – the attacker transmits a link to the victim’s application through social media, email, etc.<br>
+•	Stored XSS -  the attacker is able to store or plant a script. Once it is already stored, it is already permanent on the application.<br>
+•	DOM XSS – the script is plant as a output of changing the DOM of the site on the code of client side.
+
+       </p>
+	   
+	   
+<p id="definition">
+         -	Attack Scenario
+       </p>
+	   
+	   <p id="definition2">
+        •	The attacker uses an application that has an untrusted data in the structure of the HTML snippet without a validation.
+       </p>
+	   
+	   
+<p id="definition">
+          -	Prevention:
+       </p>
+	   
+	   <p id="definition2">
+        •	Use frameworks that instinctively escape or break XSS.
+•	Apply a sensitive code context when modifying the document browser on the client side.
+
+       </p>
+      
+      <p id="miniTitle8">8. Insecure Deserialization</p>
+      <p id="definition2">
+        -  It happens when untrusted information or data is utilized to mishandle the logic of an application, deliver a denial of service (DoS) attack, or even execute self-assertive code.
+       </p>
+      <p id="definition">
+         -	Vulnerability
+       </p>
+	   
+	   <p id="definition2">
+        •	Untrusted information or data is<br> utilized to abuse the application’s logic.
+•	Data or information tampering attacks.
+
+       </p>
+	   
+	   
+<p id="definition">
+         -	Attack Scenario
+       </p>
+	   
+	   <p id="definition2">
+        •	Changing the serialized object to have an access on server<br>
+•	Uses a PHP object serialization on the PHP forum to redeem a super cookie.
+
+       </p>
+	   
+	   
+<p id="definition">
+          -	Prevention:
+       </p>
+	   
+	   <p id="definition2">
+        •	Separating and running codes that deserializes in authorize environments.<br>
+•	Monitoring deserialization
+
+       </p>
+      
+      <p id="miniTitle9">9. Using Components with Known Vulnerabilities</p>
+      
+      <p id="definition">
+         -	Vulnerability
+       </p>
+	   
+	   <p id="definition2">
+        •	The software is obsolete, unsupported or sensitive.<br>
+•	Not upgrading frameworks, dependencies, platform etc,.<br>
+•	No knowledge on the version that are being used in all components.
+
+       </p>
+	   
+	   
+<p id="definition">
+         -	Attack Scenario
+       </p>
+	   
+	   <p id="definition2">
+        •	The attacker attempts to abuse a sensitive part on the server’s component. 
+       </p>
+	   
+	   
+<p id="definition">
+          -	Prevention:
+       </p>
+	   
+	   <p id="definition2">
+        •	Removed unnecessary features, dependencies, files, components and documents that are not using.<br>
+•	Monitor for components and libraries that are unmaintained.
+
+       </p>
+      
+      <p id="miniTitle10">10. Insufficient Logging and Monitoring</p>
+<p id="definition2">
+        -  Occurs when the security events are not logged properly and not monitoring the activity logs by the system. 
+       </p>
+      <p id="definition">
+         -	Vulnerability
+       </p>
+	   
+	   <p id="definition2">
+        •	Unmonitored suspicious activity on applications and APIs<br>
+•	The logs are only kept locally.<br>
+•	Reviewable events like high value transactions, failed logins and logins are not logged
+
+       </p>
+	   
+	   
+<p id="definition">
+         -	Attack Scenario
+       </p>
+	   
+	   <p id="definition2">
+        •	The attacker uses a common password using scans for users.<br>
+•	Software was hacked by the attacker using a flaw in its software
+
+       </p>
+	   
+	   
+<p id="definition">
+          -	Prevention:
+       </p>
+	   
+	   <p id="definition2">
+        •	Make sure all control failures, login and server-side input validation is properly logged.<br>
+•	Make sure that the logs are monitored.<br>
+•	Build an effective alerting and monitoring.
+
+       </p>
+
+     
+      <footer id="foot">
+		<div id="footCenter">
+		<a href="index.html"><img id="footlogo" src="styles/pictures/logo.png"></a>
+		<p id="footlabel"><a href="index.html">serverEd</a></p>
+		<p id="footcontent"><a href="index.html">serverEd</a></p>
+		<p id="footcontents">serverEd is an educational website which provides lessons about server-side scripting.</p>
+		<p id="footEnd">Made by Group 3 ©2018</p>
+		<p id="navigation">Navigation</p>
+		<nav id="footNav">
+			<a href="index.html">Home</a>
+			<a href="java.html">Java</a>
+			<a href="php.html">PHP</a>
+			<a href="node.html">Node.js</a>
+		</nav>
+		</div>
+	</footer>
+   </div>
+   <div id="nightButton" onclick="nightMode()">
+		<p>🌙</p>
+	</div>
+	<div id="resources" onclick="openSides()">
+		<p>✎</p>
+	</div>
+	<div id="sidebits">
+	<p id="bitslabel">This Topic's Video of the Week</p>
+	<center>
+	<iframe width="600" height="350"
+	src="https://www.youtube.com/watch?v=avFR_Af0KGk">
+	</iframe>
+	</center>
+	<p id="bitscomment">This video discusses about OWASP top 10 2017.</p>
+	</div>
+	<div id="resourcescloser" onclick="closeSides()">
+		<p>✏</p>
+	</div>
+	<script>
+		var c = document.getElementById("contents").querySelectorAll("p");
+		var b = document.getElementById("types").querySelectorAll("p");
+		var a = document.getElementById("typesTwo").querySelectorAll("p");
+		document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		function nightMode() {
+     		if ( sessionStorage.getItem('backgroundColor') == 'white') {         
+            		sessionStorage.setItem('backgroundColor', '#0b0d1e');
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#FDD017";
+					}
+     		}else if (sessionStorage.getItem('backgroundColor') == null || undefined) {
+        		sessionStorage.setItem('backgroundColor', '#0b0d1e'); 
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#FDD017";
+					}
+    		}else if( sessionStorage.getItem('backgroundColor') == '#0b0d1e') {   
+        		sessionStorage.setItem('backgroundColor', 'white');
+					document.body.style.backgroundColor = "white";
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#616D7E";
+					}
+					for (i = 0; i < b.length; i++) {
+						b[i].style.color = "#FFFFFF";
+					}
+					for (i = 0; i < c.length; i++) {
+						a[i].style.color = "#FFFFFF";
+					}
+        	}
+			document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		}
+	</script>
+   <script src="scripts/sideActions.js"></script>
+</body>
+<div id="ds1">
+</div>
+<div id="ds2">
+</div>
+<div id="ds3">
+</div>
+</html>
