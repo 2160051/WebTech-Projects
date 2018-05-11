@@ -2,7 +2,9 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+   <link rel="stylesheet" type="text/css" href="styles/nodeStyle.css"/>
+    <title>serverEd | Node.js</title>
+   <link rel="icon" href="styles/pictures/icon.png">
 </head>
 <body>
 	<div id="divCover">
@@ -17,6 +19,150 @@
 		<a href="php.html">PHP</a>
 		<a id="on" href="node.html">Node.js</a>
 	</nav>
+   <div id="sideOpenerA" onclick="openSide()">
+		<p>►</p>
+	</div>
+   <nav id="sideNav">
+		<a href="node.html">Node.js</a>
+		<a href="php.html">PHP |</a>
+		<a href="java.html">Java |</a>
+		<a href="index.html">Home |</a>
+	</nav>
+   <nav id="bottomNav">
+		<a href="#ds1">Node.js</a>
+		<a href="#title">▶ Introduction</a>
+		<a href="#miniTitle">▶ Loading and Exporting Modules</a>
+		<a href="#miniTitle2">▶ Event Emitters</a>
+		<a href="#miniTitle3">▶ CPS (continuation-Passing Style)</a>
+	</nav>
+   <div id="sideOpener" onclick="closeSide()">
+		<p>◄</p>
+	</div>
+   <div id="content">
+      <img id="node" src="styles/pictures/node.png">
+      <p id="title">Server Side: Node.js</p>
+      <p id="definition">
+         Node.js is a powerful tool that could be used to execute applications not only on the server side but also on the client side. It is defined as an open source server environment developed by Ryan Dahl in 2009. With Node.js, we are able to construct scalable network applications. It is fast compared to other server side programming languages for the reason that it is written in C and non-locking I/O model. It can also be run on different operating systems like Linux, Sun OS, Mac OS X and windows platforms. 
+      </p>
+      <p id="definition">
+         Rather than multithreaded execution, Node.js makes use of event-based server execution procedure. It makes use of event loop and is able to gauge to millions of simultaneous connections. Each I/O operation in Node.js is asynchronous which allows the server to continue processing the incoming request while the I/O operation is ongoing (see figure below). These I/O operation includes accessing an external web service, reading a file from a hard drive or waiting for a file to be uploaded, which takes a lot of time and causes inconvenience without asynchronous functionality.  
+      </p>
+      <img src="styles/pictures/EventBasedExe.png" alt="Event Based Execution">
+      <p id="definition">
+               The Node.js operates on a virtual machine v8 environment which could also be called a JavaScript engine running the JavaScript code. With this environment, it is important to host the web with the v8 environment supported web hosts. Some of these web hosts are:
+       </p>
+      <div id="types">
+      <div id="cloudf"><p>Cloud Foundry</p></div>
+	  <div id="cloudn"><p>Cloudnode</p></div>
+      <div id="dotcloud"><p>DotCloud</p></div>
+      <div id="duostack"><p>Duostack</p></div>
+   </div>
+      
+      <p id="subdefinition">
+            Node implements the commons modules standard where each module has its own context separated from the other modules. These modules cannot occupy a global scope or interfere with other modules. The modules are referenced by name or by file path. In addition, every module has a public API which could be used after it is imported into the script.
+       </p>
+      
+      <p id="miniTitle">Loading and Exporting Modules</p>
+      <p id="definition2">•	Import or Load a module: use require function – returns an object that represents JavaScript API exposed by the module.
+      </p>
+      
+      <div id="sampleCode">
+	<p class="code">
+	var module = require(‘module’);
+	</p>
+	</div>
+      
+    <p id="definition2">
+          •	Export from a module: use module.exports object
+       </p>  
+      
+      <div id="sampleCode">
+	<p class="code">
+	module.exports = ‘Welcome’;
+	</p>
+	</div>
+      <p id="miniTitle2">Event Emitters</p>            
+<p id="definition2">
+   - the objects which release events.<br> 
+         - allow programmers to subscribe to events that they need. <br>
+   *EventEmitter Pseudo-class could be used to create an event emitters of the programmers’ choice.<br> 
+      </p>
+      
+      <p id="miniTitle3">CPS (continuation-Passing Style)</p>
+   <script src="scripts/sideActions.js"></script>
+      <p id="definition2">
+   CPS (continuation-Passing Style) is a style of programming where control is passed explicitly in a continuous manner. And it is used as a style for asynchronous programming. A function written this way takes an explicit “continuation” as an extra argument which is a function of one argument. It returns the reset value by calling the continuation function with this values as the argument. 
+      </p>
+      
+      <div id="sampleCode">
+	<p class="code">
+	 function receiveData(data) {
+             console.log(“data received: ” %j, data);
+            }
+             
+	</p>
+	</div>
+               <p id="definition3">
+   Add event listener to an event type<br>
+      </p>
+      
+      <div id="sampleCode">
+	<p class="code">
+             readStream.addListener(“data”, receiveData); 
+	</p>
+	</div>
+      
+      <p id="definition3">
+   Attach an event listener to an event type to be called once
+      </p>
+      
+      <div id="sampleCode">
+	<p class="code">
+	
+             readStream.once(“data”, receiveData);
+             
+	</p>
+	</div>
+      
+       <p id="definition3">
+   Removing a specific event listener of an event
+      </p>
+      
+      <div id="sampleCode">
+	<p class="code">
+	
+             readStream.removeListener(“data”, receiveData);
+             
+	</p>
+	</div>
+      
+       <p id="definition3">
+ Remove all event listeners of an event
+      </p>
+      
+      <div id="sampleCode">
+	<p class="code">
+            readStream.removeAllListeners(“data”);
+             
+	</p>
+	</div>
+      <footer id="foot">
+		<div id="footCenter">
+		<a href="index.html"><img id="footlogo" src="styles/pictures/logo.png"></a>
+		<p id="footlabel"><a href="index.html">serverEd</a></p>
+		<p id="footcontent"><a href="index.html">serverEd</a></p>
+		<p id="footcontents">serverEd is an educational website which provides lessons about server-side scripting.</p>
+		<p id="footEnd">Made by Group 3 ©2018</p>
+		<p id="navigation">Navigation</p>
+		<nav id="footNav">
+			<a href="index.html">Home</a>
+			<a href="java.html">Java</a>
+			<a href="php.html">PHP</a>
+			<a href="node.html">Node.js</a>
+		</nav>
+		</div>
+	</footer>
+   </div>
 </body>
 <div id="ds1">
 </div>
