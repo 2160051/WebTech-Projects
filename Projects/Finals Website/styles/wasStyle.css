@@ -319,6 +319,15 @@ body{
     font-size: 20px;
 	padding: 20px;
 }
+#miniTitle1{
+	text-align: center;
+	color: var(--font-color);
+	font-family: Lib, Helvetica;
+	font-size: 58px;
+	font-weight: bold;
+	position: relative;
+	top: 140px;
+}
 #miniTitle2{
 	text-align: center;
 	color: var(--font-color);
