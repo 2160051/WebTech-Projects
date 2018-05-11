@@ -87,13 +87,13 @@
 	<div class="sampleCode">
 	<p class="code">
 		function receiveData(data) { console.log(“data received: ” %j, data); }<br>
-		//Add event listener to an event type<br>
+		<br>//Add event listener to an event type<br>
 		readStream.addListener(“data”, receiveData);<br>
-		// Attach an event listener to an event type to be called once<br>
+		<br>// Attach an event listener to an event type to be called once<br>
 		readStream.once(“data”, receiveData);<br>
-		//Removing a specific event listener of an event<br>
+		<br>//Removing a specific event listener of an event<br>
 		readStream.removeListener(“data”, receiveData);<br>
-		//Remove all event listeners of an event<br>
+		<br>//Remove all event listeners of an event<br>
 		readStream.removeAllListeners(“data”);
 	</p>
 	</div>
