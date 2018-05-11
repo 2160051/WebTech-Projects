@@ -42,6 +42,7 @@
 		<p>◄</p>
 	</div>
 	<div id="content">
+	<div id="contents">
 	<img id="php" src="styles/pictures/php.png">
 	<img id="wrench" src="styles/pictures/wrench.png">
 	<p id="title">PHP: Hypertext Preprocessor</p>
@@ -298,6 +299,7 @@
 	<p id="definition14">For arrays, there are also useful functions available. These functions include array_push() which is used to push or add elements 
 	at the end of the array, count() which can return the number of elements in the array and sort() which will simply sort the elements 
 	of an array in ascending order. Additionally, the opposite of sort() is rsort() which will sort the elements in descending order.</p>
+	</div>
 	<footer id="foot">
 		<div id="footCenter">
 		<a href="index.html"><img id="footlogo" src="styles/pictures/logo.png"></a>
@@ -315,6 +317,41 @@
 		</div>
 	</footer>
 	</div>
+	<div id="nightButton" onclick="nightMode()">
+		<p>🌙</p>
+	</div>
+	<script>
+		var c = document.getElementById("contents").querySelectorAll("p");
+		var b = document.getElementById("types").querySelectorAll("p");
+		var a = document.getElementById("typesTwo").querySelectorAll("p");
+		document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		function nightMode() {
+     		if ( sessionStorage.getItem('backgroundColor') == 'white') {         
+            		sessionStorage.setItem('backgroundColor', '#0b0d1e');
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#FDD017";
+					}
+     		}else if (sessionStorage.getItem('backgroundColor') == null || undefined) {
+        		sessionStorage.setItem('backgroundColor', '#0b0d1e'); 
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#FDD017";
+					}
+    		}else if( sessionStorage.getItem('backgroundColor') == '#0b0d1e') {   
+        		sessionStorage.setItem('backgroundColor', 'white');
+					document.body.style.backgroundColor = "white";
+					for (i = 0; i < c.length; i++) {
+						c[i].style.color = "#616D7E";
+					}
+					for (i = 0; i < b.length; i++) {
+						b[i].style.color = "#FFFFFF";
+					}
+					for (i = 0; i < c.length; i++) {
+						a[i].style.color = "#FFFFFF";
+					}
+        	}
+			document.body.style.backgroundColor = sessionStorage.getItem('backgroundColor');
+		}
+	</script>
 	<script src="scripts/sideActions.js"></script>
 </body>
 <div id="ds1">

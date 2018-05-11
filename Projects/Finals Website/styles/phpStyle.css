@@ -1040,3 +1040,22 @@ body{
 #footNav a:hover{
 	font-weight: bold;
 }
+#nightButton{
+	position: fixed;
+	background-color: #151B54;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	top: 60%;
+	right: -1px;
+	cursor: pointer;
+	z-index: 10;
+}
+#nightButton p{
+	color: white;
+	padding-left: 6px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
