@@ -3,7 +3,7 @@
 {"question": "Node.js was developed as a client-side programming language", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
 {"question": "Node.js was developed as a server-side programming language", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
 {"question": "He developed Node.js", "choices": ["Ryan Dahl", "Rhan Dahl", "Ren Dalh", "Ryan Dhi"], "answer": "a"},
-{"question": "It can run on the following operating systems except:", "choices": ["Linux", "Sun OS", "Mac OS", "None of the above"], "answer": "d"}
+{"question": "It can run on the following operating systems except:", "choices": ["Linux", "Sun OS", "Mac OS", "None of the above"], "answer": "d"},
 {"question": "Node.js was developed by Ryan Dahl in 2009", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
 {"question": "The execution procedure that was used for the Node.js is multithreaded execution", "choices": ["True", "False", "Thru", "Falls"], "answer": "b"},
 {"question": "Each I/O operation in Node.js is _______________ which allows the server to continue processing the incoming request while the I/O operation is ongoing", "choices": ["synchronous", "multithreaded", "asynchronous", "event-based"], "answer": "c"},
