@@ -1,12 +1,9 @@
 [
 {"question": "Which method is generated Servlet?", "choices": ["jspInit()","_jspService()","jspDestroy()","All of the above"], "answer": "d"},
-{"question": "Gives the guidelines utilized by the translator at the phase or stage of the life 
-cycle of JSP.
-", "choices": ["Page directive tag","Page directive","Include Directive","Taglib"], "answer": "a"},
-{"question": "It is utilized to characterize a custom tag library in a JSP page. This is done as such that the related tags can be utilized or used as a part of a similar page.
-", "choices": ["Taglib","Scripting tags","Include Diractives","None of the above"], "answer": "a"},
-{"question": "", "choices": ["","","",""], "answer": ""},
+{"question": "Gives the guidelines utilized by the translator at the phase or stage of the life cycle of JSP.", "choices": ["Page directive tag","Page directive","Include Directive","Taglib"], "answer": "a"},
+{"question": "It is utilized to characterize a custom tag library in a JSP page. This is done as such that the related tags can be utilized or used as a part of a similar page.", "choices": ["Taglib","Scripting tags","Include Diractives","None of the above"], "answer": "a"},
 {"question": "What attribute of page directives should be used, if a jsp will generate a xml page", "choices": ["contentXML","generateXML","typeXML","contentType"], "answer": "d"},
 {"question": "What attribute which specifies the url path of another page to which a request is to be dispatched to handle run time exceptions thrown by current JSP page.", "choices": ["errorPage","Import","pageEncoding","autoFlush"], "answer": "a"},
 {"question": "Which instance class is config?", "choices": ["javax.servlet.Application","javax.servlet.ServletContext","javax.servlet.ServletConfig","javax.servlet.Context"], "answer": "c"},
-{"question": "Can JSP page process HTML form data?", "choices": ["true","false"], "answer": "a"},
+{"question": "Can JSP page process HTML form data?", "choices": ["true","false", "thru", "falls"], "answer": "a"}
+]

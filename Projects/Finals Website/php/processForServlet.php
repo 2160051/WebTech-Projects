@@ -11,26 +11,28 @@
 <br />
 
 <?php
-	$url = '../json/questions.json'; 
+	$url = '../json/quizJavaServlet.json'; 
     $data = file_get_contents($url); 
     $quizQuestions = json_decode($data, true);
 	$counter = 0;
 	$score = 0;
 	
-	foreach ($quizQuestions as $quizQuestion) {
-		$studentAnswer = $_POST[$counter];		
+        foreach ($quizQuestions as $quizQuestion) {
+		  $studentAnswer = $_POST[$counter];		
 
 		if($studentAnswer == $quizQuestion['answer']){
 			$score++;
 		}
 		$counter++;
 	}
-	echo "<center>Your Score is <br> $score/$counter <br></center>";
+	echo "<center id='score'>Your Score is <br> $score/$counter <br></center>";
 	echo "<form action='process.php?id=1' method='post' id='quizForm' id='1' class='quiz'> 
                 <ol>"; 
-	foreach ($quizQuestions as $quizQuestion) {
+	$counter = 0;
+    foreach ($quizQuestions as $quizQuestion) {
+        if($quizQuestion != null || $quizQuestion != undefined){
             echo '<li>
-                    <h3>'. $quizQuestion['question']. '</h3> 
+                    <h4>'. $quizQuestion['question']. '</h4> 
                     <div>
                         <label for="answerOneA">A)'. $quizQuestion['choices'][0]. '</label>
                     </div>
@@ -47,12 +49,20 @@
                         <label for="answerOneD">D)'. $quizQuestion['choices'][3].'</label>
                     </div>
                     <h4>Answer: '. $quizQuestion['answer']. '</h4> 
+                    <h4>Your Answer: '. $_POST[$counter]. '</h4>
                 </li>';
                 $counter++;
         }
+    }
         echo "</ol>
+            <a href='../index.html' class='continueButton'>Continue Adventure</a>
              </form>";
 ?>
 </div>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>

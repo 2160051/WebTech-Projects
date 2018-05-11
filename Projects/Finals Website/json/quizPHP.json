@@ -1,0 +1,12 @@
+[
+{"question": "PHP code is written inside the < ?php and ? >", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "PHP has 8 data types used to create variables which the Integers, Doubles, Booleans, NULL, Strings, Arrays, Objects and Resources", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "PHP can be a local, function, global or static variable.", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "Wikipedia and Facebook are one of the powered sites by PHP.", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "PHP is insensitive on whitespaces, but it is case sensitive", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "PHP style for comments is like C Language", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "In PHP,the combination of tokens would be the expressions", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "Resources is considered as special variables that hold references to the resources that are external to PHP", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "PHP is usually connected with databases that are written in SQL Language", "choices": ["True", "False", "Thru", "Falls"], "answer": "a"},
+{"question": "PHP will not allow you to make websites, create dynamic web pages and develop dynamic content.", "choices": ["True", "False", "Thru", "Falls"], "answer": "b"}
+]

@@ -31,7 +31,8 @@ html{
 }
 .submitButton{
 	position: relative;
-	left: 80%;
+	display: inline-block;
+	left: 65%;
 	border-radius: 5px;
 	background-color: var(--bg-color);
 	color: white;
@@ -42,4 +43,29 @@ html{
 }
 .submitButton:hover{
 	background-color: #5bd961;
+	cursor: pointer;
+}
+.continueButton{
+	position: relative;
+	left: 70%;
+	border-radius: 5px;
+	background-color: var(--bg-color);
+	color: white;
+	width: 200px;
+	height: 70px;
+	font-family: Lib, Helvetica;
+	font-size: 24px;
+	padding: 10px;
+}
+.continueButton:hover{
+	background-color: #5bd961;
+	cursor: pointer;
+}
+#score{
+	font-family: Lib, Helvetica;
+	font-size: 32px;
+}
+a{
+	text-decoration:none; 
+	color:white;
 }

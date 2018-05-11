@@ -1,16 +1,15 @@
 [
-{"questions": "How constructor can be utilized for a servlet?", "choices": ["Initialization and Contructor function", "Initialization", "Contructor function", "Setup() method"], "answer": "a"},
-{"questions": "What method where Servlet is initialized?", "choices": ["init() method", "service() method", "destroy()method", "doGet() method"], "answer": "a"},
-{"questions": "A method for terminating a servlet? ", "choices": ["init() method", "service() method", "destroy() method", "doPost() method"], "answer": "c"},
-{"questions": "The service() method of servlet gets called when?", "choices": ["When the servlet is created first", "whenever the servlet is invoked", "both", "none of the above"], "answer": "b"},
-{"questions": "Services of a Servlet Container", "choices": ["•	It manages or handles the life cycle of servlet.", "•	The servlet container handles resources like JSP pages, servlets and HTML files.", "•	It has security service.", "All of the above"], "answer": "d"},
-{"questions": "What java servlet container configuration which is the functionality of the Web Server is received by the Servlet container.  ", "choices": ["Standalone container", "In-process container", "Out-process container", "independent container"],  "answer": "a"},
-{"questions": "the web server is separated because the plug-in  runs in another program between the main server’s address space.", "choices": ["Standalone container", "In-Process container", "Out-Process container", "dependent container"], "answer": "b"},
-{"questions": "Sequence of filter life cycle methods? ", "choices": ["initialize(), service(), destroy()", "init(), doFilter(), destroy()", "init(), service(), delete()", "init(), service(), destroy()"], "answer": "d"},
-{"questions": "Servlet class can declare constructor with ServletConfig object as a argument?", "choices": ["true", "false"], "answer": "b"},
-{"questions": "It is used to manage errors, run servlet pages and JSP that deploys description.", "choices": ["Internationalization", "Exception Handling", "Session", "Filter"], "answer": "b"},
-
-{"questions": "Usage of filter under web application.", "choices": ["Compression", "Validation", "Internationalization", "Verification", "All of the above"], "answer": "e"},
-{"questions": "A filter that collects information or data which is about more than 1 filter.", "choices": ["Filter", "FilterChain", "FilterConfig", "FilterAlter"], "answer": "b"},
-{"questions": "A session handling mechanism that makes the client’s next request, the session data needs to append to the URL path on the next request.", "choices": ["Cookies", "Hidden form field", "URL rewriting", "none of the above"], "answer": "c"}
+{"question": "How constructor can be utilized for a servlet?", "choices": ["Initialization and Contructor function", "Initialization", "Contructor function", "Setup() method"], "answer": "a"},
+{"question": "What method where Servlet is initialized?", "choices": ["init() method", "service() method", "destroy()method", "doGet() method"], "answer": "a"},
+{"question": "A method for terminating a servlet? ", "choices": ["init() method", "service() method", "destroy() method", "doPost() method"], "answer": "c"},
+{"question": "The service() method of servlet gets called when?", "choices": ["When the servlet is created first", "whenever the servlet is invoked", "both", "none of the above"], "answer": "b"},
+{"question": "Services of a Servlet Container", "choices": ["It manages or handles the life cycle of servlet.", "•	The servlet container handles resources like JSP pages, servlets and HTML files.", "•	It has security service.", "All of the above"], "answer": "d"},
+{"question": "What java servlet container configuration which is the functionality of the Web Server is received by the Servlet container.  ", "choices": ["Standalone container", "In-process container", "Out-process container", "independent container"],  "answer": "a"},
+{"question": "the web server is separated because the plug-in  runs in another program between the main server’s address space.", "choices": ["Standalone container", "In-Process container", "Out-Process container", "dependent container"], "answer": "b"},
+{"question": "Sequence of filter life cycle methods? ", "choices": ["initialize(), service(), destroy()", "init(), doFilter(), destroy()", "init(), service(), delete()", "init(), service(), destroy()"], "answer": "d"},
+{"question": "Servlet class can declare constructor with ServletConfig object as a argument?", "choices": ["true", "false"], "answer": "b"},
+{"question": "It is used to manage errors, run servlet pages and JSP that deploys description.", "choices": ["Internationalization", "Exception Handling", "Session", "Filter"], "answer": "b"},
+{"question": "Usage of filter under web application.", "choices": ["Compression", "Validation", "Internationalization", "Verification", "All of the above"], "answer": "e"},
+{"question": "A filter that collects information or data which is about more than 1 filter.", "choices": ["Filter", "FilterChain", "FilterConfig", "FilterAlter"], "answer": "b"},
+{"question": "A session handling mechanism that makes the client’s next request, the session data needs to append to the URL path on the next request.", "choices": ["Cookies", "Hidden form field", "URL rewriting", "none of the above"], "answer": "c"}
 ]
