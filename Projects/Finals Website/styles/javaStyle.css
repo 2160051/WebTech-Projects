@@ -713,3 +713,89 @@ body{
 	text-decoration: none;
 	color: #FFFFFF;
 }
+#quiz{
+	position: fixed;
+	background-color: #98AFC7;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 220px;
+	right: -1px;
+	cursor: pointer;
+	z-index: 10;
+}
+#quizcloser{
+	position: fixed;
+	background-color: #98AFC7;
+	border-radius: 5px;
+	width: 50px;
+	height: 100px;
+	bottom: 220px;
+	right: -450px;
+	cursor: pointer;
+	z-index: 10;
+}
+#quiz p{
+	color: white;
+	padding-left: 9px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#quizcloser p{
+	color: white;
+	padding-left: 9px;
+	font-family: Lib, Helvetica;
+	font-size: 31px;
+	text-decoration: none;
+	z-index: 10;
+}
+#quizBox{
+	position: fixed;
+	background-color: #98AFC7;
+	border-radius: 5px;
+	width: 400px;
+	height: 100%;
+	top: 0px;
+	right: -400px;
+	z-index: 96;
+}
+#quizBox p{
+	text-align: center;
+	color: white;
+	font-family: Lib, Helvetica;
+	font-size: 42px;
+	text-decoration: none;
+	z-index: 10;
+}
+#quizBox a{
+	text-align: center;
+	color: white;
+	font-family: Lib, Helvetica;
+	padding: 10px;
+	font-size: 28px;
+	text-decoration: none;
+	z-index: 10;
+}
+#quizBox button{
+	border: none;
+	width: 90%;
+	padding: 15px;
+	background-color: #81D8D0;
+}
+#quizBox button:hover{
+	background-color: #6DC4BC;
+}
+#resources:hover{
+	background-color: #0055C4;
+}
+#nightButton:hover{
+	background-color: #000036;
+}
+#sideOpenerA:hover{
+	background-color: #59A1A9;
+}
+#quiz:hover{
+	background-color: #7A91A9;
+}

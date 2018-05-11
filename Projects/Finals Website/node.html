@@ -86,7 +86,6 @@
 	is a function of one argument. It returns the reset value by calling the continuation function with this values as the argument.</p>
 	<div class="sampleCode">
 	<p class="code">
-<<<<<<< HEAD
 		function receiveData(data) { console.log(“data received: ” %j, data); }<br>
 		<br>//Add event listener to an event type<br>
 		readStream.addListener(“data”, receiveData);<br>
@@ -95,7 +94,6 @@
 		<br>//Removing a specific event listener of an event<br>
 		readStream.removeListener(“data”, receiveData);<br>
 		<br>//Remove all event listeners of an event<br>
-=======
 		function receiveData(data) { console.log(“data received: ” %j, data); }<br><br>
 		//Add event listener to an event type<br>
 		readStream.addListener(“data”, receiveData);<br><br>
@@ -104,7 +102,6 @@
 		//Removing a specific event listener of an event<br>
 		readStream.removeListener(“data”, receiveData);<br><br>
 		//Remove all event listeners of an event<br>
->>>>>>> 7cf6eb74a0257987a476864636fedb756ec284cf
 		readStream.removeAllListeners(“data”);
 	</p>
 	</div>
@@ -147,6 +144,18 @@
 	</div>
 	<div id="resourcescloser" onclick="closeSides()">
 		<p>✏</p>
+	</div>
+	<div id="quiz" onclick="sopenSides()">
+		<p>✨</p>
+	</div>
+	<div id="quizBox">
+	<p>Take a Quiz!</p>
+	<center>
+	<button><a href="php/quizForNode.php">Take Node.js Quiz</a></button>
+	</center>
+	</div>
+	<div id="quizcloser" onclick="scloseSides()">
+		<p>✨</p>
 	</div>
 	<script>
 		var c = document.getElementById("contents").querySelectorAll("p");
